@@ -1,5 +1,6 @@
 <header>
-	<img id="Vaise_logo" src="./assets/img/Vaise_logo.png" href="./" alt="Logo de Vaise, retour vers l'accueil"/>
+	<a href"./" ><img id="Vaise_logo" src="./assets/img/Vaise_logo.png" alt="Logo de Vaise, retour vers l'accueil"/></a>
+	<img id="map" src="./assets/img/map.jpg" alt="Plan de Lyon et focus sur le 9ème arrondissement"/>
 	<ul id="menu">
 		<li id="home"><a href="./">Accueil</a></li>
 		<li id="everyday">

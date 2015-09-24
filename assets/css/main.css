@@ -20,6 +20,12 @@ header #Vaise_logo {
 	max-height: 80px;
 }
 
+header #map {
+	max-height: 110px;
+	float: right;
+	margin: 5px 20px 0px 0px;
+}
+
 #menu,
 #menu ul{
 	list-style: none;
@@ -37,7 +43,11 @@ header #Vaise_logo {
 	text-align: center;
 	text-decoration: none;
 	color: white;
-	line-height: 28px;
+	line-height: 30px;
+}
+
+#menu > li:hover > ul {
+	display: block;
 }
 
 #menu #everyday a {
