@@ -26,7 +26,19 @@
                     </ul>
                 </li>
                 <li><a href="/">Loisirs</a></li>
+                    <ul>    
+                        <li><a href="/"></a></li>
+                        <li><a href="/"></a></li>
+                        <li><a href="/"></a></li>
+                        <li><a href="/"></a></li>
+                    </ul>
                 <li><a href="/">Culture</a></li>
+                    <ul>    
+                        <li><a href="/"></a></li>
+                        <li><a href="/"></a></li>
+                        <li><a href="/"></a></li>
+                        <li><a href="/"></a></li>
+                    </ul>
                 <li><a href="/">Contact</a></li>
             </ul>
         </div>
