@@ -43,4 +43,5 @@ function isMobile() {
 		return true;
 	return false;
 }
+
 ?>
