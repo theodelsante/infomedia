@@ -20,10 +20,10 @@ require_once('config.php');
 	<meta name="format-detection" content="telephone=yes"/>
 	<meta name="HandheldFriendly" content="true"/>
 
-	<link href="/assets/css/main.css" type="text/css" rel="stylesheet" media="all">
-	<link href="/assets/css/print.css" type="text/css" rel="stylesheet" media="print">
+	<link href="./assets/css/main.css" type="text/css" rel="stylesheet" media="all">
+	<link href="./assets/css/print.css" type="text/css" rel="stylesheet" media="print">
 
-	<script src="/assets/js/jQuery.js" type="text/javascript"></script>
+	<script src="./assets/js/jQuery.js" type="text/javascript"></script>
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
