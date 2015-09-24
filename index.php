@@ -16,6 +16,7 @@
         
         <div id="menu">
             <ul>
+                khkhkhkhkihikhikhikhik
                 // test toto
                 <li><a href="/">Vie Pratique</a>
                     <ul>
