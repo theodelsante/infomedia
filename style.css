@@ -1,0 +1,18 @@
+/*Balise classique*/
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type:none;
+    display: inline;
+}
+
+/*CSS Perso*/
+#menu ul li{
+    padding-left: 4%;
+}
+
+#carte{
+   padding-left: 75%;
+}
