@@ -1,0 +1,41 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	max-width: 100%;
+}
+
+html {
+	background-color: lightgrey;
+}
+
+body {
+	background-color: white;
+	max-width: 900px;
+	margin: 0px auto;
+}
+
+header #Vaise_logo {
+	margin: 20px;
+	max-height: 80px;
+}
+
+#menu,
+#menu ul{
+	list-style: none;
+}
+
+#menu > li {
+	display: inline-block;
+	width: 24%;
+}
+
+#menu li a {
+	display: block;
+	background-color: red;
+	text-align: center;
+	text-decoration: none;
+}
+
+#menu li ul {
+	display: none;
+}
