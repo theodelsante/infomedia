@@ -18,26 +18,26 @@
             <ul>
                 <li><a href="/">Vie Pratique</a>
                     <ul>
-                        <li><a href="/"></a></li>
-                        <li><a href="/"></a></li>
-                        <li><a href="/"></a></li>
-                        <li><a href="/"></a></li>
-                        <li><a href="/"></a></li>
+                        <li><a href="/">Se deplacer</a></li>
+                        <li><a href="/">Restaurant/Bar</a></li>
+                        <li><a href="/">Commerce</a></li>
+                        <li><a href="/">Association</a></li>
+                        <li><a href="/">Hôtel</a></li>
                     </ul>
                 </li>
                 <li><a href="/">Loisirs</a></li>
                     <ul>    
-                        <li><a href="/"></a></li>
-                        <li><a href="/"></a></li>
-                        <li><a href="/"></a></li>
-                        <li><a href="/"></a></li>
+                        <li><a href="/">Espace vert</a></li>
+                        <li><a href="/">Sport</a></li>
+                        <li><a href="/">Cinema</a></li>
+                        <li><a href="/">Théâtre</a></li>
                     </ul>
                 <li><a href="/">Culture</a></li>
                     <ul>    
-                        <li><a href="/"></a></li>
-                        <li><a href="/"></a></li>
-                        <li><a href="/"></a></li>
-                        <li><a href="/"></a></li>
+                        <li><a href="/">Musee</a></li>
+                        <li><a href="/">Lieux historique</a></li>
+                        <li><a href="/">Exposition</a></li>
+                        <li><a href="/">Mediatheque</a></li>
                     </ul>
                 <li><a href="/">Contact</a></li>
             </ul>
