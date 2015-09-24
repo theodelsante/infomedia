@@ -16,9 +16,10 @@
         
         <div id="menu">
             <ul>
+                // test toto
                 <li><a href="/">Vie Pratique</a>
                     <ul>
-                        <li><a href="/">Se deplacer</a></li>
+                        <li><a href="/">Se déplacer</a></li>
                         <li><a href="/">Restaurant/Bar</a></li>
                         <li><a href="/">Commerce</a></li>
                         <li><a href="/">Association</a></li>
