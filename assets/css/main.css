@@ -80,8 +80,8 @@ header #map {
 }
 
 .wrap_content {
-	margin-top:200px;
   font-family: sans-serif;
+  background-color:#f9f9f9;
 }
 
 /* ---- button ---- */
