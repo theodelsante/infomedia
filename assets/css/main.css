@@ -198,6 +198,16 @@ header #map {
   font-size: 2em;
 }
 
+@media screen and (max-width: 380px) {
+  .button {
+    padding: 10px 13px;
+  }
+
+  .grid-item {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 520px) {
   .carousel .carousel-caption p {
     display: none;
