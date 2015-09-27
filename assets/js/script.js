@@ -1,8 +1,7 @@
 $( function() {
   // init Isotope
   var $grid = $('.grid').isotope({
-    itemSelector: '.element-item',
-    layoutMode: 'fitRows'
+    itemSelector: '.grid-item'
   });
   // filter functions
   var filterFns = {
@@ -32,5 +31,4 @@ $( function() {
       $( this ).addClass('is-checked');
     });
   });
-  
 });

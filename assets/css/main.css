@@ -5,12 +5,6 @@
 	font-family: Arial;
 }
 
-body {
-	max-width: 900px;
-	margin: 0px auto !important;
-  position: relative;
-}
-
 header #Vaise_logo {
 	margin: 20px;
 	max-height: 80px;
@@ -22,17 +16,19 @@ header #map {
 	margin: 5px 20px 0px 0px;
 }
 
-#menu,
-#menu ul{
-	list-style: none;
+#menu img {
+  margin: 0px;
+  margin-top: -10px;
+  max-height: 40px;
 }
 
+/*
 #menu > li {
 	float:left;
 	width: 18%;
 	margin: 0px 1%;
 }
-
+*/
 #menu li a {
 	display: block;
 	background-color: #e44b00;
@@ -61,15 +57,47 @@ header #map {
 #menu #links a {
 	background-color: #7e0095
 }
-
+/*
 #menu li ul {
 	display: none;
 }
+*/
+.navbar {
+  border: 0;
+}
 
-.wrap_content {
-	position: absolute;
-  margin-top: 20px;
-  font-family: sans-serif;
+.navbar > div,
+.navbar > div > div {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-header {
+  height: 0px;
+}
+
+.navbar-nav {
+  width: 100%;
+  margin: 0px;
+}
+
+.navbar-nav > li {
+  width: 20%;
+  text-align: center;
+}
+
+.dropdown-menu {
+  width: 100%;
+  padding: 0px;
+  border: none;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+.carousel .item {
+  max-height: 500px;
 }
 
 /* ---- button ---- */
@@ -80,17 +108,14 @@ header #map {
   background: #EEE;
   border: none;
   border-radius: 7px;
-  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
   color: #222;
   font-family: sans-serif;
   font-size: 16px;
-  text-shadow: 0 1px white;
   cursor: pointer;
 }
 
 .button:hover {
   background-color: #8CF;
-  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
   color: #222;
 }
 
@@ -101,7 +126,6 @@ header #map {
 
 .button.is-checked {
   color: white;
-  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
 }
 
 .button:active {
@@ -109,7 +133,6 @@ header #map {
 }
 
 /* ---- button-group ---- */
-
 .button-group:after {
   content: '';
   display: block;
@@ -127,76 +150,78 @@ header #map {
 .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
 
 /* ---- isotope ---- */
-
-.grid {
-  border: 1px solid #333;
-}
-
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-/* ---- .element-item ---- */
-
-.element-item {
+.grid-item {
   position: relative;
   float: left;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 200px;
+  min-width: 47%;
   margin: 5px;
-  padding: 10px;
   background: #888;
   color: #262524;
+  background-size: cover;
+  background-position: center;
 }
 
-.element-item > * {
-  margin: 0;
-  padding: 0;
-}
-
-.element-item .name {
+.grid-item span {
   position: absolute;
-
-  left: 10px;
-  top: 60px;
-  text-transform: none;
-  letter-spacing: 0;
-  font-size: 12px;
-  font-weight: normal;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: block;
+  height: 150px;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
 }
 
-.element-item .symbol {
+.grid-item .title {
   position: absolute;
+  bottom: 15px;
   left: 10px;
-  top: 0px;
-  font-size: 42px;
-  font-weight: bold;
+  right: 10px;
+  margin: 0px;
   color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
-.element-item .number {
-  position: absolute;
-  right: 8px;
-  top: 5px;
+.grid-item--width2 { width: 310px; }
+.grid-item--height2 { height: 410px; }
+
+#right .glyphicon {
+  font-size: 2em;
 }
 
-.element-item .weight {
-  position: absolute;
-  left: 10px;
-  top: 76px;
-  font-size: 12px;
+@media screen and (max-width: 520px) {
+  .carousel .carousel-caption p {
+    display: none;
+  }
+
+  .grid-item {
+    height: 150px;
+  }
+
+  .grid-item--height2 { height: 310px; }
 }
 
-.element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
-.element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
-.element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
-.element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
-.element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
-.element-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
-.element-item.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
-.element-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
-.element-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
-.element-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+@media screen and (max-width: 767px) {
+  header > a,
+  header > img {
+    display: none;
+  }
+
+  .navbar-nav li {
+    width: 100%;
+  }
+
+  .navbar > div,
+  .navbar > div > div {
+    padding-left: 15px;
+  }
+}

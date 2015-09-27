@@ -18,22 +18,24 @@ require_once('config.php');
 	<meta name="format-detection" content="telephone=yes"/>
 	<meta name="HandheldFriendly" content="true"/>
 
-	<link href="./assets/css/main.css" type="text/css" rel="stylesheet" media="all">
   <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="./assets/css/print.css" type="text/css" rel="stylesheet" media="print">
+  <link href="./assets/css/main.css" type="text/css" rel="stylesheet" media="all">
+  <link href="./assets/css/print.css" type="text/css" rel="stylesheet" media="print">
 
-	<script src="./assets/js/jQuery.js" type="text/javascript"></script>
+  <script src="./assets/js/jQuery.js" type="text/javascript"></script>
   <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="./assets/js/isotope.min.js"></script>
-	<script src="./assets/js/script.js"></script>
-	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="./assets/js/isotope.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
-	<?php
+  <div class="container">
+  	<?php
 
-	require_once('view/header.php');
-  require_once('view/newsHome.php');
-  require_once('view/footer.php');
+  	require_once('view/header.php');
+    require_once('view/newsHome.php');
+    require_once('view/footer.php');
 
-	?>
+    ?>
+  </div>
 </body>
