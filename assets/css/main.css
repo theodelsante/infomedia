@@ -101,6 +101,11 @@ header #map {
   max-height: 500px;
 }
 
+.row {
+  background-color: #f9f9f9;
+  margin: 0px;
+}
+
 /* ---- button ---- */
 .button {
   display: inline-block;
@@ -201,10 +206,35 @@ header #map {
 .grid-item--height2 { height: 410px; background-size: 180%; }
 .grid-item--height2:hover { background-size: 200%; }
 
+#right > div {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#right > div h3,
+#right > div p {
+  margin: 0px;
+}
+
+#right #mayor_picture {
+  float: left;
+  max-width: 50%;
+  margin-right: 5px;
+}
+
 #right h3,
 #right .icon {
   text-align: center;
   text-transform: uppercase;
+}
+
+#right i {
+  color: #e7e7e7;
+}
+
+#right i:hover {
+  color: #a3a3a3;
 }
 
 @media screen and (max-width: 380px) {

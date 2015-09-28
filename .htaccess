@@ -1,0 +1,9 @@
+Options -Indexes +FollowSymlinks
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+# ERROR catching #
+ErrorDocument 403 /Projet%20G4%20Vaise/infomedia/errors.php?error=403
+ErrorDocument 404 /Projet%20G4%20Vaise/infomedia/errors.php?error=404
+
+ErrorDocument 500 /Projet%20G4%20Vaise/infomedia/errors.php?error=500
