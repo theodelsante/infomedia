@@ -10,25 +10,12 @@ header #Vaise_logo {
 	max-height: 80px;
 }
 
-header #map {
-	max-height: 110px;
-	float: right;
-	margin: 5px 20px 0px 0px;
-}
-
 #menu img {
   margin: 0px;
   margin-top: -10px;
   max-height: 40px;
 }
 
-/*
-#menu > li {
-	float:left;
-	width: 18%;
-	margin: 0px 1%;
-}
-*/
 #menu li a {
 	display: block;
 	background-color: #e44b00;
@@ -220,6 +207,7 @@ header #map {
 #right #mayor_picture {
   float: left;
   max-width: 50%;
+  max-height: 120px;
   margin-right: 5px;
 }
 
