@@ -15,8 +15,8 @@
         </ul>
     </div>
     <div class="row">
-        <img src="images/lyon9eme.png" alt="Logo Lyon 9" id="logolyon9">
-        <img src="images/grandLyon.png" alt="Logo Grand Lyon" id="logograndlyon">                
+        <img src="./assets/img/lyon9eme.png" alt="Logo Lyon 9" id="logolyon9">
+        <img src="./assets/img/grandLyon.png" alt="Logo Grand Lyon" id="logograndlyon">                
         <p class="texte">Mairie du 9e arrondissement - 6 place du March&eacute; 69009 Lyon - 04 72 19 81 81</p>
     </div>
 </footer>
