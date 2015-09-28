@@ -198,7 +198,8 @@ header #map {
 }
 
 .grid-item--width2 { width: 310px; }
-.grid-item--height2 { height: 410px; }
+.grid-item--height2 { height: 410px; background-size: 180%; }
+.grid-item--height2:hover { background-size: 200%; }
 
 #right h3,
 #right .icon {
