@@ -36,6 +36,7 @@ header #map {
 	text-decoration: none;
 	color: white;
 	line-height: 30px;
+  font-size: 1.2em;
 }
 
 #menu > li:hover > ul {
@@ -159,8 +160,13 @@ header #map {
   margin: 5px;
   background: #888;
   color: #262524;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
+  transition: background-size .4s;
+}
+
+.grid-item:hover {
+  background-size: 120%;
 }
 
 .grid-item span {
@@ -194,8 +200,10 @@ header #map {
 .grid-item--width2 { width: 310px; }
 .grid-item--height2 { height: 410px; }
 
-#right .glyphicon {
-  font-size: 2em;
+#right h3,
+#right .icon {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 380px) {
