@@ -16,6 +16,6 @@
       <i class="fa fa-twitter-square fa-3x"></i>
     </div>
     <h3>Imprimer</h3>
-    <div class="icon"><i class="fa fa-print fa-3x"></i></div>
+    <div class="icon"><i class="fa fa-print fa-3x" onClick="window.print()"></i></div>
   </div>
 </div>

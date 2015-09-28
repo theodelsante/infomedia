@@ -152,13 +152,30 @@ header #Vaise_logo {
   margin: 5px;
   background: #888;
   color: #262524;
-  background-size: 100%;
-  background-position: center;
-  transition: background-size .4s;
+  overflow: hidden;
 }
 
-.grid-item:hover {
-  background-size: 120%;
+.grid-item .zoom_pict {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  -moz-transition: all .4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -moz-transform: scale(1,1);
+  -webkit-transform: scale(1,1);
+  transform: scale(1,1);
+  moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  z-index: 0;
+}
+
+.grid-item:hover .zoom_pict {
+  -moz-transform: scale(1.4,1.4);
+  -webkit-transform: scale(1.4,1.4);
+  transform: scale(1.4,1.4);
 }
 
 .grid-item span {
@@ -190,8 +207,7 @@ header #Vaise_logo {
 }
 
 .grid-item--width2 { width: 310px; }
-.grid-item--height2 { height: 410px; background-size: 180%; }
-.grid-item--height2:hover { background-size: 200%; }
+.grid-item--height2 { height: 410px; }
 
 #right > div {
   background-color: white;
@@ -223,6 +239,50 @@ header #Vaise_logo {
 
 #right i:hover {
   color: #a3a3a3;
+}
+
+footer {
+  position: relative;
+}
+
+footer a,
+footer p {
+  color: #5e5e5e;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+footer li {
+  display: inline-block;
+  list-style: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+footer .liens,
+footer p {
+  text-align: center;
+}
+
+footer .texte {
+  position: absolute;
+  bottom: -70px;
+  left: 0px;
+  right: 0px;
+}
+
+footer img {
+  width: 220px;
+  float: left;
+}
+
+footer #logograndlyon {
+  margin-top: 5px;
+  float: right;
 }
 
 @media screen and (max-width: 380px) {
@@ -261,51 +321,4 @@ header #Vaise_logo {
   .navbar > div > div {
     padding-left: 15px;
   }
-}
-
-footer a, footer li, footer p{
-    color:#5e5e5e;
-}
-
-footer a:hover {
-    text-decoration: none;
-    color:grey;
-}
-
-footer li {
-    display: inline-block;
-    list-style: none;
-    font-weight: bold;
-    font-size:16;
-    text-transform: uppercase;
-}
-
-footer > .liens {
-    text-align: center;
-}
-
-footer #logolyon9 {
-    float:left;
-}
-
-footer #logograndlyon {
-    float:right;
-}
-
-footer p {
-    text-align: center;
-}
-
-footer .texte {
-    padding-top:40px;
-}
-
-footer #logograndlyon {
-    padding-right: 30px;
-    padding-top:15px;
-}
-
-footer #logolyon9 {
-    padding-left: 10px;
-    width:237px;
 }

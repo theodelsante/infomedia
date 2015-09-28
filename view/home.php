@@ -56,19 +56,24 @@
     </div>
 
     <div class="grid">
-      <div class="grid-item news" style="background-image: url('./assets/img/news2.jpg');">
+      <div class="grid-item news">
+        <div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
         <span><h3 class="title">Marché nocture de Valmy</h3></span>
       </div>
-      <div class="grid-item news event" style="background-image: url('./assets/img/news2.jpg');">
+      <div class="grid-item news event">
+        <div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
         <span><h3 class="title">La fête des lumières s'invite à Vaise</h3></span>
       </div>
-      <div class="grid-item news" style="background-image: url('./assets/img/news2.jpg');">
+      <div class="grid-item news">
+        <div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
         <span><h3 class="title">Marché nocture de Valmy</h3></span>
       </div>
-      <div class="grid-item news grid-item--height2" style="background-image: url('./assets/img/news1.jpg');">
+      <div class="grid-item news grid-item--height2">
+        <div class="zoom_pict" style="background-image: url('./assets/img/news1.jpg');"></div>
         <span><h3 class="title">Rénovation de la cathédrale St Pierre</h3></span>
       </div>
-      <div class="grid-item news" style="background-image: url('./assets/img/news2.jpg');">
+      <div class="grid-item news">
+        <div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
         <span><h3 class="title">Marché nocture de Valmy</h3></span>
       </div>
     </div>
