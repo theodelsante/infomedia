@@ -20,12 +20,13 @@ require_once('config.php');
 
   <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="./assets/css/main.css" type="text/css" rel="stylesheet" media="all">
+  <link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="./assets/css/print.css" type="text/css" rel="stylesheet" media="print">
 
   <script src="./assets/js/jQuery.js" type="text/javascript"></script>
-  <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="./assets/js/isotope.min.js"></script>
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="./assets/js/isotope.min.js" type="text/javascript"></script>
+  <script src="./assets/js/script.js" type="text/javascript"></script>
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
@@ -33,7 +34,7 @@ require_once('config.php');
   	<?php
 
   	require_once('view/header.php');
-    require_once('view/newsHome.php');
+    require_once('view/home.php');
     require_once('view/footer.php');
 
     ?>
