@@ -262,3 +262,50 @@ header #Vaise_logo {
     padding-left: 15px;
   }
 }
+
+footer a, li, p{
+    color:#5e5e5e;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color:grey;
+}
+
+footer li {
+    display: inline-block;
+    list-style: none;
+    font-weight: bold;
+    font-size:35;
+    text-transform: uppercase;
+}
+
+footer > .liens {
+    text-align: center;
+}
+
+footer #logolyon9 {
+    float:left;
+}
+
+footer #logograndlyon {
+    float:right;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer .texte {
+    padding-top:40px;
+}
+
+footer #logograndlyon {
+    padding-right: 30px;
+    padding-top:15px;
+}
+
+footer #logolyon9 {
+    padding-left: 10px;
+    width:237px;
+}
