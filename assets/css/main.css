@@ -26,7 +26,7 @@ header #Vaise_logo {
   font-size: 1.2em;
 }
 
-#menu > li:hover > ul {
+#menu li:hover > ul {
 	display: block;
 }
 
@@ -308,4 +308,61 @@ footer #logograndlyon {
 footer #logolyon9 {
     padding-left: 10px;
     width:237px;
+}
+    
+#home > a:hover {
+    color:#e44b00;
+}
+
+#everyday a:hover {
+    color:#8ea301;
+}
+
+#leisure a:hover {
+    color:#0173a6;
+}
+
+#culture a:hover{
+    color:#bc017c;
+}
+
+#links > a:hover {
+    color:#7e0095;
+}
+
+#menu #links > a:hover, 
+#menu #home > a:hover, 
+#menu #culture > a:hover,
+#menu #leisure > a:hover,
+#menu #everyday > a:hover,
+#menu #culture > ul a:hover,
+#menu #leisure > ul a:hover,
+#menu #everyday > ul a:hover {
+    background-color:white;
+}
+
+#menu #links > a, 
+#menu #home > a, 
+#menu #culture > a,
+#menu #leisure > a,
+#menu #everyday > a,
+#menu #culture > ul a,
+#menu #leisure > ul a,
+#menu #everyday > ul a {
+    transition:background-color 0.8s linear;
+}
+
+
+
+#leisure > a, #culture > a, #everyday > a {
+    z-index:9999;
+}
+
+#menu li > ul {
+    animation: movemenu 0.2s linear;
+}
+
+@keyframes movemenu {
+    0% {top:0px;}
+    100% {top:45px;}
 }
