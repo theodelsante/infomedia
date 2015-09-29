@@ -2,8 +2,8 @@
   <h2>Actualité</h2>
   <div id="mayor_word">
     <h3>Le mot du maire</h3>
-    <img id="mayor_picture" src="./assets/img/maire.jpg" alt="Maire du 9ème arrondissement"/>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui neque, semper ut neque at, interdum ultricies mauris. Donec consectetur nibh sed leo aliquet gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent sodales finibus metus non mattis. Quisque lacinia varius dolor maximus aliquam. Mauris ut sodales magna. In sit amet nisl imperdiet, maximus mauris sit amet, placerat arcu.</p>
+    <img id="mayor_picture" src="./assets/img/maire.png" alt="Maire du 9ème arrondissement"/>
+    <p>Lorem ipsum dolor sit amet, cQuisque lacinia varius dolor maximus aliquam. Mauris ut sodales magna. In sit amet nisl imperdiet, maximus mauris sit amet, placerat arcu.</p>
   </div>
   <div id="weather">
     <h3>Météo</h3>

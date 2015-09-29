@@ -42,8 +42,8 @@
 						</ul>
 					</li>
 					<li id="links"><a href="./">Liens utiles</a></li>
-					<li id="langues"><a href="./">EN</a></li>
 				</ul>
+				<div id="en"><a href="./">EN</a></div>
 			</div>
 		</div>
 	</nav>

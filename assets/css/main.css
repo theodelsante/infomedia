@@ -16,7 +16,7 @@ header #Vaise_logo {
   max-height: 40px;
 }
 
-#menu li a {
+#menu li a, #en a {
 	display: block;
 	background-color: #e44b00;
 	text-align: center;
@@ -46,9 +46,10 @@ header #Vaise_logo {
 	background-color: #7e0095;
 }
 
-#menu #langues a {
+#en a {
   background-color: #e7e7e7;
   color:black;
+  width:5%;
 }
 /*
 #menu li ul {
@@ -77,10 +78,6 @@ header #Vaise_logo {
 .navbar-nav > li {
   width: 19%;
   text-align: center;
-}
-
-li:last-child { 
-  width:5%;
 }
 
 .dropdown-menu {
@@ -234,6 +231,7 @@ li:last-child {
   max-width: 50%;
   max-height: 120px;
   margin-right: 5px;
+  margin:6px;
 }
 
 #right h3,
