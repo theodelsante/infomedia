@@ -34,8 +34,10 @@ require_once('config.php');
   	<?php
 
   	require_once('view/header.php');
-    require_once('view/home.php');
+    require_once('view/contact.php');
+        require_once('view/contact.php');
     require_once('view/footer.php');
+
 
     ?>
   </div>

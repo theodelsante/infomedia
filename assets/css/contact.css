@@ -1,0 +1,53 @@
+h2 
+{
+color: #5e5e5e;
+text-align: center;
+}
+
+
+.contact_list_text h3,.contact_list_text p{
+	text-align:center;
+}
+
+.contact_list_text
+{
+	color:white;
+/*	position:absolute;*/
+}
+
+.contact_list_text_container
+{
+	position:relative;
+	top:-50px;
+	height:50px;
+	overflow:hidden;
+    background-color: rgba(0,0,0,0.5);
+	border:1px solid #5e5e5e;
+	border-radius: 5px 5px 0px 0px;
+	transition:all 1s;
+} 
+
+@keyframes above
+{
+	from{top:-50px;
+	height:50px;}
+	to{height:150px;
+	top:-150px;}
+
+}
+
+@keyframes down
+{
+	from{top:-150px;
+	height:150px;}
+	to{height:50px;
+	top:-50px;}
+
+}
+
+.contact_list li:hover div.contact_list_text_container
+{
+
+	height:200px;
+	top:-200px;
+}
