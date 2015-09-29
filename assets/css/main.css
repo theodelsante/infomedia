@@ -6,11 +6,11 @@
 }
 
 header{
-    clear: both;
+  clear: both;
 }
 
 header #Vaise_logo {
-	margin: 20px 20px 20px 0px;
+	margin: 20px 0px;
 	max-height: 80px;
 }
 
@@ -35,13 +35,9 @@ header #Vaise_logo {
 }
 
 #menu{
-  width:85%;
+  width: 86%;
   float: right;
-  margin-top:40px;
-}
-
-#menu > li:hover > ul {
-	display: block;
+  margin-top: 40px;
 }
 
 #menu #everyday a {
@@ -293,8 +289,7 @@ footer li {
   text-transform: uppercase;
 }
 
-footer .liens,
-footer p {
+footer * {
   text-align: center;
 }
 
@@ -305,14 +300,12 @@ footer .texte {
   right: 0px;
 }
 
-footer img {
-  width: 220px;
-  float: left;
+footer .col-md-8 {
+  padding: 0px;
 }
 
 footer #logograndlyon {
   margin-top: 5px;
-  float: right;
 }
 
 @media screen and (max-width: 380px) {
@@ -337,10 +330,20 @@ footer #logograndlyon {
   .grid-item--height2 { height: 310px; }
 }
 
+@media screen and (min-width: 767px) {
+  #menu li:hover > ul {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 767px) {
   header > a,
   header > img {
     display: none;
+  }
+
+  #menu {
+    width: 100%;
   }
 
   .navbar-nav li {
@@ -353,14 +356,57 @@ footer #logograndlyon {
   }
 }
 
-@media screen and (max-width: 992px) {
-  .carousel .carousel-caption p {
-    display: none;
-  }
+#home > a:hover {
+  color:#e44b00;
+}
 
-  .grid-item {
-    height: 150px;
-  }
+#everyday a:hover {
+  color:#8ea301;
+}
 
-  .grid-item--height2 { height: 310px; }
+#leisure a:hover {
+  color:#0173a6;
+}
+
+#culture a:hover{
+  color:#bc017c;
+}
+
+#links > a:hover {
+  color:#7e0095;
+}
+
+#menu #links > a:hover, 
+#menu #home > a:hover, 
+#menu #culture > a:hover,
+#menu #leisure > a:hover,
+#menu #everyday > a:hover,
+#menu #culture > ul a:hover,
+#menu #leisure > ul a:hover,
+#menu #everyday > ul a:hover {
+  background-color:white;
+}
+
+#menu #links > a, 
+#menu #home > a, 
+#menu #culture > a,
+#menu #leisure > a,
+#menu #everyday > a,
+#menu #culture > ul a,
+#menu #leisure > ul a,
+#menu #everyday > ul a {
+  transition:background-color 0.6s linear;
+}
+
+#leisure > a, #culture > a, #everyday > a {
+  z-index:9999;
+}
+
+#menu li > ul {
+  animation: movemenu 0.2s linear;
+}
+
+@keyframes movemenu {
+  0% {top:0px;}
+  100% {top:45px;}
 }
