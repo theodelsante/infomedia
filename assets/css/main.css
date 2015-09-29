@@ -5,9 +5,17 @@
 	font-family: Arial;
 }
 
+header{
+    clear: both;
+}
+
 header #Vaise_logo {
-	margin: 20px;
+	margin: 20px 20px 20px 0px;
 	max-height: 80px;
+}
+
+.container-fluid{
+  background-color:white;
 }
 
 #menu img {
@@ -24,6 +32,12 @@ header #Vaise_logo {
 	color: white;
 	line-height: 30px;
   font-size: 1.2em;
+}
+
+#menu{
+  width:85%;
+  float: right;
+  margin-top:40px;
 }
 
 #menu > li:hover > ul {
@@ -46,10 +60,10 @@ header #Vaise_logo {
 	background-color: #7e0095;
 }
 
-#en a {
+#menu #en a {
   background-color: #e7e7e7;
   color:black;
-  width:5%;
+  line-height: 60px;
 }
 /*
 #menu li ul {
@@ -80,12 +94,21 @@ header #Vaise_logo {
   text-align: center;
 }
 
+.navbar-nav > li:last-child {
+  width: 5%;
+  text-align: center;
+  float: left;
+}
+
 .dropdown-menu {
   width: 100%;
   padding: 0px;
   border: none;
 }
 
+#myCarousel{
+  clear: both;
+}
 .carousel img {
   width: 100%;
 }
@@ -328,4 +351,16 @@ footer #logograndlyon {
   .navbar > div > div {
     padding-left: 15px;
   }
+}
+
+@media screen and (max-width: 992px) {
+  .carousel .carousel-caption p {
+    display: none;
+  }
+
+  .grid-item {
+    height: 150px;
+  }
+
+  .grid-item--height2 { height: 310px; }
 }

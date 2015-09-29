@@ -14,7 +14,7 @@
 				<ul class="nav navbar-nav">
 					<li id="home"><a href="./">Accueil</a></li>
 					<li class="dropdown" id="everyday">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="./">Vie pratique<span class="caret"></span></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="./">Vie pratique</a>
 						<ul class="dropdown-menu">
 							<li><a href="./">Se déplacer</a></li>
 							<li><a href="./">Restauration / Bars</a></li>
@@ -24,7 +24,7 @@
 						</ul>
 					</li>
 					<li class="dropdown" id="leisure">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="./">Loisir<span class="caret"></span></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="./">Loisir</a>
 						<ul class="dropdown-menu">
 							<li><a href="./">Espaces verts</a></a></li>
 							<li><a href="./">Sports</a></li>
@@ -33,7 +33,7 @@
 						</ul>
 					</li>
 					<li class="dropdown" id="culture">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="./">Culture<span class="caret"></span></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="./">Culture</a>
 						<ul class="dropdown-menu">
 							<li><a href="./">Musées</a></li>
 							<li><a href="./">Lieux historiques</a></li>
@@ -42,8 +42,8 @@
 						</ul>
 					</li>
 					<li id="links"><a href="./">Liens utiles</a></li>
+					<div id="en"><a href="./">EN</a></div>
 				</ul>
-				<div id="en"><a href="./">EN</a></div>
 			</div>
 		</div>
 	</nav>
