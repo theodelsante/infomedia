@@ -31,19 +31,24 @@ header #Vaise_logo {
 }
 
 #menu #everyday a {
-	background-color: #8ea301
+	background-color: #8ea301;
 }
 
 #menu #leisure a {
-	background-color: #0173a6
+	background-color: #0173a6;
 }
 
 #menu #culture a {
-	background-color: #bc017c
+	background-color: #bc017c;
 }
 
 #menu #links a {
-	background-color: #7e0095
+	background-color: #7e0095;
+}
+
+#menu #langues a {
+  background-color: #e7e7e7;
+  color:black;
 }
 /*
 #menu li ul {
@@ -70,8 +75,12 @@ header #Vaise_logo {
 }
 
 .navbar-nav > li {
-  width: 20%;
+  width: 19%;
   text-align: center;
+}
+
+li:last-child { 
+  width:5%;
 }
 
 .dropdown-menu {
