@@ -1,4 +1,17 @@
 <?php
+
+$pages = array('home', 'news', 'sscat');
+if (isset($_GET['page']) && $_GET['page'] != '') {
+  if (in_array($_GET['page'], $pages)) {
+    $page = $_GET['page'];
+  } else {
+    require_once('errors.php');
+    exit();
+  }
+} else {
+  $page ='home';
+}
+
 require_once('config.php');
 ?>
 <html lang="fr">
@@ -34,7 +47,7 @@ require_once('config.php');
   	<?php
 
   	require_once('view/header.php');
-    require_once('view/home.php');
+    require_once('view/'.$page.'.php');
     require_once('view/footer.php');
 
     ?>

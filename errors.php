@@ -1,8 +1,10 @@
 <?php
 require_once('config.php');
 $error = 'Erreur';
-if ($_GET['error'] && $_GET['error']) {
+if (isset($_GET['error']) && $_GET['error'] != '') {
 	$error .= ' '.$_GET['error'];
+} else if (isset($_SERVER['PHP_SELF']) && strpos($_SERVER['PHP_SELF'], 'index.php')) {
+	$error .= ' 404';
 }
 ?>
 <html lang="fr">
