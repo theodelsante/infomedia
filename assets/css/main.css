@@ -295,6 +295,11 @@ header #Vaise_logo {
   background-color: white;
   padding: 10px;
   margin-bottom: 20px;
+  clear: both;
+}
+
+#right #mayor_word {
+  float: left;
 }
 
 #right > div h3,

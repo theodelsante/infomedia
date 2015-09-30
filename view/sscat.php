@@ -1,26 +1,70 @@
+<?php
+
+$sscat[0]['name'] = 'Cantabria';
+$sscat[0]['type'] = 'Restaurant et bar espagnol';
+$sscat[0]['lat'] = 45.77434;
+$sscat[0]['lng'] = 4.80364;
+
+$sscat[1]['name'] = 'Subway';
+$sscat[1]['type'] = 'Restauration rapide';
+$sscat[1]['lat'] = 45.77232;
+$sscat[1]['lng'] = 4.80544;
+
+$sscat[2]['name'] = 'Indian Haveli';
+$sscat[2]['type'] = '';
+$sscat[2]['lat'] = 45.77592;
+$sscat[2]['lng'] = 4.80514;
+
+$sscat[3]['name'] = 'Chicken Chips';
+$sscat[3]['type'] = '';
+$sscat[3]['lat'] = 45.77551;
+$sscat[3]['lng'] = 4.80437;
+
+$sscat[4]['name'] = 'Dominos Pizza';
+$sscat[4]['type'] = '';
+$sscat[4]['lat'] = 45.77566;
+$sscat[4]['lng'] = 4.80400;
+
+$sscat[5]['name'] = 'Tout le Monde à Table';
+$sscat[5]['type'] = '';
+$sscat[5]['lat'] = 45.78131;
+$sscat[5]['lng'] = 4.80653;
+
+$sscat[6]['name'] = 'Matsuri';
+$sscat[6]['type'] = '';
+$sscat[6]['lat'] = 45.78330;
+$sscat[6]['lng'] = 4.80805;
+
+?>
 <div class="row">
-	<div class="col-md-9 col-sm-12" id="left">
-		<div id="gmap" style="height:60%;"></div>
+	<div class="col-md-1 col-sm-12" id="left">
+
+	</div>
+	<div class="col-md-8 col-sm-12" id="left">
+		<div id="gmap" style="height:50%;"></div>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfLButc-F4bj_qIbyH8c4hCcplD-NGaZw&signed_in=true&callback=initMap" async defer type="text/javascript"></script>
 		<script>
 		function initMap() {
 			var map = new google.maps.Map(document.getElementById('gmap'), {
 				zoom: 15,
 				center: {lat: 45.77601, lng: 4.80072},
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				disableDefaultUI: true,
 				zoomControl: false,
 				scaleControl: false,
 				scrollwheel: false,
 				disableDoubleClickZoom: true,
-				disableDefaultUI: true
+				draggable: true
 			});
 
 			var mark = new Array();
-			mark[0] = addMarker(0, {lat: 45.77434, lng: 4.80364}, 'Cantabria');
-			mark[1] = addMarker(1, {lat: 45.77232, lng: 4.80544}, 'Subway');
-			mark[2] = addMarker(2, {lat: 45.77592, lng: 4.80514}, 'Indian Haveli');
-			mark[3] = addMarker(3, {lat: 45.77551, lng: 4.80437}, 'Chicken Chips');
-			mark[4] = addMarker(4, {lat: 45.77566, lng: 4.80400}, 'Domino\'s Pizza');
-			mark[5] = addMarker(5, {lat: 45.78131, lng: 4.80653}, 'Tout le Monde à Table');
-			mark[6] = addMarker(6, {lat: 45.78330, lng: 4.80805}, 'Matsuri');
+			<?php
+
+			foreach ($sscat as $key => $value) {
+				echo 'mark['.$key.'] = addMarker('.$key.', {lat: '.$value['lat'].', lng: '.$value['lng'].'}, \''.$value['name'].'\');';
+			}
+
+			?>
 
 			// Adds a marker to the map.
 			function addMarker(id, pos, title) {
@@ -32,15 +76,14 @@
 				marker.id = id;
 
 				google.maps.event.addListener(marker, 'click', function() {
-					alert(marker.title+' // id:'+marker.id);
 					map.setCenter(marker.getPosition());
+					alert(marker.title+' // id:'+marker.id);
 				});
 
 				return marker;
 			}
 		}
 		</script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfLButc-F4bj_qIbyH8c4hCcplD-NGaZw&signed_in=true&callback=initMap" async defer type="text/javascript"></script>
 	</div>
 	<?php
 	/*
