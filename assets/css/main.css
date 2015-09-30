@@ -10,7 +10,7 @@ header{
 }
 
 header #Vaise_logo {
-	margin: 20px 0px;
+	margin: 2% 0px;
 	max-height: 80px;
 }
 
@@ -31,11 +31,11 @@ header #Vaise_logo {
 	text-decoration: none;
 	color: white;
 	line-height: 30px;
-  font-size: 1.2em;
+  font-size: 100%;
 }
 
 #menu{
-  width: 86%;
+  width: 79%;
   float: right;
   margin-top: 40px;
 }
@@ -60,6 +60,63 @@ header #Vaise_logo {
   background-color: #e7e7e7;
   color:black;
   line-height: 60px;
+}
+
+
+
+#menu #links > a, 
+#menu #home > a, 
+#menu #culture > a,
+#menu #leisure > a,
+#menu #everyday > a,
+#menu #culture > ul a,
+#menu #leisure > ul a,
+#menu #everyday > ul a {
+  transition:all 0.8s linear;
+}
+
+#leisure > a, #culture > a, #everyday > a {
+  z-index:9999;
+}
+
+#menu li > ul {
+  animation: movemenu 0.2s linear;
+}
+
+@keyframes movemenu {
+  0% {top:0px;}
+  100% {top:45px;}
+}
+
+#home > a:hover {
+  color:#e44b00;
+}
+
+#everyday a:hover {
+  color:#8ea301;
+}
+
+#leisure a:hover {
+  color:#0173a6;
+}
+
+#culture a:hover{
+  color:#bc017c;
+}
+
+#links > a:hover {
+  color:#7e0095;
+}
+
+#menu #links > a:hover, 
+#menu #home > a:hover, 
+#menu #culture > a:hover,
+#menu #leisure > a:hover,
+#menu #everyday > a:hover,
+#menu #culture > ul a:hover,
+#menu #leisure > ul a:hover,
+#menu #everyday > ul a:hover {
+  background-color:white;
 }
 /*
 #menu li ul {
@@ -336,6 +393,17 @@ footer #logograndlyon {
     display: block;
   }
 }
+@media screen and (max-width: 1200px) {
+  .container{
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 1103px) {
+  #menu{
+    width:79%;
+  }
+}
 
 @media screen and (max-width: 767px) {
   header > a,
@@ -357,57 +425,6 @@ footer #logograndlyon {
   }
 }
 
-#home > a:hover {
-  color:#e44b00;
-}
 
-#everyday a:hover {
-  color:#8ea301;
-}
 
-#leisure a:hover {
-  color:#0173a6;
-}
 
-#culture a:hover{
-  color:#bc017c;
-}
-
-#links > a:hover {
-  color:#7e0095;
-}
-
-#menu #links > a:hover, 
-#menu #home > a:hover, 
-#menu #culture > a:hover,
-#menu #leisure > a:hover,
-#menu #everyday > a:hover,
-#menu #culture > ul a:hover,
-#menu #leisure > ul a:hover,
-#menu #everyday > ul a:hover {
-  background-color:white;
-}
-
-#menu #links > a, 
-#menu #home > a, 
-#menu #culture > a,
-#menu #leisure > a,
-#menu #everyday > a,
-#menu #culture > ul a,
-#menu #leisure > ul a,
-#menu #everyday > ul a {
-  transition:background-color 0.6s linear;
-}
-
-#leisure > a, #culture > a, #everyday > a {
-  z-index:9999;
-}
-
-#menu li > ul {
-  animation: movemenu 0.2s linear;
-}
-
-@keyframes movemenu {
-  0% {top:0px;}
-  100% {top:45px;}
-}
