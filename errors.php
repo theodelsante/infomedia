@@ -43,9 +43,12 @@ if ($_GET['error'] && $_GET['error']) {
 			echo '<div class="col-md-9 col-sm-12" id="left"><h1>'.$error.'</h1></div>';
 			require_once('view/sidebar.php');
 
-			require_once('view/footer.php');
-
 			?>
 		</div>
+		<?php
+
+		require_once('view/footer.php');
+
+		?>
 	</div>
 </body>
