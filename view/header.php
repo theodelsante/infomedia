@@ -17,7 +17,7 @@
 						<a class="dropdown-toggle" data-toggle="dropdown" href="./">Vie pratique</a>
 						<ul class="dropdown-menu">
 							<li><a href="./">Se déplacer</a></li>
-							<li><a href="./">Restauration / Bars</a></li>
+							<li><a href="./?page=sscat">Restauration / Bars</a></li>
 							<li><a href="./">Commerces</a></li>
 							<li><a href="./">Associations</a></li>
 							<li><a href="./">Hôtels</a></li>
@@ -41,7 +41,7 @@
 							<li><a href="./">Médiathèque</a></li>
 						</ul>
 					</li>
-					<li id="links"><a href="./">Liens utiles</a></li>
+					<li id="links"><a href="./?page=contact">Liens utiles</a></li>
 					<div id="en"><a href="./en">EN</a></div>
 				</ul>
 			</div>
