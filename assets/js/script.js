@@ -1,4 +1,4 @@
-$( function() {
+$(document).ready(function() {
   // init Isotope
   var $grid = $('.grid').isotope({
     itemSelector: '.grid-item'

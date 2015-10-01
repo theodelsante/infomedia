@@ -14,6 +14,10 @@ header #Vaise_logo {
 	max-height: 80px;
 }
 
+ul {
+  list-style: none;
+}
+
 .container-fluid{
   background-color:white;
 }
@@ -62,8 +66,6 @@ header #Vaise_logo {
   line-height: 60px;
 }
 
-
-
 #menu #links > a, 
 #menu #home > a, 
 #menu #culture > a,
@@ -72,20 +74,28 @@ header #Vaise_logo {
 #menu #culture > ul a,
 #menu #leisure > ul a,
 #menu #everyday > ul a {
-  transition:all 0.8s linear;
+  transition: all .2s linear;
 }
 
 #leisure > a, #culture > a, #everyday > a {
-  z-index:9999;
+  z-index: 10000;
 }
 
 #menu li > ul {
-  animation: movemenu 0.2s linear;
+  animation: movemenu .2s linear;
+  -webkit-animation: movemenu .2s linear;
 }
 
+/* Standard syntax */
 @keyframes movemenu {
-  0% {top:0px;}
-  100% {top:45px;}
+  0% {top: 0px;}
+  100% {top: 45px;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes movemenu {
+  from {top: 0px;}
+  to {top: 45px;}
 }
 
 #home > a:hover {
