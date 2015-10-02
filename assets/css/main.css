@@ -3,6 +3,7 @@
 	padding: 0px;
 	max-width: 100%;
 	font-family: Arial;
+  color:#5E5E5E;
 }
 
 header{
@@ -16,6 +17,19 @@ header #Vaise_logo {
 
 ul {
   list-style: none;
+}
+
+h2{
+  text-transform: uppercase;
+
+}
+
+h3{
+  font-size: 25px;
+  font-family: "Arial";
+  color: rgb(94, 94, 94);
+  font-weight: bold;
+  text-align: center;
 }
 
 .container-fluid{
@@ -181,8 +195,12 @@ ul {
 }
 
 .row {
-  background-color: #f9f9f9;
   margin: 0px;
+}
+
+.conteneur{
+  margin-top:30px;
+  background-color:#f9f9f9;
 }
 
 /* ---- button ---- */
@@ -190,32 +208,36 @@ ul {
   display: inline-block;
   padding: 10px 18px;
   margin-bottom: 10px;
-  background: #EEE;
-  border: none;
-  border-radius: 7px;
-  color: #222;
+  background-color:#f9f9f9;
+  color: #5E5E5E;
   font-family: sans-serif;
   font-size: 16px;
   cursor: pointer;
+  float: left;
+  border:none;
+  text-transform: uppercase;
 }
 
 .button:hover {
   background-color: #8CF;
   color: #222;
 }
+.button-home{
+  margin-top:17px;
+}
 
-.button:active,
+/*.button:active,
 .button.is-checked {
   background-color: #28F;
-}
+}*/
 
-.button.is-checked {
+/*.button.is-checked {
   color: white;
-}
+}*/
 
-.button:active {
+/*.button:active {
   box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
-}
+}*/
 
 /* ---- button-group ---- */
 .button-group:after {
@@ -224,15 +246,12 @@ ul {
   clear: both;
 }
 
-.button-group .button {
+/*.button-group .button {
   float: left;
   border-radius: 0;
   margin-left: 0;
   margin-right: 1px;
-}
-
-.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
-.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+}*/
 
 /* ---- isotope ---- */
 .grid-item {
@@ -301,6 +320,9 @@ ul {
 .grid-item--width2 { width: 310px; }
 .grid-item--height2 { height: 410px; }
 
+
+/*Sidebar*/
+
 #right > div {
   background-color: white;
   padding: 10px;
@@ -316,7 +338,10 @@ ul {
 #right > div p {
   margin: 0px;
 }
-
+.sidebar{
+  margin:30px 0;
+  border-left:1px solid #5E5E5E;
+}
 #right #mayor_picture {
   float: left;
   max-width: 50%;
@@ -338,6 +363,51 @@ ul {
 #right i:hover {
   color: #a3a3a3;
 }
+
+#weather{
+  text-align: center;
+}
+
+#weather img{
+    max-width: 70%;
+}
+
+#weather .nomination{
+  font-weight: bold;
+  margin-top:5px;
+}
+
+
+
+/*Page 404*/
+.p404{
+  margin:0;
+  padding:0;
+}
+.p404 img{
+  width:100%;
+  max-height: 60%;
+}
+
+.p404 h1{
+  font-size: 5vw;
+  font-family: "Arial Black";
+  color: rgb(94, 94, 94);
+  line-height: 1.402;
+  text-align: center;
+}
+.p404 h1 a{
+  font-family: "Arial Black";
+  color: rgb(94, 94, 94);
+  text-decoration: underline;
+}
+
+.p404 .text_404{
+  position:absolute;
+  top:70px;
+  left:1px;
+}
+
 
 footer {
   position: relative;
@@ -418,6 +488,10 @@ footer #logograndlyon {
   #menu{
     width:79%;
   }
+
+  .sidebar{
+    border:none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -439,7 +513,4 @@ footer #logograndlyon {
     padding-left: 15px;
   }
 }
-
-
-
 
