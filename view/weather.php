@@ -7,7 +7,6 @@ $temperature = $temperature - 273.15;
 $humidity = $parsed_json['main']['humidity'];
 $wind = $parsed_json['wind']['speed'];
 $icons = $parsed_json['weather'];
-var_dump($parsed_json);
 ?>
 <link href="./assets/css/weather.css" rel="stylesheet"/>
 <div class="row">
