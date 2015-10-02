@@ -1,5 +1,5 @@
 <?php
-//Récuperations des infos
+//Recuperations des infos
 $json = file_get_contents('http://api.openweathermap.org/data/2.5/weather?zip=69009,fr&APPID=0547c4b53bb55b58fa33197b45dad4d1');
 $parsed_json = json_decode($json, true);
 $temperature = $parsed_json['main']['temp'];
@@ -13,8 +13,8 @@ $icons = $parsed_json['weather'];
     <div id="weather">
         <center>
             <div id="temperature">
-                <h6><strong>Température</strong></h6>
-                <?php echo $temperature . '°C' ?>
+                <h6><strong>Tempï¿½rature</strong></h6>
+                <?php echo $temperature . 'ï¿½C' ?>
             </div>
             <div id="wind">
                 <h6><strong>Vitesse du vent</strong></h6>
