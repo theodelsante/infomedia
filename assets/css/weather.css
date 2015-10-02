@@ -1,0 +1,8 @@
+#weather{
+    float: right;
+    padding-right: 20px;
+}
+
+#weather h6{
+    margin-bottom: -3px !important; 
+}
