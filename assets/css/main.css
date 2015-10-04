@@ -514,3 +514,70 @@ footer #logograndlyon {
   }
 }
 
+
+/*Pagemenu*/
+
+.cat-menu{
+  margin-bottom:10px;
+}
+
+.cat-menu img{
+  height:auto;
+  text-align: center
+}
+
+.cat-menu-2:first-child{
+  margin-top:30px;
+}
+
+.cat-menu #left{
+  padding-right:5px;
+}
+
+.cat-menu #right{
+  padding-left:5px;
+}
+
+.cat-menu p{
+  font-size: 1em;
+}
+
+.cat-menu .img-menu{
+  position:relative;
+}
+
+.cat-menu h2{
+  position:absolute;
+  width:100%;
+  text-align: center;
+  bottom: 40%;
+  color:white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.txt-menu, .img-menu{
+  height:250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
