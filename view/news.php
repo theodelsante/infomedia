@@ -21,6 +21,6 @@
         </div>
     </div>
     <?php
-        require_once ('newssidebar.php');
+    require_once ('sidebar.php');
     ?>
 </div>

@@ -45,14 +45,15 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<div class="row">
+<div class="row conteneur">
   <div class="col-md-9 col-sm-12" id="left">
-    <h2>En ce moment</h2>
+    <div class="col-md-4" id="#left"><h2>En ce moment</h2></div>
 
     <div class="button-group filters-button-group">
       <button class="button is-checked" data-filter="*">TOUT</button>
       <button class="button" data-filter=".news">News</button>
-      <button class="button" data-filter=".event">Évènements</button>
+      <button class="button" data-filter=".event">Événements</button>
+      <button class="button" data-filter=".social">Les réseaux</button>
     </div>
 
     <div class="grid">

@@ -3,6 +3,7 @@
 	padding: 0px;
 	max-width: 100%;
 	font-family: Arial;
+  color: #5e5e5e;
 }
 
 header{
@@ -22,6 +23,7 @@ ul {
   background-color:white;
 }
 
+/* Menu */
 #menu img {
   margin: 0px;
   margin-top: -10px;
@@ -169,9 +171,15 @@ ul {
   border: none;
 }
 
-#myCarousel{
+/* Caroussel */
+#myCarousel {
   clear: both;
 }
+
+#myCarousel * {
+  color: white;
+}
+
 .carousel img {
   width: 100%;
 }
@@ -185,54 +193,35 @@ ul {
   margin: 0px;
 }
 
-/* ---- button ---- */
+.conteneur{
+  margin-top:30px;
+  background-color:#f9f9f9;
+}
+
+/* Isotope buttons selector */
 .button {
-  display: inline-block;
   padding: 10px 18px;
-  margin-bottom: 10px;
-  background: #EEE;
-  border: none;
-  border-radius: 7px;
-  color: #222;
-  font-family: sans-serif;
+  background-color: #f9f9f9;
   font-size: 16px;
   cursor: pointer;
+  float: left;
+  border:none;
+  text-transform: uppercase;
 }
 
 .button:hover {
-  background-color: #8CF;
-  color: #222;
+  color: black;
 }
 
-.button:active,
-.button.is-checked {
-  background-color: #28F;
+.button-group {
+  margin-top: 20px;
 }
 
-.button.is-checked {
-  color: white;
-}
-
-.button:active {
-  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
-}
-
-/* ---- button-group ---- */
 .button-group:after {
   content: '';
   display: block;
   clear: both;
 }
-
-.button-group .button {
-  float: left;
-  border-radius: 0;
-  margin-left: 0;
-  margin-right: 1px;
-}
-
-.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
-.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
 
 /* ---- isotope ---- */
 .grid-item {
@@ -301,6 +290,13 @@ ul {
 .grid-item--width2 { width: 310px; }
 .grid-item--height2 { height: 410px; }
 
+
+/* Sidebar */
+#right {
+  margin: 30px 0px;
+  border-left: 1px solid #5e5e5e;
+}
+
 #right > div {
   background-color: white;
   padding: 10px;
@@ -308,7 +304,7 @@ ul {
   clear: both;
 }
 
-#right #mayor_word {
+#right #first {
   float: left;
 }
 
@@ -339,6 +335,45 @@ ul {
   color: #a3a3a3;
 }
 
+#weather{
+  text-align: center;
+}
+
+#weather img{
+  max-width: 70%;
+}
+
+#weather .nomination{
+  font-weight: bold;
+  margin-top:5px;
+}
+
+/* Page 404 */
+#error404 .row img {
+  width: 100%;
+}
+
+#error404 h1 {
+  font-size: 5vw;
+  font-family: "Arial Black";
+  line-height: 1.402;
+  text-align: center;
+}
+
+#error404 h1 a {
+  font-family: "Arial Black";
+  color: rgb(94, 94, 94);
+  text-decoration: underline;
+}
+
+#error404 .text_404 {
+  position: absolute;
+  top: 10%;
+  left: 0px;
+  right: 0px;
+}
+
+/* Footer */
 footer {
   position: relative;
   margin-top: 20px;
@@ -418,6 +453,10 @@ footer #logograndlyon {
   #menu{
     width:79%;
   }
+
+  .sidebar{
+    border:none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -440,8 +479,54 @@ footer #logograndlyon {
   }
 }
 
+/* News */
 #text a {
   margin: 0px auto;
   display: block;
   width: 280px;
+}
+
+/* Pagemenu */
+.cat-menu{
+  margin-bottom:10px;
+}
+
+.cat-menu img{
+  height:auto;
+  text-align: center
+}
+
+.cat-menu-2:first-child{
+  margin-top:30px;
+}
+
+.cat-menu #left{
+  padding-right:5px;
+}
+
+.cat-menu #right{
+  padding-left:5px;
+  border: none;
+}
+
+.cat-menu p{
+  font-size: 1em;
+}
+
+.cat-menu .img-menu{
+  position:relative;
+}
+
+.cat-menu h2{
+  position:absolute;
+  width:100%;
+  text-align: center;
+  bottom: 40%;
+  color:white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.txt-menu, .img-menu{
+  height:250px;
 }

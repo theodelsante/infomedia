@@ -1,6 +1,6 @@
 <?php
 
-$pages = array('home', 'news', 'sscat', 'contact');
+$pages = array('home', 'news', 'viepratique', 'sscat', 'contact');
 if (isset($_GET['page']) && $_GET['page'] != '') {
   if (in_array($_GET['page'], $pages)) {
     $page = $_GET['page'];
@@ -31,9 +31,9 @@ require_once('config.php');
 	<meta name="format-detection" content="telephone=yes"/>
 	<meta name="HandheldFriendly" content="true"/>
 
-  <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="./assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all"/>
   <link href="./assets/css/main.css" type="text/css" rel="stylesheet" media="all"/>
-  <link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="./assets/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet" media="all"/>
   <link href="./assets/css/print.css" type="text/css" rel="stylesheet" media="print"/>
 
   <script src="./assets/js/jQuery.js" type="text/javascript"></script>

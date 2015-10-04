@@ -14,7 +14,7 @@
 				<ul class="nav navbar-nav">
 					<li id="home"><a href="./">Accueil</a></li>
 					<li class="dropdown" id="everyday">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="./">Vie pratique</a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="./?page=viepratique">Vie pratique</a>
 						<ul class="dropdown-menu">
 							<li><a href="./">Se déplacer</a></li>
 							<li><a href="./?page=sscat">Restauration / Bars</a></li>

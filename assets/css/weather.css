@@ -1,0 +1,22 @@
+#weather .details {
+	float: right;
+	padding-right: 20px;
+}
+#weather .col-xs-5,
+#weather .col-xs-6 {
+	float: initial;
+	display: inline-block;
+	padding: 0px;
+	vertical-align: middle;
+}
+#weather h6 {
+	margin-bottom: -3px; 
+}
+
+.gray {
+	filter: gray; /* IE6+*/
+	-webkit-filter: grayscale(1); /* Old WebKit */
+	-webkit-filter: grayscale(100%); /* New WebKit */
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%); /* Current draft standard */
+}

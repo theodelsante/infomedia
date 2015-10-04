@@ -1,13 +1,26 @@
 <div class="col-md-3 col-sm-12" id="right">
-  <h2>Actualité</h2>
-  <div id="mayor_word">
-    <h3>Le mot du maire</h3>
-    <img id="mayor_picture" src="./assets/img/maire.png" alt="Maire du 9ème arrondissement"/>
-    <p>Lorem ipsum dolor sit amet, cQuisque lacinia varius dolor maximus aliquam. Mauris ut sodales magna. In sit amet nisl imperdiet, maximus mauris sit amet, placerat arcu.</p>
+  <div id="first">
+    <?php
+    if (isset($_GET['page']) && $_GET['page'] == 'news') {
+      echo '<h3>Dernière news</h3>
+      <img src="./assets/img/news2.jpg">';
+    } else {
+      echo '<h3>Le mot du maire</h3>
+      <img id="mayor_picture" src="./assets/img/maire.png" alt="Maire du 9ème arrondissement"/>
+      <p>Lorem ipsum dolor sit amet, cQuisque lacinia varius dolor maximus aliquam. Mauris ut sodales magna. In sit amet nisl imperdiet, maximus mauris sit amet, placerat arcu.</p>';
+    }
+    ?>
   </div>
   <div id="weather">
     <h3>Météo</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui neque, semper ut neque at, interdum ultricies mauris. Donec consectetur nibh sed leo aliquet gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    <!-- <img class="" src="./assets/img/nuage.png" alt="météo">
+    <p class="nomination">Température</p>
+    <p class="info">34°C</p>
+    <p class="nomination">Vitesse du vent</p>
+    <p class="info">60 KM/h</p>
+    <p class="nomination">Humidité</p>
+    <p class="info">60%</p> -->
+    <?php require_once('weather.php'); ?>
   </div>
   <div id="share">
     <h3>Partager</h3>
