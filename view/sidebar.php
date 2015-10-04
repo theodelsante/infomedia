@@ -14,6 +14,7 @@
     <div class="icon">
       <i class="fa fa-facebook-square fa-3x"></i>
       <i class="fa fa-twitter-square fa-3x"></i>
+      <i class="fa fa-google-plus-square fa-3x"></i>
     </div>
     <h3>Imprimer</h3>
     <div class="icon"><i class="fa fa-print fa-3x" onClick="window.print()"></i></div>

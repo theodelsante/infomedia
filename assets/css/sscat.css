@@ -1,31 +1,55 @@
-#left img {
-	float: left;
-	width: 100px;
-	margin: 8px 0px;
-}
-
-#left img:hover {
-	border: 4px solid black;
-}
-
-#center #gmap {
+#left #gmap {
 	height: 50%;
 }
 
-#center #gmap * {
+#left #gmap * {
 	max-width: initial;
 }
 
-#center li {
+#left li {
 	background-color: white;
 	margin-top: 10px;
 	padding: 10px;
 }
 
-#center h3 {
+#left li > * {
+	display: inline-block;
+	float: initial;
+	vertical-align: middle;
+}
+
+#left li img {
+	padding: 0px;
+}
+
+#left li #no_pict {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#left li div > * {
+	margin: 0px 0px 5px 0px;
+}
+
+#left li h3 {
 	margin-top: 0px;
 }
 
-#center p:last-child {
+#left li div *:last-child {
 	margin-bottom: 0px;
+}
+
+.open_now,
+.close_now {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.open_now {
+	color: green;
+}
+
+.close_now {
+	color: red;
 }

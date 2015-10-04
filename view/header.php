@@ -1,5 +1,5 @@
 <header>
-	<a href"./" ><img id="Vaise_logo" src="./assets/img/Vaise_logo.png" alt="Logo de Vaise, retour vers l'accueil"/></a>
+	<a href"./"><img id="Vaise_logo" src="./assets/img/Vaise_logo.png" alt="Logo de Vaise, retour vers l'accueil"/></a>
 	<nav class="navbar navbar-default" id="menu">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -42,7 +42,7 @@
 						</ul>
 					</li>
 					<li id="links"><a href="./?page=contact">Liens utiles</a></li>
-					<div id="en"><a href="./en">EN</a></div>
+					<div id="en"><a href="./en" class="hidden-xs">EN</a><a href="./en" class="hidden-sm hidden-md hidden-lg hidden-xl">ENGLISH</a></div>
 				</ul>
 			</div>
 		</div>

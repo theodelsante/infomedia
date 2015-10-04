@@ -403,7 +403,7 @@ footer #logograndlyon {
   .grid-item--height2 { height: 310px; }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   #menu li:hover > ul {
     display: block;
   }
@@ -440,6 +440,8 @@ footer #logograndlyon {
   }
 }
 
-
-
-
+#text a {
+  margin: 0px auto;
+  display: block;
+  width: 280px;
+}

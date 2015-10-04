@@ -13,25 +13,15 @@ define('AUTHOR', 'Web City');
 
 /**
  * Autoload class function
- * Search on model and view folders
+ * Search in model and view folders
  */
-spl_autoload_register(
-	function ($class) {
-		if(is_file('./model/'.$class.'.php'))
-			require './model/'.$class.'.php';		//Main
-		elseif (is_file('../model/'.$class.'.php'))
-			require '../model/'.$class.'.php';
-		elseif(is_file('../../model/'.$class.'.php'))
-			require '../../model/'.$class.'.php';	//Apps
+spl_autoload_register(function ($class) {
+	if(is_file('./model/'.$class.'.php'))
+		require './model/'.$class.'.php';
 
-		if(is_file('./view/'.$class.'.php'))
-			require './view/'.$class.'.php';		//Main
-		elseif (is_file('../view/'.$class.'.php'))
-			require '../view/'.$class.'.php';
-		elseif(is_file('../../view/'.$class.'.php'))
-			require '../../view/'.$class.'.php';	//Apps
-	}
-);
+	if(is_file('./view/'.$class.'.php'))
+		require './view/'.$class.'.php';
+});
 
 function getBrowserLang() {
 	return strtolower(substr(trim(explode(',',$_SERVER['HTTP_ACCEPT_LANGUAGE'])[0]),0,2));
@@ -43,5 +33,3 @@ function isMobile() {
 		return true;
 	return false;
 }
-
-?>
