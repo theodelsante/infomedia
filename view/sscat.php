@@ -40,6 +40,11 @@ $sscat[7]['name'] = 'Home Sushi';
 $sscat[7]['type'] = 'Restaurant japonnais';
 $sscat[7]['img'] = 'Home_sushi.JPG';
 
+$sscat[8] = Google::getPlaceDetails('ChIJG05gbmrr9EcRg2-j8g-57ms');
+$sscat[8]['name'] = 'Saigon Wok';
+$sscat[8]['type'] = 'Restaurant asiatique';
+$sscat[8]['img'] = 'Saigon_Wok.JPG';
+
 ?>
 <link href="./assets/css/sscat.css" type="text/css" rel="stylesheet" media="all"/>
 <div class="row">
@@ -74,14 +79,6 @@ $sscat[7]['img'] = 'Home_sushi.JPG';
 				draggable: true
 			});
 
-			<?php
-			if (isset($sscat[0]['geometry'])) {
-				foreach ($sscat as $key => $value) {
-					echo 'mark['.$key.'] = addMarker('.$key.', {lat: '.$value['geometry']['location']['lat'].', lng: '.$value['geometry']['location']['lng'].'}, "'.$value['name'].'");';
-				}
-			}
-			?>
-
 			// Adds a marker to the map.
 			function addMarker(id, pos, title) {
 				var marker = new google.maps.Marker({
@@ -98,6 +95,14 @@ $sscat[7]['img'] = 'Home_sushi.JPG';
 
 				return marker;
 			}
+
+			<?php
+			if (isset($sscat[0]['geometry'])) {
+				foreach ($sscat as $key => $value) {
+					echo 'mark['.$key.'] = addMarker('.$key.', {lat: '.str_replace(',', '.', $value['geometry']['location']['lat']).', lng: '.str_replace(',', '.', $value['geometry']['location']['lng']).'}, "'.$value['name'].'");';
+				}
+			}
+			?>
 		}
 		</script>
 		<ul>
