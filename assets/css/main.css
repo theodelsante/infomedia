@@ -292,28 +292,28 @@ ul {
 
 
 /* Sidebar */
-#right {
+#sidebar {
   margin: 30px 0px;
   border-left: 1px solid #5e5e5e;
 }
 
-#right > div {
+#sidebar > div {
   background-color: white;
   padding: 10px;
   margin-bottom: 20px;
   clear: both;
 }
 
-#right #first {
+#sidebar .first {
   float: left;
 }
 
-#right > div h3,
-#right > div p {
+#sidebar > div h3,
+#sidebar > div p {
   margin: 0px;
 }
 
-#right #mayor_picture {
+#sidebar #mayor_picture {
   float: left;
   max-width: 50%;
   max-height: 120px;
@@ -321,17 +321,17 @@ ul {
   margin-left: 0px;
 }
 
-#right h3,
-#right .icon {
+#sidebar h3,
+#sidebar .icon {
   text-align: center;
   text-transform: uppercase;
 }
 
-#right i {
+#sidebar i {
   color: #e7e7e7;
 }
 
-#right i:hover {
+#sidebar #share i:hover {
   color: #a3a3a3;
 }
 
@@ -339,13 +339,37 @@ ul {
   text-align: center;
 }
 
-#weather img{
+/*#weather img{
   max-width: 70%;
 }
 
 #weather .nomination{
   font-weight: bold;
   margin-top:5px;
+}*/
+
+#weather .col-xs-5,
+#weather .col-xs-6 {
+  float: initial;
+  display: inline-block;
+  padding: 0px;
+  vertical-align: middle;
+}
+
+#weather .col-xs-5 {
+  font-size: 5em;
+}
+
+#weather h6 {
+  margin-bottom: -3px; 
+}
+
+/*.gray {
+  filter: gray; /* IE6+*
+  -webkit-filter: grayscale(1); /* Old WebKit *
+  -webkit-filter: grayscale(100%); /* New WebKit *
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%); /* Current draft standard *
 }
 
 /* Page 404 */
@@ -443,6 +467,13 @@ footer #logograndlyon {
     display: block;
   }
 }
+
+@media screen and (max-width: 992px) {
+  #sidebar {
+    border: none;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .container{
     width:100%;
@@ -452,10 +483,6 @@ footer #logograndlyon {
 @media screen and (max-width: 1103px) {
   #menu{
     width:79%;
-  }
-
-  .sidebar{
-    border:none;
   }
 }
 
@@ -480,7 +507,7 @@ footer #logograndlyon {
 }
 
 /* News */
-#text a {
+.btn-primary {
   margin: 0px auto;
   display: block;
   width: 280px;
@@ -500,21 +527,14 @@ footer #logograndlyon {
   margin-top:30px;
 }
 
-.cat-menu #left{
+.cat-menu .img-menu{
   padding-right:5px;
+  position: relative;
 }
 
-.cat-menu #right{
+.cat-menu .txt-menu{
   padding-left:5px;
   border: none;
-}
-
-.cat-menu p{
-  font-size: 1em;
-}
-
-.cat-menu .img-menu{
-  position:relative;
 }
 
 .cat-menu h2{

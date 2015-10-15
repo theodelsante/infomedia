@@ -48,7 +48,7 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 ?>
 <link href="./assets/css/sscat.css" type="text/css" rel="stylesheet" media="all"/>
 <div class="row">
-	<div class="col-md-9 col-sm-12" id="left">
+	<div class="col-md-9 col-sm-12" id="content">
 		<h2>Restaurants / Bars</h2>
 
 		<div id="gmap"></div>
@@ -61,7 +61,7 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 			try {
 				map.setCenter(mark[id].getPosition());
 			} catch(e) {}
-			$('#left ul').prepend($('#left ul').find('[data-id="'+id+'"]').remove());
+			$('#content ul').prepend($('#content ul').find('[data-id="'+id+'"]').remove());
 		}
 
 		function initMap() {
@@ -162,7 +162,7 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 	</div>
 	<script type="text/javascript">
 	$(document).ready(function() {
-		$('#left li .address i').click(function() {
+		$('#content li .address i').click(function() {
 			pushToTop($(this).parent().parent().parent().data('id'));
 			$(document.body).scrollTop($('#gmap').offset().top);
 			// $(document.body).animate({

@@ -1,41 +1,41 @@
-#left #gmap {
+#content #gmap {
 	height: 50%;
 }
 
-#left #gmap * {
+#content #gmap * {
 	max-width: initial;
 }
 
-#left li {
+#content li {
 	background-color: white;
 	margin-top: 10px;
 	padding: 10px;
 }
 
-#left li > * {
+#content li > * {
 	display: inline-block;
 	float: initial;
 	vertical-align: middle;
 }
 
-#left li img {
+#content li img {
 	padding: 0px;
 }
 
-#left li #no_pict {
+#content li #no_pict {
 	padding-left: 30px;
 	padding-right: 30px;
 }
 
-#left li div > * {
+#content li div > * {
 	margin: 0px 0px 5px 0px;
 }
 
-#left li h3 {
+#content li h3 {
 	margin-top: 0px;
 }
 
-#left li div *:last-child {
+#content li div *:last-child {
 	margin-bottom: 0px;
 }
 

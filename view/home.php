@@ -46,8 +46,8 @@
   </a>
 </div>
 <div class="row conteneur">
-  <div class="col-md-9 col-sm-12" id="left">
-    <div class="col-md-4" id="#left"><h2>En ce moment</h2></div>
+  <div class="col-md-9 col-sm-12" id="content">
+    <div class="col-md-4"><h2>En ce moment</h2></div>
 
     <div class="button-group filters-button-group">
       <button class="button is-checked" data-filter="*">TOUT</button>

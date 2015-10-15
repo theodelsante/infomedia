@@ -1,5 +1,5 @@
-<div class="col-md-3 col-sm-12" id="right">
-  <div id="first">
+<div class="col-md-3 col-sm-12" id="sidebar">
+  <div class="first">
     <?php
     if (isset($_GET['page']) && $_GET['page'] == 'news') {
       echo '<h3>Dernière news</h3>

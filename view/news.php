@@ -1,5 +1,5 @@
 <div class="row">
-    <div id="left" class="col-md-9 col-sm-12">
+    <div id="content" class="col-md-9 col-sm-12">
         <img id="img" src="./assets/img/news2.jpg"/>
         <div id="text">
             <h1>Ouverture d'un salon Jackie Tuning</h1>
