@@ -11,7 +11,7 @@ if ($content != false) {
     <div class="col-xs-6">
         <div>
             <h6><strong>Température</strong></h6>
-            <?php echo ($content['main']['temp'] - 273.15).'°C' ?>
+            <?php echo number_format(($content['main']['temp'] - 273.15),1).'°C' ?>
         </div>
         <div>
             <h6><strong>Vitesse du vent</strong></h6>
