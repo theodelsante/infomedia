@@ -1,42 +1,51 @@
-#content #gmap {
+#gmap {
 	height: 50%;
 }
 
-#content #gmap * {
+#gmap * {
 	max-width: initial;
 }
 
-#content li {
+#list-item {
 	background-color: white;
 	margin-top: 10px;
 	padding: 10px;
 }
 
-#content li > * {
+#list-item > * {
 	display: inline-block;
 	float: initial;
 	vertical-align: middle;
 }
 
-#content li img {
+#list-item img {
 	padding: 0px;
 }
 
-#content li #no_pict {
+#list-item #no_pict {
 	padding-left: 30px;
 	padding-right: 30px;
 }
 
-#content li div > * {
+#list-item div > * {
 	margin: 0px 0px 5px 0px;
 }
 
-#content li h3 {
-	margin-top: 0px;
+#list-item div > *:last-child {
+	margin-bottom: 0px;
 }
 
-#content li div *:last-child {
-	margin-bottom: 0px;
+#list-item h3,
+.opening_hours p {
+	margin-top: 10px !important;
+}
+
+.opening_hours {
+	padding: 0px;
+}
+
+.opening_hours p {
+	text-decoration: underline;
 }
 
 .open_now,

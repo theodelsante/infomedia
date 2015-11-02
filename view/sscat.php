@@ -109,50 +109,62 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 			<?php
 
 			foreach ($sscat as $key => $value) {
-				echo '<li data-id="'.$key.'">';
+				echo '<li id="list-item" data-id="'.$key.'">';
 				if (isset($value['img']) && $value['img'] != null) {
 					echo '<img class="col-sm-3" src="./assets/img/'.$value['img'].'"/>';
 				} else if (isset($value['icon']) && $value['icon'] != '') {
 					echo '<img class="col-sm-3" src="'.$value['icon'].'" id="no_pict"/>';
 				}
-				echo '<div class="col-sm-9 col-xs-12">
-					<h3>'.$value['name'].'</h3>
-					<p>'.$value['type'].'</p>';
-					// print_r($value);
-					if (isset($value['rating'])) {
-						echo '<div class="rating">';
-						$rating = explode('.', $value['rating']);
-						for ($nbstar=0; $nbstar < $rating[0]; $nbstar++) { 
-							echo '<i class="fa fa-star"></i>';
-						}
-						if (isset($rating[1]) && $rating[1] >= 4 && $rating[1] <= 6) {
-							echo '<i class="fa fa-star-half-o"></i>';
-							$nbstar++;
-						}
-						for ($i=$nbstar; $i < 5; $i++) { 
-							echo '<i class="fa fa-star-o"></i>';
-						}
-						echo ' '.count($value['reviews']).' avis Google';
-						echo '</div>';
+				echo '<div class="col-sm-5 col-xs-12 details">
+				<h3>'.$value['name'].'</h3>
+				<p>'.$value['type'].'</p>';
+				// print_r($value);
+				if (isset($value['rating'])) {
+					echo '<div class="rating">';
+					$rating = explode('.', $value['rating']);
+					for ($nbstar=0; $nbstar < $rating[0]; $nbstar++) { 
+						echo '<i class="fa fa-star"></i>';
 					}
-					if (isset($value['opening_hours'])) {
-						if (isset($value['opening_hours']['open_now'])) {
-							if ($value['opening_hours']['open_now'] == true) {
-								echo '<p class="open_now">OUVERT</p>';
-							} else {
-								echo '<p class="close_now">FERMÉ</p>';
-							}
-						}
+					if (isset($rating[1]) && $rating[1] >= 4 && $rating[1] <= 6) {
+						echo '<i class="fa fa-star-half-o"></i>';
+						$nbstar++;
 					}
-					if (isset($value['adr_address'])) {
-						echo '<p class="address">'.$value['adr_address'].' <i class="fa fa-map-o"></i></p>';
+					for ($i=$nbstar; $i < 5; $i++) { 
+						echo '<i class="fa fa-star-o"></i>';
 					}
-					if (isset($value['international_phone_number'])) {
-						echo '<p class="phone">'.$value['international_phone_number'].'</p>';
+					echo ' '.count($value['reviews']).' avis Google';
+					echo '</div>';
+				}
+				
+				if (isset($value['adr_address'])) {
+					$search = array(', <span class="country-name">France</span>', 'France');
+					$value['adr_address'] = trim(str_replace($search, '', $value['adr_address']), ',');
+					echo '<p class="address">'.$value['adr_address'].' <i class="fa fa-map-o"></i></p>';
+				}
+				if (isset($value['international_phone_number'])) {
+					echo '<p class="phone">'.$value['international_phone_number'].'</p>';
+				}
+				if (isset($value['website'])) {
+					echo '<a class="website" href="'.$value['website'].'">'.$value['website'].'</a>';
+				}
+				echo '</div>';
+
+				echo '<div class="col-sm-4 col-xs-12 opening_hours">';
+				if (isset($value['opening_hours']['open_now'])) {
+					if ($value['opening_hours']['open_now'] == true) {
+						echo '<span class="open_now">OUVERT</span>';
+					} else {
+						echo '<span class="close_now">FERMÉ</span>';
 					}
-					if (isset($value['website'])) {
-						echo '<a class="website" href="'.$value['website'].'">'.$value['website'].'</a>';
+				}
+				if (isset($value['opening_hours']['weekday_text'])) {
+					echo '<p>Horaires d\'ouvertures</p>
+					<ul>';
+					foreach ($value['opening_hours']['weekday_text'] as $opening_hours) {
+						echo '<li>'.$opening_hours.'</li>';
 					}
+					echo '</ul>';
+				}
 				echo '</div>
 				</li>';
 			}
@@ -168,7 +180,7 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 			// $(document.body).animate({
 			// 	'scrollTop':   $('#anchorName2').offset().top
 			// }, 2000);
-		});
+	});
 	});
 	</script>
 	<?php
