@@ -1,46 +1,46 @@
 <?php
 
-$sscat[0] = Google::getPlaceDetails('ChIJAQAAAHTr9EcRZgFFzuySLWc');
+$sscat[0] = Google::getPlaceDetails('ChIJAQAAAHTr9EcRZgFFzuySLWc', getBrowserLang());
 $sscat[0]['name'] = 'Cantabria';
 $sscat[0]['type'] = 'Restaurant et bar espagnol';
 $sscat[0]['img'] = 'Cantabria.JPG';
 
-$sscat[1] = Google::getPlaceDetails('ChIJ5_PoS3Lr9EcRHbXJXHzx4JU');
+$sscat[1] = Google::getPlaceDetails('ChIJ5_PoS3Lr9EcRHbXJXHzx4JU', getBrowserLang());
 $sscat[1]['name'] = 'Subway';
 $sscat[1]['type'] = 'Chaîne de sandwichs à composer soi-même';
 $sscat[1]['img'] = 'Subway.JPG';
 
-$sscat[2] = Google::getPlaceDetails('ChIJ-yES3m3r9EcRbO0nlVnNfjc');
+$sscat[2] = Google::getPlaceDetails('ChIJ-yES3m3r9EcRbO0nlVnNfjc', getBrowserLang());
 $sscat[2]['name'] = 'Indian Haveli';
 $sscat[2]['type'] = 'Restaurant indien';
 $sscat[2]['img'] = null;
 
-$sscat[3] = Google::getPlaceDetails('ChIJpyRJCW7r9EcR5u7OcODMEws');
+$sscat[3] = Google::getPlaceDetails('ChIJpyRJCW7r9EcR5u7OcODMEws', getBrowserLang());
 $sscat[3]['name'] = 'Chicken Chips';
 $sscat[3]['type'] = 'Restauration rapide Hallal';
 $sscat[3]['img'] = 'Chicken_chips.JPG';
 
-$sscat[4] = Google::getPlaceDetails('ChIJj4spEm7r9EcRQCCgn5DGkc0');
+$sscat[4] = Google::getPlaceDetails('ChIJj4spEm7r9EcRQCCgn5DGkc0', getBrowserLang());
 $sscat[4]['name'] = 'Dominos Pizza';
 $sscat[4]['type'] = 'Pizzeria';
 $sscat[4]['img'] = 'Dominos.JPG';
 
-$sscat[5] = Google::getPlaceDetails('ChIJ6ZirTmnr9EcRjuAdsUbs1FU');
+$sscat[5] = Google::getPlaceDetails('ChIJ6ZirTmnr9EcRjuAdsUbs1FU', getBrowserLang());
 $sscat[5]['name'] = 'Tout le Monde à Table';
 $sscat[5]['type'] = 'Cuisine traditionelle';
 $sscat[5]['img'] = 'Tous a table.JPG';
 
-$sscat[6] = Google::getPlaceDetails('ChIJ-wrbN2rr9EcRsYKTnNYOXRE');
+$sscat[6] = Google::getPlaceDetails('ChIJ-wrbN2rr9EcRsYKTnNYOXRE', getBrowserLang());
 $sscat[6]['name'] = 'Matsuri';
 $sscat[6]['type'] = 'Restaurant japonnais de sushis et tartares';
 $sscat[6]['img'] = 'Matsuri.JPG';
 
-$sscat[7] = Google::getPlaceDetails('ChIJBaitTmnr9EcRlNs3mfSRnpc');
+$sscat[7] = Google::getPlaceDetails('ChIJBaitTmnr9EcRlNs3mfSRnpc', getBrowserLang());
 $sscat[7]['name'] = 'Home Sushi';
 $sscat[7]['type'] = 'Restaurant japonnais';
 $sscat[7]['img'] = 'Home_sushi.JPG';
 
-$sscat[8] = Google::getPlaceDetails('ChIJG05gbmrr9EcRg2-j8g-57ms');
+$sscat[8] = Google::getPlaceDetails('ChIJG05gbmrr9EcRg2-j8g-57ms', getBrowserLang());
 $sscat[8]['name'] = 'Saigon Wok';
 $sscat[8]['type'] = 'Restaurant asiatique';
 $sscat[8]['img'] = 'Saigon_Wok.JPG';
@@ -60,8 +60,9 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 		function pushToTop(id) {
 			try {
 				map.setCenter(mark[id].getPosition());
+				map.setZoom(18);
 			} catch(e) {}
-			$('#content ul').prepend($('#content ul').find('[data-id="'+id+'"]').remove());
+			$('#content > ul').prepend($('#list-item[data-id="'+id+'"]').detach());
 		}
 
 		function initMap() {
@@ -99,7 +100,9 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 			<?php
 			if (isset($sscat[0]['geometry'])) {
 				foreach ($sscat as $key => $value) {
-					echo 'mark['.$key.'] = addMarker('.$key.', {lat: '.str_replace(',', '.', $value['geometry']['location']['lat']).', lng: '.str_replace(',', '.', $value['geometry']['location']['lng']).'}, "'.$value['name'].'");';
+					if (isset($value['geometry'])) {
+						echo 'mark['.$key.'] = addMarker('.$key.', {lat: '.str_replace(',', '.', $value['geometry']['location']['lat']).', lng: '.str_replace(',', '.', $value['geometry']['location']['lng']).'}, "'.$value['name'].'");';
+					}
 				}
 			}
 			?>
@@ -174,7 +177,7 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 	</div>
 	<script type="text/javascript">
 	$(document).ready(function() {
-		$('#content li .address i').click(function() {
+		$('#list-item .address i').click(function() {
 			pushToTop($(this).parent().parent().parent().data('id'));
 			$(document.body).scrollTop($('#gmap').offset().top);
 			// $(document.body).animate({
