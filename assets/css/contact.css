@@ -1,0 +1,27 @@
+p.contact_description {
+	text-align:center;
+}
+
+.grid-item {
+	width: 100%;
+}
+
+.contact_list_title_container {
+	position:relative;
+} 
+
+.contact_list li.col-sm-4 {
+	margin-bottom: 20px
+}
+
+.contact_list_adresse span {
+	font-weight: bold;
+}
+
+.contact_list_adresse {
+	margin-left:20px;
+}
+
+.contact_formulaire .alert_message {
+	color: red;
+}
