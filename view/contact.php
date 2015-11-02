@@ -21,7 +21,7 @@
 							<p><span>Mail : </span><a href="mailto:mairie.vaise@gmail.com">mairie.vaise@gmail.com</a></p>
 						</li>
 						<li>
-							<p><span>site : </span><a href="www.mairie9.lyon.fr/">www.mairie9.lyon.fr/</a></p>
+							<p><span>site : </span><a href="www.mairie9.lyon.fr/" target="_blank">www.mairie9.lyon.fr/</a></p>
 						</li>
 					</ul>
 				</div>
@@ -45,7 +45,7 @@
 							<p><span>Mail : </span><a href="mailto:mairie.vaise@gmail.com">mairie.vaise@gmail.com</a></p>
 						</li>
 						<li>
-							<p><span>site : </span><a href="www.mairie9.lyon.fr/">www.mairie9.lyon.fr/</a></p>
+							<p><span>site : </span><a href="www.mairie9.lyon.fr/" target="_blank">www.mairie9.lyon.fr/</a></p>
 						</li>
 					</ul>
 				</div>
@@ -69,7 +69,7 @@
 							<p><span>Mail : </span><a href="mailto:mairie.vaise@gmail.com">mairie.vaise@gmail.com</a></p>
 						</li>
 						<li>
-							<p><span>site : </span><a href="www.mairie9.lyon.fr/">www.mairie9.lyon.fr/</a></p>
+							<p><span>site : </span><a href="www.mairie9.lyon.fr/" target="_blank">www.mairie9.lyon.fr/</a></p>
 						</li>
 					</ul>
 				</div>
@@ -93,7 +93,7 @@
 							<p><span>Mail : </span><a href="mailto:mairie.vaise@gmail.com">mairie.vaise@gmail.com</a></p>
 						</li>
 						<li>
-							<p><span>site : </span><a href="www.mairie9.lyon.fr/">www.mairie9.lyon.fr/</a></p>
+							<p><span>site : </span><a href="www.mairie9.lyon.fr/" target="_blank">www.mairie9.lyon.fr/</a></p>
 						</li>
 					</ul>
 				</div>
