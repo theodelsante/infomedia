@@ -112,7 +112,7 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 				echo '<li data-id="'.$key.'">';
 				if (isset($value['img']) && $value['img'] != null) {
 					echo '<img class="col-sm-3" src="./assets/img/'.$value['img'].'"/>';
-				} else {
+				} else if (isset($value['icon']) && $value['icon'] != '') {
 					echo '<img class="col-sm-3" src="'.$value['icon'].'" id="no_pict"/>';
 				}
 				echo '<div class="col-sm-9 col-xs-12">
