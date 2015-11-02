@@ -1,107 +1,103 @@
 <link href="./assets/css/contact.css" type="text/css" rel="stylesheet">
 <div class="row">
 	<div id="content" class="col-md-9 col-sm-12">
+		<h2>Liens utiles</h2>
 		<ul class="contact_list">
-			<div class="row">
-				<h2>Liens utiles</h2>
-				<li class="col-md-6 col-xs-12">
-					<div class="grid-item">
-						<div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
-						<span><h3 class="title">Mairie</h3></span>
-					</div>
-					<div class="contact_list_text">
-						<p class="contact_description">La mairie de Vaise pourra vous renseigner sur les différents points administratifs.</p>
-						<ul class="contact_list_adresse ">
-							<li>
-								<p><span>Adresse : </span>6 Place du Marché, 69009 Lyon</p>
-							</li>
-							<li>
-								<p><span>Téléphone : </span>06 40 67 58 46</p>
-							</li>
-							<li>
-								<p><span>Mail : </span><a href="mailto:mairie.vaise@gmail.com">mairie.vaise@gmail.com</a></p>
-							</li>
-							<li>
-								<p><span>site : </span><a href="www.mairie9.lyon.fr/">www.mairie9.lyon.fr/</a></p>
-							</li>
-						</ul>
-					</div>
-				</li>
+			<li class="col-sm-6 col-xs-12">
+				<div class="grid-item">
+					<div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
+					<span><h3 class="title">Mairie</h3></span>
+				</div>
+				<div class="contact_list_text">
+					<p class="contact_description">La mairie de Vaise pourra vous renseigner sur les différents points administratifs.</p>
+					<ul class="contact_list_adresse ">
+						<li>
+							<p><span>Adresse : </span>6 Place du Marché, 69009 Lyon</p>
+						</li>
+						<li>
+							<p><span>Téléphone : </span>06 40 67 58 46</p>
+						</li>
+						<li>
+							<p><span>Mail : </span><a href="mailto:mairie.vaise@gmail.com">mairie.vaise@gmail.com</a></p>
+						</li>
+						<li>
+							<p><span>site : </span><a href="www.mairie9.lyon.fr/">www.mairie9.lyon.fr/</a></p>
+						</li>
+					</ul>
+				</div>
+			</li>
 
-				<li class="col-md-6 col-xs-12">
-					<div class="grid-item">
-						<div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
-						<span><h3 class="title">Mairie</h3></span>
-					</div>
-					<div class="contact_list_text">
-						<p class="contact_description">La mairie de Vaise pourra vous renseigner sur les différents points administratifs.</p>
-						<ul class="contact_list_adresse">
-							<li>
-								<p><span>Adresse : </span>6 Place du Marché, 69009 Lyon</p>
-							</li>
-							<li>
-								<p><span>Téléphone : </span>06 40 67 58 46</p>
-							</li>
-							<li>
-								<p><span>Mail : </span><a href="mailto:mairie.vaise@gmail.com">mairie.vaise@gmail.com</a></p>
-							</li>
-							<li>
-								<p><span>site : </span><a href="www.mairie9.lyon.fr/">www.mairie9.lyon.fr/</a></p>
-							</li>
-						</ul>
-					</div>
-				</li>
-			</div>
+			<li class="col-sm-6 col-xs-12">
+				<div class="grid-item">
+					<div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
+					<span><h3 class="title">Mairie</h3></span>
+				</div>
+				<div class="contact_list_text">
+					<p class="contact_description">La mairie de Vaise pourra vous renseigner sur les différents points administratifs.</p>
+					<ul class="contact_list_adresse">
+						<li>
+							<p><span>Adresse : </span>6 Place du Marché, 69009 Lyon</p>
+						</li>
+						<li>
+							<p><span>Téléphone : </span>06 40 67 58 46</p>
+						</li>
+						<li>
+							<p><span>Mail : </span><a href="mailto:mairie.vaise@gmail.com">mairie.vaise@gmail.com</a></p>
+						</li>
+						<li>
+							<p><span>site : </span><a href="www.mairie9.lyon.fr/">www.mairie9.lyon.fr/</a></p>
+						</li>
+					</ul>
+				</div>
+			</li>
 
-			<div class="row">
-				<li class="col-md-6 col-xs-12">
-					<div class="grid-item">
-						<div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
-						<span><h3 class="title">Mairie</h3></span>
-					</div>
-					<div class="contact_list_text">
-						<p class="contact_description">La mairie de Vaise pourra vous renseigner sur les différents points administratifs.</p>
-						<ul class="contact_list_adresse ">
-							<li>
-								<p><span>Adresse : </span>6 Place du Marché, 69009 Lyon</p>
-							</li>
-							<li>
-								<p><span>Téléphone : </span>06 40 67 58 46</p>
-							</li>
-							<li>
-								<p><span>Mail : </span><a href="mailto:mairie.vaise@gmail.com">mairie.vaise@gmail.com</a></p>
-							</li>
-							<li>
-								<p><span>site : </span><a href="www.mairie9.lyon.fr/">www.mairie9.lyon.fr/</a></p>
-							</li>
-						</ul>
-					</div>
-				</li>
+			<li class="col-sm-6 col-xs-12">
+				<div class="grid-item">
+					<div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
+					<span><h3 class="title">Mairie</h3></span>
+				</div>
+				<div class="contact_list_text">
+					<p class="contact_description">La mairie de Vaise pourra vous renseigner sur les différents points administratifs.</p>
+					<ul class="contact_list_adresse ">
+						<li>
+							<p><span>Adresse : </span>6 Place du Marché, 69009 Lyon</p>
+						</li>
+						<li>
+							<p><span>Téléphone : </span>06 40 67 58 46</p>
+						</li>
+						<li>
+							<p><span>Mail : </span><a href="mailto:mairie.vaise@gmail.com">mairie.vaise@gmail.com</a></p>
+						</li>
+						<li>
+							<p><span>site : </span><a href="www.mairie9.lyon.fr/">www.mairie9.lyon.fr/</a></p>
+						</li>
+					</ul>
+				</div>
+			</li>
 
-				<li class="col-md-6 col-xs-12">
-					<div class="grid-item">
-						<div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
-						<span><h3 class="title">Mairie</h3></span>
-					</div>
-					<div class="contact_list_text">
-						<p class="contact_description">La mairie de Vaise pourra vous renseigner sur les différents points administratifs.</p>
-						<ul class="contact_list_adresse ">
-							<li>
-								<p><span>Adresse : </span>6 Place du Marché, 69009 Lyon</p>
-							</li>
-							<li>
-								<p><span>Téléphone : </span>06 40 67 58 46</p>
-							</li>
-							<li>
-								<p><span>Mail : </span><a href="mailto:mairie.vaise@gmail.com">mairie.vaise@gmail.com</a></p>
-							</li>
-							<li>
-								<p><span>site : </span><a href="www.mairie9.lyon.fr/">www.mairie9.lyon.fr/</a></p>
-							</li>
-						</ul>
-					</div>
-				</li>
-			</div>
+			<li class="col-sm-6 col-xs-12">
+				<div class="grid-item">
+					<div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
+					<span><h3 class="title">Mairie</h3></span>
+				</div>
+				<div class="contact_list_text">
+					<p class="contact_description">La mairie de Vaise pourra vous renseigner sur les différents points administratifs.</p>
+					<ul class="contact_list_adresse ">
+						<li>
+							<p><span>Adresse : </span>6 Place du Marché, 69009 Lyon</p>
+						</li>
+						<li>
+							<p><span>Téléphone : </span>06 40 67 58 46</p>
+						</li>
+						<li>
+							<p><span>Mail : </span><a href="mailto:mairie.vaise@gmail.com">mairie.vaise@gmail.com</a></p>
+						</li>
+						<li>
+							<p><span>site : </span><a href="www.mairie9.lyon.fr/">www.mairie9.lyon.fr/</a></p>
+						</li>
+					</ul>
+				</div>
+			</li>
 		</ul>
 
 		<div class="contact_formulaire">
