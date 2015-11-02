@@ -13,13 +13,6 @@
   </div>
   <div id="weather">
     <h3>Météo</h3>
-    <!-- <img class="" src="./assets/img/nuage.png" alt="météo">
-    <p class="nomination">Température</p>
-    <p class="info">34°C</p>
-    <p class="nomination">Vitesse du vent</p>
-    <p class="info">60 KM/h</p>
-    <p class="nomination">Humidité</p>
-    <p class="info">60%</p> -->
     <?php require_once('weather.php'); ?>
   </div>
   <div id="share">
