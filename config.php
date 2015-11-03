@@ -11,6 +11,15 @@ session_start();
 define('SITE_NAME', 'Vaise');
 define('AUTHOR', 'Web City');
 
+/* Set the language according to the browser */
+$lang_accept = array('fr', 'en');
+if (!isset($_SESSION['lang'])) {    
+  $_SESSION['lang'] = getBrowserLang();
+  if ($_SESSION['lang'] != 'fr') {
+    $_SESSION['lang'] = 'en';
+  }
+}
+
 /**
  * Autoload class function
  * Search in model and view folders
