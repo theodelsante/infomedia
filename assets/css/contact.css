@@ -10,8 +10,13 @@ p.contact_description {
 	position:relative;
 } 
 
-.contact_list li.col-sm-4 {
-	margin-bottom: 20px
+#contact_list li {
+	margin-bottom: 10px
+}
+
+#contact_formulaire {
+	margin-top: 20px;
+	clear: both;
 }
 
 .contact_list_adresse span {

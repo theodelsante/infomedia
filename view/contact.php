@@ -2,105 +2,67 @@
 <div class="row">
 	<div id="content" class="col-md-9 col-sm-12">
 		<h2>Liens utiles</h2>
-		<ul class="contact_list">
-			<li class="col-sm-6 col-xs-12">
-				<div class="grid-item">
-					<div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
-					<span><h3 class="title">Mairie</h3></span>
-				</div>
-				<div class="contact_list_text">
-					<p class="contact_description">La mairie de Vaise pourra vous renseigner sur les différents points administratifs.</p>
-					<ul class="contact_list_adresse ">
-						<li>
-							<p><span>Adresse : </span>6 Place du Marché, 69009 Lyon</p>
-						</li>
-						<li>
-							<p><span>Téléphone : </span>06 40 67 58 46</p>
-						</li>
-						<li>
-							<p><span>Mail : </span><a href="mailto:mairie.vaise@gmail.com">mairie.vaise@gmail.com</a></p>
-						</li>
-						<li>
-							<p><span>site : </span><a href="www.mairie9.lyon.fr/" target="_blank">www.mairie9.lyon.fr/</a></p>
-						</li>
-					</ul>
-				</div>
-			</li>
+		<ul id="contact_list">
+			<?php
+			$json['useful_links'][0]['title'] = 'Mairie';
+			$json['useful_links'][0]['img'] = './assets/img/news2.jpg';
+			$json['useful_links'][0]['description'] = 'La mairie de Vaise pourra vous renseigner sur les différents points administratifs.';
+			$json['useful_links'][0]['address'] = '6 Place du Marché, 69009 Lyon';
+			$json['useful_links'][0]['tel'] = '06 40 67 58 46';
+			$json['useful_links'][0]['mail'] = 'mairie.vaise@gmail.com';
+			$json['useful_links'][0]['website'] = 'http://www.mairie9.lyon.fr/';
 
+			$json['useful_links'][1]['title'] = 'Mairie';
+			$json['useful_links'][1]['img'] = './assets/img/news2.jpg';
+			$json['useful_links'][1]['description'] = 'La mairie de Vaise pourra vous renseigner sur les différents points administratifs.';
+			$json['useful_links'][1]['address'] = '6 Place du Marché, 69009 Lyon';
+			$json['useful_links'][1]['tel'] = '06 40 67 58 46';
+			$json['useful_links'][1]['mail'] = 'mairie.vaise@gmail.com';
+			$json['useful_links'][1]['website'] = 'http://www.mairie9.lyon.fr/';
+
+			$json['useful_links'][2]['title'] = 'Mairie';
+			$json['useful_links'][2]['img'] = './assets/img/news2.jpg';
+			$json['useful_links'][2]['description'] = 'La mairie de Vaise pourra vous renseigner sur les différents points administratifs.';
+			$json['useful_links'][2]['address'] = '6 Place du Marché, 69009 Lyon';
+			$json['useful_links'][2]['tel'] = '06 40 67 58 46';
+			$json['useful_links'][2]['mail'] = 'mairie.vaise@gmail.com';
+			$json['useful_links'][2]['website'] = 'http://www.mairie9.lyon.fr/';
+
+			$json['useful_links'][3]['title'] = 'Mairie';
+			$json['useful_links'][3]['img'] = './assets/img/news2.jpg';
+			$json['useful_links'][3]['description'] = 'La mairie de Vaise pourra vous renseigner sur les différents points administratifs.';
+			$json['useful_links'][3]['address'] = '6 Place du Marché, 69009 Lyon';
+			$json['useful_links'][3]['tel'] = '06 40 67 58 46';
+			$json['useful_links'][3]['mail'] = 'mairie.vaise@gmail.com';
+			$json['useful_links'][3]['website'] = 'http://www.mairie9.lyon.fr/';
+
+			foreach ($json['useful_links'] as $value) {
+				echo '
 			<li class="col-sm-6 col-xs-12">
-				<div class="grid-item">
-					<div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
-					<span><h3 class="title">Mairie</h3></span>
-				</div>
+				'.Display::zoomImage($value['title'], $value['img']).'
 				<div class="contact_list_text">
-					<p class="contact_description">La mairie de Vaise pourra vous renseigner sur les différents points administratifs.</p>
+					<p class="contact_description">'.$value['description'].'</p>
 					<ul class="contact_list_adresse">
 						<li>
-							<p><span>Adresse : </span>6 Place du Marché, 69009 Lyon</p>
+							<p><span>Adresse : </span>'.$value['address'].'</p>
 						</li>
 						<li>
-							<p><span>Téléphone : </span>06 40 67 58 46</p>
+							<p><span>Téléphone : </span>'.$value['tel'].'</p>
 						</li>
 						<li>
-							<p><span>Mail : </span><a href="mailto:mairie.vaise@gmail.com">mairie.vaise@gmail.com</a></p>
+							<p><span>Mail : </span><a href="mailto:'.$value['mail'].'">'.$value['mail'].'</a></p>
 						</li>
 						<li>
-							<p><span>site : </span><a href="www.mairie9.lyon.fr/" target="_blank">www.mairie9.lyon.fr/</a></p>
+							<p><span>Site : </span><a href="'.$value['website'].'" target="_blank">'.$value['website'].'</a></p>
 						</li>
 					</ul>
 				</div>
-			</li>
-
-			<li class="col-sm-6 col-xs-12">
-				<div class="grid-item">
-					<div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
-					<span><h3 class="title">Mairie</h3></span>
-				</div>
-				<div class="contact_list_text">
-					<p class="contact_description">La mairie de Vaise pourra vous renseigner sur les différents points administratifs.</p>
-					<ul class="contact_list_adresse ">
-						<li>
-							<p><span>Adresse : </span>6 Place du Marché, 69009 Lyon</p>
-						</li>
-						<li>
-							<p><span>Téléphone : </span>06 40 67 58 46</p>
-						</li>
-						<li>
-							<p><span>Mail : </span><a href="mailto:mairie.vaise@gmail.com">mairie.vaise@gmail.com</a></p>
-						</li>
-						<li>
-							<p><span>site : </span><a href="www.mairie9.lyon.fr/" target="_blank">www.mairie9.lyon.fr/</a></p>
-						</li>
-					</ul>
-				</div>
-			</li>
-
-			<li class="col-sm-6 col-xs-12">
-				<div class="grid-item">
-					<div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
-					<span><h3 class="title">Mairie</h3></span>
-				</div>
-				<div class="contact_list_text">
-					<p class="contact_description">La mairie de Vaise pourra vous renseigner sur les différents points administratifs.</p>
-					<ul class="contact_list_adresse ">
-						<li>
-							<p><span>Adresse : </span>6 Place du Marché, 69009 Lyon</p>
-						</li>
-						<li>
-							<p><span>Téléphone : </span>06 40 67 58 46</p>
-						</li>
-						<li>
-							<p><span>Mail : </span><a href="mailto:mairie.vaise@gmail.com">mairie.vaise@gmail.com</a></p>
-						</li>
-						<li>
-							<p><span>site : </span><a href="www.mairie9.lyon.fr/" target="_blank">www.mairie9.lyon.fr/</a></p>
-						</li>
-					</ul>
-				</div>
-			</li>
+			</li>';
+			}
+			?>
 		</ul>
 
-		<div class="contact_formulaire">
+		<div id="contact_formulaire">
 			<h2>Nous contacter</h2>
 			<form class="form-horizontal" role="form" method="post" action="./controller/contact.php">
 				<div class="form-group">

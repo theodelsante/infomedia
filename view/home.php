@@ -57,26 +57,13 @@
     </div>
 
     <div class="grid">
-      <a class="grid-item news" href="./?page=news">
-        <div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
-        <span><h3 class="title">Marché nocture de Valmy</h3></span>
-      </a>
-      <a class="grid-item event" href="./?page=news">
-        <div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
-        <span><h3 class="title">La fête des lumières s'invite à Vaise</h3></span>
-      </a>
-      <a class="grid-item event" href="./?page=news">
-        <div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
-        <span><h3 class="title">Marché nocture de Valmy</h3></span>
-      </a>
-      <a class="grid-item event grid-item--height2" href="./?page=news">
-        <div class="zoom_pict" style="background-image: url('./assets/img/news1.jpg');"></div>
-        <span><h3 class="title">Rénovation de la cathédrale St Pierre</h3></span>
-      </a>
-      <a class="grid-item news" href="./?page=news">
-        <div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
-        <span><h3 class="title">Marché nocture de Valmy</h3></span>
-      </a>
+      <?php
+      echo '<a href="./?page=news">'.Display::zoomImage('Marché nocture de Valmy', './assets/img/news2.jpg', 'news').'</a>';
+      echo '<a href="./?page=news">'.Display::zoomImage('La fête des lumières s\'invite à Vaise', './assets/img/news2.jpg', 'event').'</a>';
+      echo '<a href="./?page=news">'.Display::zoomImage('Marché nocture de Valmy', './assets/img/news2.jpg', 'event').'</a>';
+      echo '<a href="./?page=news">'.Display::zoomImage('Marché nocture de Valmy', './assets/img/news1.jpg', 'event grid-item--height2').'</a>';
+      echo '<a href="./?page=news">'.Display::zoomImage('Rénovation de la cathédrale St Pierre', './assets/img/news2.jpg', 'news').'</a>';
+      ?>
     </div>
   </div>
   <?php
