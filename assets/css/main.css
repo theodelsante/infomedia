@@ -563,7 +563,7 @@ footer #logograndlyon {
     }
 }
 
-@media screen and (min-width: 970px){
+@media screen and (min-width: 992px){
     .reverse{
         float: right;
     }
