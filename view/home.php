@@ -37,11 +37,11 @@
     </div>
   </div>
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="fa fa-chevron-left fa-2x" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="fa fa-chevron-right fa-2x" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>
@@ -57,26 +57,26 @@
     </div>
 
     <div class="grid">
-      <div class="grid-item news">
+      <a class="grid-item news" href="./?page=news">
         <div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
         <span><h3 class="title">Marché nocture de Valmy</h3></span>
-      </div>
-      <div class="grid-item event">
+      </a>
+      <a class="grid-item event" href="./?page=news">
         <div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
         <span><h3 class="title">La fête des lumières s'invite à Vaise</h3></span>
-      </div>
-      <div class="grid-item event">
+      </a>
+      <a class="grid-item event" href="./?page=news">
         <div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
         <span><h3 class="title">Marché nocture de Valmy</h3></span>
-      </div>
-      <div class="grid-item event grid-item--height2">
+      </a>
+      <a class="grid-item event grid-item--height2" href="./?page=news">
         <div class="zoom_pict" style="background-image: url('./assets/img/news1.jpg');"></div>
         <span><h3 class="title">Rénovation de la cathédrale St Pierre</h3></span>
-      </div>
-      <div class="grid-item news">
+      </a>
+      <a class="grid-item news" href="./?page=news">
         <div class="zoom_pict" style="background-image: url('./assets/img/news2.jpg');"></div>
         <span><h3 class="title">Marché nocture de Valmy</h3></span>
-      </div>
+      </a>
     </div>
   </div>
   <?php

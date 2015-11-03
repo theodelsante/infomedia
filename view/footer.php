@@ -14,7 +14,7 @@
             <li>|</li>
             <li><a href="./?page=contact">Liens utiles</a></li>
             <li>|</li>
-            <li><a href="./">Mentions legales</a></li>
+            <li><a href="./?page=legalnotice">Mentions legales</a></li>
         </ul>
     </div>
     <div class="col-md-2 hidden-sm hidden-xs">
