@@ -1,0 +1,31 @@
+{
+    "nav":{
+        "home":"Home",
+        "everyday":"Everyday",
+        "move":"Move",
+        "restaurants_bars":"Restaurants / Bars",
+        "shops":"Shops",
+        "associations":"Associations",
+        "hotels":"Hotels",
+        "leisures":"Leisures",
+        "parks":"Parks",
+        "sports":"Sports",
+        "cinemas":"Cinemas",
+        "theaters":"Theaters",
+        "culture":"Culture",
+        "museums":"Museums",
+        "historic_places":"Historic places",
+        "exhibitions":"Exhibitions",
+        "media_library":"Media library",
+        "useful_links":"Useful links",
+        "legal_notice":"Legal notice",
+        "lang_short":"fr",
+        "lang_long":"French"
+    }, "sidebar": {
+        "mayor_word":"Mayor word",
+        "last_news":"Last news",
+        "weather":"Weather",
+        "share":"Share",
+        "print":"Print"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "nav": {
+        "home":"Accueil",
+        "everyday":"Vie pratique",
+        "move":"Se déplacer",
+        "restaurants_bars":"Restaurants / Bars",
+        "shops":"Commerces",
+        "associations":"Associations",
+        "hotels":"Hôtels",
+        "leisures":"Loisirs",
+        "parks":"Espaces verts",
+        "sports":"Sports",
+        "cinemas":"Cinémas",
+        "theaters":"Théâtres",
+        "culture":"Culture",
+        "museums":"Musées",
+        "historic_places":"Lieux historiques",
+        "exhibitions":"Expositions",
+        "media_library":"Médiathèque",
+        "useful_links":"Liens utiles",
+        "legal_notice":"Mentions légales",
+        "lang_short":"en",
+        "lang_long":"English"
+    }, "sidebar": {
+        "mayor_word":"Le mot du maire",
+        "last_news":"Dernière actus",
+        "weather":"Météo",
+        "share":"Partager",
+        "print":"Imprimer"
+    }
+}

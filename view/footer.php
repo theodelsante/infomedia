@@ -4,17 +4,17 @@
     </div>
     <div class="col-md-8 col-sm-12">
         <ul>
-            <li><a href="./">Accueil</a></li>
+            <li><a href="./"><?php echo $json['nav']['home']; ?></a></li>
             <li>|</li>
-            <li><a href="./?page=viepratique">Vie pratique</a></li>
+            <li><a href="./?page=viepratique"><?php echo $json['nav']['everyday']; ?></a></li>
             <li>|</li>
-            <li><a href="./">Loisir</a></li>
+            <li><a href="./"><?php echo $json['nav']['leisures']; ?></a></li>
             <li>|</li>
-            <li><a href="./">Culture</a></li>
+            <li><a href="./"><?php echo $json['nav']['culture']; ?></a></li>
             <li>|</li>
-            <li><a href="./?page=contact">Liens utiles</a></li>
+            <li><a href="./?page=contact"><?php echo $json['nav']['useful_links']; ?></a></li>
             <li>|</li>
-            <li><a href="./?page=legalnotice">Mentions legales</a></li>
+            <li><a href="./?page=legalnotice"><?php echo $json['nav']['legal_notice']; ?></a></li>
         </ul>
     </div>
     <div class="col-md-2 hidden-sm hidden-xs">

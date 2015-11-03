@@ -12,37 +12,37 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li id="home"><a href="./">Accueil</a></li>
+					<li id="home"><a href="./"><?php echo $json['nav']['home']; ?></a></li>
 					<li class="dropdown" id="everyday">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="./?page=viepratique">Vie pratique</a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="./?page=viepratique"><?php echo $json['nav']['everyday']; ?></a>
 						<ul class="dropdown-menu">
-							<li><a href="./">Se déplacer</a></li>
-							<li><a href="./?page=sscat">Restauration / Bars</a></li>
-							<li><a href="./">Commerces</a></li>
-							<li><a href="./">Associations</a></li>
-							<li><a href="./">Hôtels</a></li>
+							<li><a href="./"><?php echo $json['nav']['move']; ?></a></li>
+							<li><a href="./?page=sscat"><?php echo $json['nav']['restaurants_bars']; ?></a></li>
+							<li><a href="./"><?php echo $json['nav']['shops']; ?></a></li>
+							<li><a href="./"><?php echo $json['nav']['associations']; ?></a></li>
+							<li><a href="./"><?php echo $json['nav']['hotels']; ?></a></li>
 						</ul>
 					</li>
 					<li class="dropdown" id="leisure">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="./">Loisir</a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="./"><?php echo $json['nav']['leisures']; ?></a>
 						<ul class="dropdown-menu">
-							<li><a href="./">Espaces verts</a></a></li>
-							<li><a href="./">Sports</a></li>
-							<li><a href="./">Cinémas</a></li>
-							<li><a href="./">Théâtres</a></li>
+							<li><a href="./"><?php echo $json['nav']['parks']; ?></a></a></li>
+							<li><a href="./"><?php echo $json['nav']['sports']; ?></a></li>
+							<li><a href="./"><?php echo $json['nav']['cinemas']; ?></a></li>
+							<li><a href="./"><?php echo $json['nav']['theaters']; ?></a></li>
 						</ul>
 					</li>
 					<li class="dropdown" id="culture">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="./">Culture</a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="./"><?php echo $json['nav']['culture']; ?></a>
 						<ul class="dropdown-menu">
-							<li><a href="./">Musées</a></li>
-							<li><a href="./">Lieux historiques</a></li>
-							<li><a href="./">Expositions</a></li>
-							<li><a href="./">Médiathèque</a></li>
+							<li><a href="./"><?php echo $json['nav']['museums']; ?></a></li>
+							<li><a href="./"><?php echo $json['nav']['historic_places']; ?></a></li>
+							<li><a href="./"><?php echo $json['nav']['exhibitions']; ?></a></li>
+							<li><a href="./"><?php echo $json['nav']['media_library']; ?></a></li>
 						</ul>
 					</li>
-					<li id="links"><a href="./?page=contact">Liens utiles</a></li>
-					<div id="en"><a href="./en" class="hidden-xs">EN</a><a href="./en" class="hidden-sm hidden-md hidden-lg hidden-xl">ENGLISH</a></div>
+					<li id="links"><a href="./?page=contact"><?php echo $json['nav']['useful_links']; ?></a></li>
+					<div id="other_lang"><a href="./?lang=<?php echo $json['nav']['lang_short']; ?>" class="hidden-xs"><?php echo $json['nav']['lang_short']; ?></a><a href="./?lang=<?php echo $json['nav']['lang_short']; ?>" class="hidden-sm hidden-md hidden-lg hidden-xl"><?php echo $json['nav']['lang_long']; ?></a></div>
 				</ul>
 			</div>
 		</div>

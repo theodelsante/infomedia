@@ -27,7 +27,7 @@ if (isset($_GET['lang']) && in_array($_GET['lang'], $lang_accept)) {
   $_SESSION['lang'] = $_GET['lang'];
 }
 
-$json = file_get_contents('lang/'.$_SESSION['lang'].'.json');
+$json = file_get_contents('assets/lang/'.$_SESSION['lang'].'.json');
 $json = json_decode($json, true);
 ?>
 <html lang="<?php echo $_SESSION['lang']; ?>">
