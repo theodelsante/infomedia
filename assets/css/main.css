@@ -315,6 +315,7 @@ ul {
 
 #sidebar .first {
   float: left;
+  width: 100%;
 }
 
 #sidebar > div h3,
@@ -328,6 +329,11 @@ ul {
   max-height: 120px;
   margin: 6px;
   margin-left: 0px;
+}
+
+#sidebar .grid-item {
+  width: 100%;
+  margin: 0px;
 }
 
 #sidebar h3,
@@ -365,28 +371,28 @@ ul {
 }
 
 /* Page 404 */
-#error404 .row img {
+#errors .row img {
   width: 100%;
 }
 
-#error404 h1 {
+#errors .text_404 {
+  position: absolute;
+  top: 10%;
+  left: 0px;
+  right: 0px;
+}
+
+#errors .text_404 h1 {
   font-size: 5vw;
   font-family: "Arial Black";
   line-height: 1.402;
   text-align: center;
 }
 
-#error404 h1 a {
+#errors .text_404 h1 a {
   font-family: "Arial Black";
   color: rgb(94, 94, 94);
   text-decoration: underline;
-}
-
-#error404 .text_404 {
-  position: absolute;
-  top: 10%;
-  left: 0px;
-  right: 0px;
 }
 
 /* Footer */

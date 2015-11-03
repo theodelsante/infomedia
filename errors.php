@@ -8,7 +8,7 @@ if (isset($_GET['error']) && $_GET['error'] != '') {
 	$error .= ' 404';
 }
 ?>
-<html lang="fr">
+<html lang="<?php echo $_SESSION['lang']; ?>">
 <head>
 	<title><?php echo $error; ?> | <?php echo SITE_NAME; ?></title>
 	<meta name="robots" content="all"/>
@@ -35,7 +35,7 @@ if (isset($_GET['error']) && $_GET['error'] != '') {
 	<script src="./assets/js/script.js" type="text/javascript"></script>
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
-<body id='error404'>
+<body id='errors'>
 	<div class="container">
 		<?php
 
