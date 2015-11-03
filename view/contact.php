@@ -1,7 +1,7 @@
 <link href="./assets/css/contact.css" type="text/css" rel="stylesheet">
 <div class="row">
 	<div id="content" class="col-md-9 col-sm-12">
-		<h2>Liens utiles</h2>
+		<h2><?php echo $json['nav']['useful_links']; ?></h2>
 		<ul id="contact_list">
 			<?php
 			foreach ($json['contact']['useful_links'] as $value) {
