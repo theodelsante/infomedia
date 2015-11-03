@@ -550,3 +550,14 @@ footer #logograndlyon {
 #texte_mentions > h1 {
     text-align: center;
 }
+
+
+#build-h2 h2{
+  font-size:75px;
+  text-align: center;
+}
+.sidebarhor img{
+  width:50%;
+  height:auto;
+  margin:0 25%;
+}
