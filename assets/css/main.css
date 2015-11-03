@@ -546,3 +546,7 @@ footer #logograndlyon {
 .txt-menu, .img-menu{
   height:250px;
 }
+
+#texte_mentions > h1 {
+    text-align: center;
+}
