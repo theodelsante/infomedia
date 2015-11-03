@@ -1,7 +1,7 @@
 <div class="col-md-3 col-sm-12" id="sidebar">
   <div class="first">
     <?php
-    if (isset($_GET['page']) && $_GET['page'] == 'news') {
+    if (isset($page) && $page == 'news') {
       echo '<h3>Dernière news</h3>
       <img src="./assets/img/news2.jpg">';
     } else {

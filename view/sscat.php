@@ -142,7 +142,7 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 				if (isset($value['adr_address'])) {
 					$search = array(', <span class="country-name">France</span>', 'France');
 					$value['adr_address'] = trim(str_replace($search, '', $value['adr_address']), ',');
-					echo '<p class="address">'.$value['adr_address'].' <i class="fa fa-map-o"></i></p>';
+					echo '<p class="address">'.$value['adr_address'].' <i class="fa fa-map-o" alt="Afficher sur la carte"></i></p>';
 				}
 				if (isset($value['international_phone_number'])) {
 					echo '<p class="phone">'.$value['international_phone_number'].'</p>';

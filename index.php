@@ -13,8 +13,24 @@ if (isset($_GET['page']) && $_GET['page'] != '') {
 }
 
 require_once('config.php');
+
+/* Set the language according to the browser */
+$lang_accept = array('fr', 'en');
+if (!isset($_SESSION['lang'])) {    
+  $_SESSION['lang'] = getBrowserLang();
+  if ($_SESSION['lang'] != 'fr') {
+    $_SESSION['lang'] = 'en';
+  }
+}
+/* If user change manually the language */
+if (isset($_GET['lang']) && in_array($_GET['lang'], $lang_accept)) {
+  $_SESSION['lang'] = $_GET['lang'];
+}
+
+$json = file_get_contents('lang/'.$_SESSION['lang'].'.json');
+$json = json_decode($json, true);
 ?>
-<html lang="fr">
+<html lang="<?php echo $_SESSION['lang']; ?>">
 <head>
 	<title>Accueil | <?php echo SITE_NAME; ?></title>
 	<meta name="robots" content="all"/>
