@@ -1,72 +1,72 @@
 * {
-	margin: 0px;
-	padding: 0px;
-	max-width: 100%;
-	font-family: Arial;
-  color: #5e5e5e;
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+    font-family: Arial;
+    color: #5e5e5e;
 }
 
 header{
-  clear: both;
+    clear: both;
 }
 
 header #Vaise_logo {
-	margin: 20px 0px;
-	max-height: 80px;
+    margin: 20px 0px;
+    max-height: 80px;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 .container-fluid{
-  background-color:white;
+    background-color:white;
 }
 
 /* Menu */
 #menu {
-  width: 79%;
-  float: right;
-  margin-top: 40px;
-  z-index: 1;
+    width: 79%;
+    float: right;
+    margin-top: 40px;
+    z-index: 1;
 }
 
 #menu img {
-  margin: 0px;
-  margin-top: -10px;
-  max-height: 40px;
+    margin: 0px;
+    margin-top: -10px;
+    max-height: 40px;
 }
 
 #menu li a, #en a {
-	display: block;
-	background-color: #e44b00;
-	text-align: center;
-	text-decoration: none;
-	color: white;
-	line-height: 30px;
-  font-size: 100%;
+    display: block;
+    background-color: #e44b00;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+    font-size: 100%;
 }
 
 #menu #everyday a {
-	background-color: #8ea301;
+    background-color: #8ea301;
 }
 
 #menu #leisure a {
-	background-color: #0173a6;
+    background-color: #0173a6;
 }
 
 #menu #culture a {
-	background-color: #bc017c;
+    background-color: #bc017c;
 }
 
 #menu #links a {
-	background-color: #7e0095;
+    background-color: #7e0095;
 }
 
 #menu #en a {
-  background-color: #e7e7e7;
-  color:black;
-  line-height: 60px;
+    background-color: #e7e7e7;
+    color:black;
+    line-height: 60px;
 }
 
 #menu #links > a, 
@@ -77,48 +77,48 @@ ul {
 #menu #culture > ul a,
 #menu #leisure > ul a,
 #menu #everyday > ul a {
-  transition: all .2s linear;
+    transition: all .2s linear;
 }
 
 #leisure > a, #culture > a, #everyday > a {
-  z-index: 10000;
+    z-index: 10000;
 }
 
 #menu li > ul {
-  -webkit-animation: movemenu .2s linear;
-  animation: movemenu .2s linear;
+    -webkit-animation: movemenu .2s linear;
+    animation: movemenu .2s linear;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes movemenu {
-  from {top: 0px;}
-  to {top: 45px;}
+    from {top: 0px;}
+    to {top: 45px;}
 }
 
 /* Standard syntax */
 @keyframes movemenu {
-  0% {top: 0px;}
-  100% {top: 45px;}
+    0% {top: 0px;}
+    100% {top: 45px;}
 }
 
 #home > a:hover {
-  color:#e44b00;
+    color:#e44b00;
 }
 
 #everyday a:hover {
-  color:#8ea301;
+    color:#8ea301;
 }
 
 #leisure a:hover {
-  color:#0173a6;
+    color:#0173a6;
 }
 
 #culture a:hover{
-  color:#bc017c;
+    color:#bc017c;
 }
 
 #links > a:hover {
-  color:#7e0095;
+    color:#7e0095;
 }
 
 #menu #links > a:hover, 
@@ -129,170 +129,170 @@ ul {
 #menu #culture > ul a:hover,
 #menu #leisure > ul a:hover,
 #menu #everyday > ul a:hover {
-  background-color:white;
+    background-color:white;
 }
 
 .navbar {
-  border: 0;
+    border: 0;
 }
 
 .navbar > div,
 .navbar > div > div {
-  padding-left: 0;
-  padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .navbar-header {
-  height: 0px;
+    height: 0px;
 }
 
 .navbar-nav {
-  width: 100%;
-  margin: 0px;
+    width: 100%;
+    margin: 0px;
 }
 
 .navbar-nav > li {
-  width: 19%;
-  text-align: center;
+    width: 19%;
+    text-align: center;
 }
 
 .navbar-nav > li:last-child {
-  width: 5%;
-  text-align: center;
-  float: left;
+    width: 5%;
+    text-align: center;
+    float: left;
 }
 
 .dropdown-menu {
-  width: 100%;
-  padding: 0px;
-  border: none;
+    width: 100%;
+    padding: 0px;
+    border: none;
 }
 
 /* Caroussel */
 #myCarousel {
-  clear: both;
+    clear: both;
 }
 
 #myCarousel * {
-  color: white;
+    color: white;
 }
 
 .carousel img {
-  width: 100%;
+    width: 100%;
 }
 
 .carousel .item {
-  max-height: 500px;
+    max-height: 500px;
 }
 
 .carousel .carousel-control .fa {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 40px;
-  height: 40px;
-  margin-left: -20px;
-  margin-top: -20px;
-  z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    z-index: 5;
 }
 
 .row {
-  background-color: #f9f9f9;
-  margin: 0px;
+    background-color: #f9f9f9;
+    margin: 0px;
 }
 
 .conteneur{
-  margin-top:30px;
-  background-color:#f9f9f9;
+    margin-top:30px;
+    background-color:#f9f9f9;
 }
 
 /* Isotope buttons selector */
 .button {
-  padding: 10px 18px;
-  background-color: #f9f9f9;
-  font-size: 16px;
-  cursor: pointer;
-  float: left;
-  border:none;
-  text-transform: uppercase;
+    padding: 10px 18px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    border:none;
+    text-transform: uppercase;
 }
 
 .button:hover {
-  color: black;
+    color: black;
 }
 
 .button-group {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .button-group:after {
-  content: '';
-  display: block;
-  clear: both;
+    content: '';
+    display: block;
+    clear: both;
 }
 
 /* ---- isotope ---- */
 .grid-item {
-  position: relative;
-  float: left;
-  width: 150px;
-  height: 200px;
-  min-width: 47%;
-  margin: 5px;
-  background: #888;
-  color: #262524;
-  overflow: hidden;
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 200px;
+    min-width: 47%;
+    margin: 5px;
+    background: #888;
+    color: #262524;
+    overflow: hidden;
 }
 
 .grid-item .zoom_pict {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  -moz-transition: all .4s;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  -moz-transform: scale(1,1);
-  -webkit-transform: scale(1,1);
-  transform: scale(1,1);
-  moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    -moz-transition: all .4s;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: 0;
 }
 
 .grid-item:hover .zoom_pict {
-  -moz-transform: scale(1.4,1.4);
-  -webkit-transform: scale(1.4,1.4);
-  transform: scale(1.4,1.4);
+    -moz-transform: scale(1.4,1.4);
+    -webkit-transform: scale(1.4,1.4);
+    transform: scale(1.4,1.4);
 }
 
 .grid-item span {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  display: block;
-  height: 150px;
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: block;
+    height: 150px;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
 }
 
 .grid-item .title {
-  position: absolute;
-  bottom: 15px;
-  left: 10px;
-  right: 10px;
-  margin: 0px;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 18px;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    right: 10px;
+    margin: 0px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
 }
 
 .grid-item--width2 { width: 310px; }
@@ -301,250 +301,272 @@ ul {
 
 /* Sidebar */
 #sidebar {
-  margin: 30px 0px;
-  border-left: 1px solid #5e5e5e;
+    margin: 30px 0px;
+    border-left: 1px solid #5e5e5e;
 }
 
 #sidebar > div {
-  background-color: white;
-  padding: 10px;
-  margin-bottom: 20px;
-  clear: both;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    clear: both;
 }
 
 #sidebar .first {
-  float: left;
+    float: left;
 }
 
 #sidebar > div h3,
 #sidebar > div p {
-  margin: 0px;
+    margin: 0px;
 }
 
 #sidebar #mayor_picture {
-  float: left;
-  max-width: 50%;
-  max-height: 120px;
-  margin: 6px;
-  margin-left: 0px;
+    float: left;
+    max-width: 50%;
+    max-height: 120px;
+    margin: 6px;
+    margin-left: 0px;
 }
 
 #sidebar h3,
 #sidebar .icon {
-  text-align: center;
-  text-transform: uppercase;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #sidebar i {
-  color: #e7e7e7;
+    color: #e7e7e7;
 }
 
 #sidebar #share i:hover {
-  color: #a3a3a3;
+    color: #a3a3a3;
 }
 
 #weather{
-  text-align: center;
+    text-align: center;
 }
 
 #weather .col-xs-5,
 #weather .col-xs-6 {
-  float: initial;
-  display: inline-block;
-  padding: 0px;
-  vertical-align: middle;
+    float: initial;
+    display: inline-block;
+    padding: 0px;
+    vertical-align: middle;
 }
 
 #weather .col-xs-5 {
-  font-size: 5em;
+    font-size: 5em;
 }
 
 #weather h6 {
-  margin-bottom: -3px; 
+    margin-bottom: -3px; 
 }
 
 /* Page 404 */
 #error404 .row img {
-  width: 100%;
+    width: 100%;
 }
 
 #error404 h1 {
-  font-size: 5vw;
-  font-family: "Arial Black";
-  line-height: 1.402;
-  text-align: center;
+    font-size: 5vw;
+    font-family: "Arial Black";
+    line-height: 1.402;
+    text-align: center;
 }
 
 #error404 h1 a {
-  font-family: "Arial Black";
-  color: rgb(94, 94, 94);
-  text-decoration: underline;
+    font-family: "Arial Black";
+    color: rgb(94, 94, 94);
+    text-decoration: underline;
 }
 
 #error404 .text_404 {
-  position: absolute;
-  top: 10%;
-  left: 0px;
-  right: 0px;
+    position: absolute;
+    top: 10%;
+    left: 0px;
+    right: 0px;
 }
 
 /* Footer */
 footer {
-  position: relative;
-  margin-top: 20px;
+    position: relative;
+    margin-top: 20px;
 }
 
 footer a,
 footer p {
-  color: #5e5e5e;
+    color: #5e5e5e;
 }
 
 footer a:hover {
-  text-decoration: none;
-  color: grey;
+    text-decoration: none;
+    color: grey;
 }
 
 footer li {
-  display: inline-block;
-  list-style: none;
-  font-weight: bold;
-  font-size: 16px;
-  text-transform: uppercase;
+    display: inline-block;
+    list-style: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 footer * {
-  text-align: center;
+    text-align: center;
 }
 
 footer .texte {
-  position: absolute;
-  bottom: -70px;
-  left: 0px;
-  right: 0px;
+    position: absolute;
+    bottom: -70px;
+    left: 0px;
+    right: 0px;
 }
 
 footer .col-md-8 {
-  padding: 0px;
+    padding: 0px;
 }
 
 footer #logograndlyon {
-  margin-top: 5px;
+    margin-top: 5px;
 }
 
 @media screen and (max-width: 380px) {
-  .button {
-    padding: 10px 13px;
-  }
+    .button {
+        padding: 10px 13px;
+    }
 
-  .grid-item {
-    width: 100%;
-  }
+    .grid-item {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 520px) {
-  .carousel .carousel-caption p {
-    display: none;
-  }
+    .carousel .carousel-caption p {
+        display: none;
+    }
 
-  .grid-item {
-    height: 150px;
-  }
+    .grid-item {
+        height: 150px;
+    }
 
-  .grid-item--height2 { height: 310px; }
+    .grid-item--height2 { height: 310px; }
 }
 
 @media screen and (min-width: 768px) {
-  #menu li:hover > ul {
-    display: block;
-  }
+    #menu li:hover > ul {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 992px) {
-  #sidebar {
-    border: none;
-  }
+    #sidebar {
+        border: none;
+    }
 }
 
 @media screen and (max-width: 1200px) {
-  .container{
-    width:100%;
-  }
+    .container{
+        width:100%;
+    }
 }
 
 @media screen and (max-width: 1103px) {
-  #menu{
-    width:79%;
-  }
+    #menu{
+        width:79%;
+    }
 }
 
 @media screen and (max-width: 767px) {
-  body > .container {
-    padding: 0px;
-  }
+    body > .container {
+        padding: 0px;
+    }
 
-  header > a,
-  header > img {
-    display: none;
-  }
+    header > a,
+    header > img {
+        display: none;
+    }
 
-  #menu {
-    width: 100%;
-    margin-top: 0px;
-  }
+    #menu {
+        width: 100%;
+        margin-top: 0px;
+    }
 
-  .navbar-nav li {
-    width: 100%;
-  }
+    .navbar-nav li {
+        width: 100%;
+    }
 
-  .navbar > div,
-  .navbar > div > div {
-    padding-left: 15px;
-  }
+    .navbar > div,
+    .navbar > div > div {
+        padding-left: 15px;
+    }
 }
 
 /* News */
 .btn-primary {
-  margin: 0px auto;
-  display: block;
-  width: 280px;
+    margin: 0px auto;
+    display: block;
+    width: 280px;
 }
 
 /* Pagemenu */
 .cat-menu{
-  margin-bottom:10px;
+    margin-bottom:10px;
 }
 
 .cat-menu img{
-  height:auto;
-  text-align: center
+    text-align: center
 }
 
 .cat-menu-2:first-child{
-  margin-top:30px;
+    margin-top:30px;
 }
 
 .cat-menu .img-menu{
-  padding-right:5px;
-  position: relative;
+    position: relative;
+    padding:0px;
+    text-align: center;
 }
 
 .cat-menu .txt-menu{
-  padding-left:5px;
-  border: none;
+    padding-left:5px;
+    border: none;
 }
 
 .cat-menu h2{
-  position:absolute;
-  width:100%;
-  text-align: center;
-  bottom: 40%;
-  color:white;
-  text-transform: uppercase;
-  font-weight: bold;
+    position:absolute;
+    width:100%;
+    text-align: center;
+    bottom: 40%;
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.3);
 }
 
 .txt-menu, .img-menu{
-  height:250px;
+    height:250px;
+}
+
+.cat-menu, .img-menu{
+    min-height:250px;
+}
+
+@media screen and (max-width: 992px){
+    .cat-menu > .img-menu{
+        min-height: 10px;
+    }
+
+    .vignette{
+        max-width: 522px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 970px){
+    .reverse{
+        float: right;
+    }
 }
 
 #texte_mentions > h1 {
@@ -553,11 +575,11 @@ footer #logograndlyon {
 
 
 #build-h2 h2{
-  font-size:75px;
-  text-align: center;
+    font-size:75px;
+    text-align: center;
 }
 .sidebarhor img{
-  width:50%;
-  height:auto;
-  margin:0 25%;
+    width:50%;
+    height:auto;
+    margin:0 25%;
 }
