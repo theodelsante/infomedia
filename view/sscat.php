@@ -123,19 +123,9 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 				<p>'.$value['type'].'</p>';
 				// print_r($value);
 				if (isset($value['rating'])) {
-					echo '<div class="rating">';
-					$rating = explode('.', $value['rating']);
-					for ($nbstar=0; $nbstar < $rating[0]; $nbstar++) { 
-						echo '<i class="fa fa-star"></i>';
-					}
-					if (isset($rating[1]) && $rating[1] >= 4 && $rating[1] <= 6) {
-						echo '<i class="fa fa-star-half-o"></i>';
-						$nbstar++;
-					}
-					for ($i=$nbstar; $i < 5; $i++) { 
-						echo '<i class="fa fa-star-o"></i>';
-					}
-					echo ' '.count($value['reviews']).' avis Google';
+					echo '<div class="rating">'
+					.Display::ratingStar($value['rating']).
+					' '.count($value['reviews']).' avis Google';
 					echo '</div>';
 				}
 				
@@ -168,6 +158,25 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 					}
 					echo '</ul>';
 				}
+				if (isset($value['reviews'])) {
+					echo '</div>
+					<div class="col-xs-12"><button id="advise_button">Voir les avis</button></div>
+					<div class="col-xs-12 advise">';
+					foreach ($value['reviews'] as $review) {
+						if (!isset($review['profile_photo_url'])) {
+							$review['profile_photo_url'] = 'https://lh3.googleusercontent.com/-o1mwVx7Ld9M/AAAAAAAAAAI/AAAAAAAAAAA/ATg44saQmQQ/s120-c/photo.jpg';
+						}
+						echo '<div class="col-md-6">';
+						if (isset($review['author_url'])) {
+							echo '<a href="'.$review['author_url'].'" target="_blank"><img src="'.$review['profile_photo_url'].'"/><h4>'.$review['author_name'].'</h4></a>';
+						} else {
+							echo '<img src="'.$review['profile_photo_url'].'"/><h4>'.$review['author_name'].'</h4>';
+						}
+						echo '<span>'.Display::ratingStar($review['aspects'][0]['rating']).'</span>
+						<p>'.$review['text'].'</p>
+						</div>';
+					}
+				}
 				echo '</div>
 				</li>';
 			}
@@ -180,10 +189,11 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 		$('#list-item .address i').click(function() {
 			pushToTop($(this).parent().parent().parent().data('id'));
 			$(document.body).scrollTop($('#gmap').offset().top);
-			// $(document.body).animate({
-			// 	'scrollTop':   $('#anchorName2').offset().top
-			// }, 2000);
-	});
+		});
+
+		$(document).on('click', '#advise_button', function() {
+			$(this).parent().parent().find('.advise').toggleClass('deploy');
+		});
 	});
 	</script>
 	<?php
