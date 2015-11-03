@@ -557,6 +557,7 @@ footer #logograndlyon {
   .vignette{
     max-width: 522px;
     text-align: center;
+    float: initial;
   }
 }
 
