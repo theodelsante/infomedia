@@ -1,6 +1,6 @@
 <?php
 
-$pages = array('home', 'news', 'viepratique', 'sscat', 'contact', 'legalnotice');
+$pages = array('home', 'listnews', 'news', 'viepratique', 'sscat', 'contact', 'legalnotice');
 if (isset($_GET['page']) && $_GET['page'] != '') {
   if (in_array($_GET['page'], $pages)) {
     $page = $_GET['page'];
