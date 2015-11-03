@@ -47,13 +47,13 @@
 </div>
 <div class="row conteneur">
   <div class="col-md-9 col-sm-12" id="content">
-    <div class="col-md-4"><h2>En ce moment</h2></div>
+    <div class="col-md-4"><h2><?php echo $json['home']['now']; ?></h2></div>
 
     <div class="button-group filters-button-group">
-      <button class="button is-checked" data-filter="*">TOUT</button>
-      <button class="button" data-filter=".news">News</button>
-      <button class="button" data-filter=".event">Événements</button>
-      <button class="button" data-filter=".social">Les réseaux</button>
+      <button class="button is-checked" data-filter="*"><?php echo $json['home']['all']; ?></button>
+      <button class="button" data-filter=".news"><?php echo $json['home']['news']; ?></button>
+      <button class="button" data-filter=".event"><?php echo $json['home']['events']; ?></button>
+      <button class="button" data-filter=".social"><?php echo $json['home']['networks']; ?></button>
     </div>
 
     <div class="grid">

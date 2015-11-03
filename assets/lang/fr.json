@@ -24,8 +24,19 @@
     }, "sidebar": {
         "mayor_word":"Le mot du maire",
         "last_news":"Dernière actus",
-        "weather":"Météo",
+        "weather": {
+            "label":"Météo",
+            "temperature":"Température",
+            "wind_speed":"Vitesse du vent",
+            "humidity":"Humidité"
+        },
         "share":"Partager",
         "print":"Imprimer"
+    }, "home": {
+        "now":"En ce moment",
+        "all":"TOUT",
+        "news":"Actus",
+        "events":"Évènements",
+        "networks":"Les réseaux"
     }
 }

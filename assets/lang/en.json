@@ -1,5 +1,5 @@
 {
-    "nav":{
+    "nav": {
         "home":"Home",
         "everyday":"Everyday",
         "move":"Move",
@@ -24,8 +24,19 @@
     }, "sidebar": {
         "mayor_word":"Mayor word",
         "last_news":"Last news",
-        "weather":"Weather",
+        "weather": {
+            "label":"Weather",
+            "temperature":"Temperature",
+            "wind_speed":"Wind Speed",
+            "humidity":"Humidity"
+        },
         "share":"Share",
         "print":"Print"
+    }, "home": {
+        "now":"Now",
+        "all":"ALL",
+        "news":"News",
+        "events":"Events",
+        "networks":"Networks"
     }
 }

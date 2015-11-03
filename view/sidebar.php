@@ -12,7 +12,7 @@
     ?>
   </div>
   <div id="weather">
-    <h3><?php echo $json['sidebar']['weather']; ?></h3>
+    <h3><?php echo $json['sidebar']['weather']['label']; ?></h3>
     <?php require_once('weather.php'); ?>
   </div>
   <div id="share">
