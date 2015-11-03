@@ -511,7 +511,6 @@ footer #logograndlyon {
 }
 
 /* Pagemenu */
-/* Pagemenu */
 .cat-menu{
   margin-bottom:10px;
 }
@@ -526,8 +525,8 @@ footer #logograndlyon {
 
 .cat-menu .img-menu{
   position: relative;
-  padding:0px;
-  text-align: center;
+  padding: 0px;
+  margin: 0px auto;
 }
 
 .cat-menu .txt-menu{
@@ -561,7 +560,7 @@ footer #logograndlyon {
   }
 }
 
-@media screen and (min-width: 970px){
+@media screen and (min-width: 992px){
   .reverse{
     float: right;
   }
