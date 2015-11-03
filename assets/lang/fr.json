@@ -38,5 +38,53 @@
         "news":"Actus",
         "events":"Évènements",
         "networks":"Les réseaux"
+    }, "contact":{
+        "useful_links":[{
+               "title":"Mairie",
+               "img":"./assets/img/news2.jpg",
+               "description":"La mairie de Vaise pourra vous renseigner sur les différents points administratifs.",
+               "address":"6 Place du Marché, 69009 Lyon", 
+               "tel":"06 40 67 58 46", 
+               "mail":"mairie.vaise@gmail.com", 
+               "website":"http://www.mairie9.lyon.fr/"
+        }, {
+               "title":"Mairie",
+               "img":"./assets/img/news2.jpg",
+               "description":"La mairie de Vaise pourra vous renseigner sur les différents points administratifs.",
+               "address":"6 Place du Marché, 69009 Lyon", 
+               "tel":"06 40 67 58 46", 
+               "mail":"mairie.vaise@gmail.com", 
+               "website":"http://www.mairie9.lyon.fr/"
+        }, {
+               "title":"Mairie",
+               "img":"./assets/img/news2.jpg",
+               "description":"La mairie de Vaise pourra vous renseigner sur les différents points administratifs.",
+               "address":"6 Place du Marché, 69009 Lyon", 
+               "tel":"06 40 67 58 46", 
+               "mail":"mairie.vaise@gmail.com", 
+               "website":"http://www.mairie9.lyon.fr/"
+        }, {
+               "title":"Mairie",
+               "img":"./assets/img/news2.jpg",
+               "description":"La mairie de Vaise pourra vous renseigner sur les différents points administratifs.",
+               "address":"6 Place du Marché, 69009 Lyon", 
+               "tel":"06 40 67 58 46", 
+               "mail":"mairie.vaise@gmail.com", 
+               "website":"http://www.mairie9.lyon.fr/"
+        }],
+        "address":"Adresse",
+        "telephone":"Téléphone",
+        "website":"Site",
+        "contact_us":"Nous contacter",
+        "name":"Nom",
+        "subject":"Sujet",
+        "name_error":"Veuillez saisir votre nom",
+        "subject_error":"Veuillez saisir un sujet",
+        "mail_error":"Veuillez saisir une addresse mail valide",
+        "message_error":"Veuillez saisir votre message",
+        "checkbox_error":"Veuillez ne pas cocher la checkbox",
+        "placeholder_name":"Prénom et nom",
+        "placeholder_subject":"Sujet du message",
+        "send":"Envoyer"
     }
 }
