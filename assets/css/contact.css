@@ -8,10 +8,16 @@ p.contact_description {
 
 .contact_list_title_container {
 	position:relative;
-} 
+}
 
 #contact_list li {
-	margin-bottom: 10px
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+	#contact_list > li {
+		min-height:400px;
+	}
 }
 
 #contact_formulaire {

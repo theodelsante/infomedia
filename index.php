@@ -8,7 +8,6 @@ if (isset($_GET['page']) && $_GET['page'] != '') {
       exit();
     } else if ($_GET['page'] == 'sscat' && ((isset($_GET['details']) && $_GET['details'] != 'restaurants') || !isset($_GET['details']))) {
       require_once('errors.php');
-      echo '<h1>prout</h1>';
       exit();
     }
   } else {
