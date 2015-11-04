@@ -3,7 +3,9 @@
         <ul class="cat-menu-2">
             <li class="cat-menu">
                 <div class="vignette col-md-6 col-sm-12 img-menu">
-                    <img class="" src="./assets/img/sedeplacer.png" alt="">
+                    <a href="./?page=sscat&main=everyday&details=move">
+                        <img class="" src="./assets/img/sedeplacer.png" alt="">
+                    </a>
                     <h2>Se déplacer</h2>
                 </div>
                 <div class="col-md-6 col-sm-12 txt-menu">
@@ -14,7 +16,9 @@
             </li>
             <li class="cat-menu">
                 <div class="vignette col-md-6 col-sm-12 img-menu reverse">
-                    <img class="" src="./assets/img/restaurant.png" alt="">
+                    <a href="./?page=sscat&main=everyday&details=restaurants">
+                        <img class="" src="./assets/img/categorie/saigon-wok.jpg" alt="">
+                    </a>
                     <h2>Restauration / Bar</h2>
                 </div>
                 <div class="col-md-6 col-sm-12 txt-menu">
@@ -25,7 +29,9 @@
             </li>
             <li class="cat-menu">
                 <div class="vignette col-md-6 col-sm-12 img-menu">
-                    <img class="" src="./assets/img/commerces.png" alt="">
+                    <a href="./?page=sscat&main=everyday&details=shops">
+                        <img class="" src="./assets/img/categorie/pathe.jpg" alt="">
+                    </a>
                     <h2>Commerces</h2>
                 </div>
                 <div class="col-md-6 col-sm-12 txt-menu">
@@ -36,7 +42,9 @@
             </li>
             <li class="cat-menu">
                 <div class="vignette col-md-6 col-sm-12 img-menu reverse">
-                    <img class="" src="./assets/img/asso.png" alt="">
+                    <a href="./?page=sscat&main=everyday&details=associations">
+                        <img class="" src="./assets/img/categorie/association.jpg" alt="">
+                    </a>
                     <h2>Associations</h2>
                 </div>
                 <div class="col-md-6 col-sm-12 txt-menu">
@@ -47,7 +55,9 @@
             </li>
             <li class="cat-menu">
                 <div class="vignette col-md-6 col-sm-12 img-menu">
-                    <img class="" src="./assets/img/hotel.png" alt="">
+                    <a href="./?page=sscat&main=everyday&details=hotels">
+                        <img class="" src="./assets/img/hotel.png" alt="">
+                    </a>
                     <h2>Hôtel</h2>
                 </div>
                 <div class="col-md-6 col-sm-12 txt-menu">
