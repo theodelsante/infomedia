@@ -16,4 +16,18 @@ $(document).ready(function() {
       $( this ).addClass('is-checked');
     });
   });
+
+  $('.afficher_plus').click(function() {
+    $('.isotopesup').css('height', 'auto');
+    $(this).css('display', 'none');
+    $('#sp').css('display', 'block');
+  });
+
+  $('#sp').click(function() {
+    $(document.body).animate({
+       'scrollTop':0
+      }, 1000);
+  });
+
+
 });
