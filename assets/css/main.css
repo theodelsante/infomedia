@@ -6,6 +6,12 @@
   color: #5e5e5e;
 }
 
+button {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+}
+
 header{
   clear: both;
 }
@@ -581,8 +587,67 @@ footer #logograndlyon {
   font-size:75px;
   text-align: center;
 }
+
 .sidebarhor img{
   width:50%;
   height:auto;
   margin:0 25%;
+}
+
+
+.listgrid .grid-item {
+  position: relative;
+  float: left;
+  width: 150px;
+  height: 200px;
+  min-width: 32%;
+  margin: 5px;
+  background: #888;
+  color: #262524;
+  overflow: hidden;
+}
+
+.listgrid .grid-item--height2 {
+  position: relative;
+  float: left;
+  width: 150px;
+  height: 410px;
+  min-width: 32%;
+  margin: 5px;
+  background: #888;
+  color: #262524;
+  overflow: hidden;
+}
+
+.isotopesup{
+  height:630px;
+  overflow: hidden;
+}
+
+#afficher_plus h3{
+  text-align: center;
+}
+
+#up_button {
+  position: relative;
+  bottom: 150px;
+  left: 100px;
+  display:none;
+  float:right;
+  width:60px;
+  height:60px;
+  border-radius: 1000px;
+  color:#5E5E5E;
+  border:5px solid #5E5E5E;
+}
+
+#up_button i{
+  line-height: 50px;
+  text-align: center;
+  width:100%;
+  color:#5E5E5E;
+}
+
+#titrenews{
+  text-align: center;
 }

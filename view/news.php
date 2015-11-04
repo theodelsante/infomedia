@@ -17,7 +17,7 @@
                 organa fabricantur hydraulica, et lyrae ad speciem carpentorum ingentes tibiaeque 
                 et histrionici gestus instrumenta non levia.
             </p>
-            <a href="./" class="btn btn-primary" role="button">Retour a la liste des news</a>
+            <a href="./?page=listnews" class="btn btn-primary" role="button">Retour a la liste des news</a>
         </div>
     </div>
     <?php

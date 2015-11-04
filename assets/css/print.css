@@ -2,6 +2,11 @@
 	width: 100%;
 }
 
-#sidebar {
-	display: none;
+#sidebar,
+footer,
+.open_now,
+.close_now,
+.advise,
+#advise_button {
+	display: none !important;
 }
