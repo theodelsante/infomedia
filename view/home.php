@@ -58,11 +58,13 @@
 
     <div class="grid">
       <?php
-      echo '<a href="./?page=news">'.Display::zoomImage('Marché nocture de Valmy', './assets/img/news2.jpg', 'news').'</a>';
-      echo '<a href="./?page=news">'.Display::zoomImage('La fête des lumières s\'invite à Vaise', './assets/img/news2.jpg', 'event').'</a>';
-      echo '<a href="./?page=news">'.Display::zoomImage('Marché nocture de Valmy', './assets/img/news2.jpg', 'event').'</a>';
-      echo '<a href="./?page=news">'.Display::zoomImage('Marché nocture de Valmy', './assets/img/news1.jpg', 'event grid-item--height2').'</a>';
-      echo '<a href="./?page=news">'.Display::zoomImage('Rénovation de la cathédrale St Pierre', './assets/img/news2.jpg', 'news').'</a>';
+      for ($key=0; $key < 5; $key++) {
+        $class = '';
+        if ($key == 3) {
+          $class = ' grid-item--height2';
+        }
+        echo '<a href="./?page=news&id='.$key.'">'.Display::zoomImage($json['news'][$key]['title'], $json['news'][$key]['img'], $json['news'][$key]['type'].$class).'</a>';
+      }
       ?>
     </div>
   </div>
