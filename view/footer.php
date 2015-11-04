@@ -6,13 +6,13 @@
         <ul>
             <li><a href="./"><?php echo $json['nav']['home']; ?></a></li>
             <li>|</li>
-            <li><a href="./?page=viepratique"><?php echo $json['nav']['everyday']; ?></a></li>
+            <li><a href="./?page=category&id=everyday"><?php echo $json['nav']['everyday']; ?></a></li>
             <li>|</li>
-            <li><a href="./"><?php echo $json['nav']['leisures']; ?></a></li>
+            <li><a href="./?page=category&id=leisures"><?php echo $json['nav']['leisures']; ?></a></li>
             <li>|</li>
-            <li><a href="./"><?php echo $json['nav']['culture']; ?></a></li>
+            <li><a href="./?page=category&id=culture"><?php echo $json['nav']['culture']; ?></a></li>
             <li>|</li>
-            <li><a href="./?page=contact"><?php echo $json['nav']['useful_links']; ?></a></li>
+            <li><a href="./?page=contact"><?php echo $json['nav']['usefull_links']; ?></a></li>
             <li>|</li>
             <li><a href="./?page=legalnotice"><?php echo $json['nav']['legal_notice']; ?></a></li>
         </ul>
