@@ -6,11 +6,11 @@
         <ul>
             <li><a href="./"><?php echo $json['nav']['home']; ?></a></li>
             <li>|</li>
-            <li><a href="./?page=category&id=everyday"><?php echo $json['nav']['everyday']; ?></a></li>
+            <li><a href="./?page=category&main=everyday"><?php echo $json['nav']['everyday']; ?></a></li>
             <li>|</li>
-            <li><a href="./?page=category&id=leisures"><?php echo $json['nav']['leisures']; ?></a></li>
+            <li><a href="./?page=category&main=leisures"><?php echo $json['nav']['leisures']; ?></a></li>
             <li>|</li>
-            <li><a href="./?page=category&id=culture"><?php echo $json['nav']['culture']; ?></a></li>
+            <li><a href="./?page=category&main=culture"><?php echo $json['nav']['culture']; ?></a></li>
             <li>|</li>
             <li><a href="./?page=contact"><?php echo $json['nav']['usefull_links']; ?></a></li>
             <li>|</li>

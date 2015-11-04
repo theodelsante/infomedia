@@ -14,34 +14,34 @@
 				<ul class="nav navbar-nav">
 					<li id="home"><a href="./"><?php echo $json['nav']['home']; ?></a></li>
 					<li class="dropdown" id="everyday">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="./?page=viepratique"><?php echo $json['nav']['everyday']; ?></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="./?page=category&main=everyday"><?php echo $json['nav']['everyday']; ?></a>
 						<ul class="dropdown-menu">
-							<li><a href="./"><?php echo $json['nav']['move']; ?></a></li>
-							<li><a href="./?page=sscat"><?php echo $json['nav']['restaurants_bars']; ?></a></li>
-							<li><a href="./"><?php echo $json['nav']['shops']; ?></a></li>
-							<li><a href="./"><?php echo $json['nav']['associations']; ?></a></li>
-							<li><a href="./"><?php echo $json['nav']['hotels']; ?></a></li>
+							<li><a href="./?page=sscat&main=everyday&details=move"><?php echo $json['nav']['move']; ?></a></li>
+							<li><a href="./?page=sscat&main=everyday&details=restaurants"><?php echo $json['nav']['restaurants_bars']; ?></a></li>
+							<li><a href="./?page=sscat&main=everyday&details=shops"><?php echo $json['nav']['shops']; ?></a></li>
+							<li><a href="./?page=sscat&main=everyday&details=associations"><?php echo $json['nav']['associations']; ?></a></li>
+							<li><a href="./?page=sscat&main=everyday&details=hotels"><?php echo $json['nav']['hotels']; ?></a></li>
 						</ul>
 					</li>
 					<li class="dropdown" id="leisure">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="./"><?php echo $json['nav']['leisures']; ?></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="./?page=category&main=leisures"><?php echo $json['nav']['leisures']; ?></a>
 						<ul class="dropdown-menu">
-							<li><a href="./"><?php echo $json['nav']['parks']; ?></a></a></li>
-							<li><a href="./"><?php echo $json['nav']['sports']; ?></a></li>
-							<li><a href="./"><?php echo $json['nav']['cinemas']; ?></a></li>
-							<li><a href="./"><?php echo $json['nav']['theaters']; ?></a></li>
+							<li><a href="./?page=sscat&main=leisures&details=parks"><?php echo $json['nav']['parks']; ?></a></a></li>
+							<li><a href="./?page=sscat&main=leisures&details=sports"><?php echo $json['nav']['sports']; ?></a></li>
+							<li><a href="./?page=sscat&main=leisures&details=cinemas"><?php echo $json['nav']['cinemas']; ?></a></li>
+							<li><a href="./?page=sscat&main=leisures&details=theaters"><?php echo $json['nav']['theaters']; ?></a></li>
 						</ul>
 					</li>
 					<li class="dropdown" id="culture">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="./"><?php echo $json['nav']['culture']; ?></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="./?page=category&main=culture"><?php echo $json['nav']['culture']; ?></a>
 						<ul class="dropdown-menu">
-							<li><a href="./"><?php echo $json['nav']['museums']; ?></a></li>
-							<li><a href="./"><?php echo $json['nav']['historic_places']; ?></a></li>
-							<li><a href="./"><?php echo $json['nav']['exhibitions']; ?></a></li>
-							<li><a href="./"><?php echo $json['nav']['media_library']; ?></a></li>
+							<li><a href="./?page=sscat&main=culture&details=museums"><?php echo $json['nav']['museums']; ?></a></li>
+							<li><a href="./?page=sscat&main=culture&details=historic_places"><?php echo $json['nav']['historic_places']; ?></a></li>
+							<li><a href="./?page=sscat&main=culture&details=exhibitions"><?php echo $json['nav']['exhibitions']; ?></a></li>
+							<li><a href="./?page=sscat&main=culture&details=media_library"><?php echo $json['nav']['media_library']; ?></a></li>
 						</ul>
 					</li>
-					<li id="links"><a href="./?page=contact"><?php echo $json['nav']['useful_links']; ?></a></li>
+					<li id="links"><a href="./?page=contact"><?php echo $json['nav']['usefull_links']; ?></a></li>
 					<div id="other_lang"><a href="./?lang=<?php echo $json['nav']['lang_short']; if (isset($page) && $page != 'home') { echo '&page='.$page; }?>" class="hidden-xs"><?php echo $json['nav']['lang_short']; ?></a><a href="./?lang=<?php echo $json['nav']['lang_short']; if (isset($page) && $page != 'home') { echo '&page='.$page; }?>" class="hidden-sm hidden-md hidden-lg hidden-xl"><?php echo $json['nav']['lang_long']; ?></a></div>
 				</ul>
 			</div>
