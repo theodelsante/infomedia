@@ -1,10 +1,10 @@
 <link href="./assets/css/contact.css" type="text/css" rel="stylesheet">
 <div class="row">
 	<div id="content" class="col-md-9 col-sm-12">
-		<h2><?php echo $json['nav']['useful_links']; ?></h2>
+		<h2><?php echo $json['nav']['usefull_links']; ?></h2>
 		<ul id="contact_list">
 			<?php
-			foreach ($json['contact']['useful_links'] as $value) {
+			foreach ($json['contact']['usefull_links'] as $value) {
 				echo '
 			<li class="col-sm-6 col-xs-12">
 				'.Display::zoomImage($value['title'], $value['img']).'
@@ -16,11 +16,13 @@
 						</li>
 						<li>
 							<p><span>Téléphone : </span>'.$value['tel'].'</p>
-						</li>
-						<li>
+						</li>';
+						if (isset($value['mail'])) {
+							echo '<li>
 							<p><span>Mail : </span><a href="mailto:'.$value['mail'].'">'.$value['mail'].'</a></p>
-						</li>
-						<li>
+						</li>';
+						}
+						echo '<li>
 							<p><span>Site : </span><a href="'.$value['website'].'" target="_blank">'.$value['website'].'</a></p>
 						</li>
 					</ul>
