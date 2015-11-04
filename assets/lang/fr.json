@@ -40,8 +40,8 @@
         "networks":"Les réseaux"
     }, "contact":{
         "usefull_links":[{
-               "title":"Mairie",
-               "img":"./assets/img/usefull_links/mairie-lutile.jpg",
+               "title":"Mairie du 9ème",
+               "img":"./assets/img/usefull_links/mairie.jpg",
                "description":"La mairie de Vaise pourra vous renseigner sur les différents points administratifs.",
                "address":"6 Place du Marché, 69009 Lyon", 
                "tel":"06 40 67 58 46", 
@@ -49,26 +49,24 @@
                "website":"http://www.mairie9.lyon.fr/"
         }, {
                "title":"Gare de Vaise",
-               "img":"./assets/img/news2.jpg",
+               "img":"./assets/img/usefull_links/gare-de-vaise.jpg",
                "description":"Accès direct au quartier de Vaise via la train. Consulter les horaires sur le site de la SNCF ci-dessous.",
                "address":"2 Place de Paris 69009 Lyon", 
                "tel":"36 35",
                "website":"http://www.gares-sncf.com/fr/gare/frhcd/lyon-vaise"
         }, {
-               "title":"TCL à Vaise",
-               "img":"./assets/img/news2.jpg",
-               "description":"La mairie de Vaise pourra vous renseigner sur les différents points administratifs.",
-               "address":"6 Place du Marché, 69009 Lyon", 
-               "tel":"06 40 67 58 46", 
-               "mail":"mairie.vaise@gmail.com", 
-               "website":"http://www.mairie9.lyon.fr/"
+               "title":"TCL Vaise",
+               "img":"./assets/img/usefull_links/metro-valmy.jpg",
+               "description":"Se déplacer à Vaise avec les Transports en Commun Lyonnais",
+               "address":"2-4 Place du Paris, 69009 Lyon", 
+               "tel":"04 26 10 12 12",
+               "website":"http://www.tcl.fr/Pied-de-page/Nous-ecrire"
         }, {
-               "title":"Mairie",
-               "img":"./assets/img/news2.jpg",
-               "description":"La mairie de Vaise pourra vous renseigner sur les différents points administratifs.",
-               "address":"6 Place du Marché, 69009 Lyon", 
-               "tel":"06 40 67 58 46", 
-               "mail":"mairie.vaise@gmail.com", 
+               "title":"Médiathèque de Vaise",
+               "img":"./assets/img/usefull_links/mediatheque.jpg",
+               "description":"La médiathèque vous invite pour un moment de détente.",
+               "address":"Place Valmy, 69009 Lyon", 
+               "tel":"04 72 85 66 20", 
                "website":"http://www.mairie9.lyon.fr/"
         }],
         "address":"Adresse",
@@ -99,7 +97,7 @@
                "text":"L’installation numérique L.I.R (Livre In Room) est un dispositif conçu pour véritable immersion littéraire. Le livre est bien entendu au cœur de ce système. Il permet à la suite de la sélection d’un livre, de déclencher une séquence visuelle et sonore. Chaque visiteur repart alors avec une expérience unique de « lecture augmentée ». En accès libre et gratuit pour les amoureux de la lecture au Théâtre Nouvelle génération."
         }, {
                "title":"Micro Mondes",
-               "img":"./assets/img/theatre.jpg",
+               "img":"./assets/img/news/theatre.jpg",
                "text":"Micro Mondes propose pour sa 3ème édition, un festival d’arts immersifs centré sur les créations contemporaines. Micro Mondes regroupe des artistes de théâtre, des arts plastiques, de la danse, du cirque ou encore du multimédia. Ce festival vous entraine au cœur d’univers intimistes et sensoriels en regroupant images, sons, sensations tactiles ou encore poétiques. Cet évènement se déroulera à Vaise au Théâtre Nouvelle Génération / Centre Dramatique National de Lyon du 24 au 29 Novembre 2015"
         }, {
                "title":"Acrobates",
