@@ -1,22 +1,9 @@
 <div class="row">
     <div id="content" class="col-md-9 col-sm-12">
-        <img id="img" src="./assets/img/news2.jpg"/>
+        <img id="img" src="<?php echo $json['news'][$_GET['id']]['img']; ?>"/>
         <div id="text">
-            <h1>Ouverture d'un salon Jackie Tuning</h1>
-            <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae 
-                nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu 
-                fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor 
-                artium ludicrarum accitur et bybliothecis sepulcrorum ritu in perpetuum clausis 
-                organa fabricantur hydraulica, et lyrae ad speciem carpentorum ingentes tibiaeque 
-                et histrionici gestus instrumenta non levia.
-            </p>
-            <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae 
-                nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu 
-                fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor 
-                artium ludicrarum accitur et bybliothecis sepulcrorum ritu in perpetuum clausis 
-                organa fabricantur hydraulica, et lyrae ad speciem carpentorum ingentes tibiaeque 
-                et histrionici gestus instrumenta non levia.
-            </p>
+            <h1><?php echo $json['news'][$_GET['id']]['title']; ?></h1>
+            <p><?php echo $json['news'][$_GET['id']]['text']; ?></p>
             <a href="./?page=listnews" class="btn btn-primary" role="button">Retour a la liste des news</a>
         </div>
     </div>
