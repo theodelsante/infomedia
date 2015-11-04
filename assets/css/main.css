@@ -625,10 +625,12 @@ footer #logograndlyon {
 }
 
 #afficher_plus h3{
+  cursor: pointer;
   text-align: center;
 }
 
 #up_button {
+  cursor: pointer;
   position: relative;
   bottom: 150px;
   left: 100px;

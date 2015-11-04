@@ -10,3 +10,7 @@ footer,
 #advise_button {
 	display: none !important;
 }
+
+a[href]:after {
+	content: "" !important;
+}
