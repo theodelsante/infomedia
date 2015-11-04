@@ -17,7 +17,7 @@
         "historic_places":"Historic places",
         "exhibitions":"Exhibitions",
         "media_library":"Media library",
-        "useful_links":"Useful links",
+        "usefull_links":"Usefull links",
         "legal_notice":"Legal notice",
         "lang_short":"fr",
         "lang_long":"French"
@@ -39,7 +39,7 @@
         "events":"Events",
         "networks":"Networks"
     }, "contact":{
-        "useful_links":[{
+        "usefull_links":[{
                "title":"Town hall",
                "img":"./assets/img/news2.jpg",
                "description":"The city hall of Vaise can inform you about the various administrative points.",
