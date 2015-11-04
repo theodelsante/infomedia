@@ -3,6 +3,14 @@ $pages = array('home', 'listnews', 'news', 'category', 'sscat', 'contact', 'lega
 if (isset($_GET['page']) && $_GET['page'] != '') {
   if (in_array($_GET['page'], $pages)) {
     $page = $_GET['page'];
+    if ($_GET['page'] == 'category' && ((isset($_GET['main']) && $_GET['main'] != 'everyday') || !isset($_GET['main']))) {
+      require_once('errors.php');
+      exit();
+    } else if ($_GET['page'] == 'sscat' && ((isset($_GET['details']) && $_GET['details'] != 'restaurants') || !isset($_GET['details']))) {
+      require_once('errors.php');
+      echo '<h1>prout</h1>';
+      exit();
+    }
   } else {
     require_once('errors.php');
     exit();

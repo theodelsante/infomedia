@@ -1,5 +1,4 @@
 <?php
-
 $sscat[0] = Google::getPlaceDetails('ChIJAQAAAHTr9EcRZgFFzuySLWc', getBrowserLang());
 $sscat[0]['name'] = 'Cantabria';
 $sscat[0]['type'] = 'Restaurant et bar espagnol';
