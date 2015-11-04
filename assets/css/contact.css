@@ -16,7 +16,7 @@ p.contact_description {
 
 @media screen and (min-width: 768px) {
 	#contact_list > li {
-		min-height:400px;
+		min-height:410px;
 	}
 }
 
