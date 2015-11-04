@@ -160,7 +160,7 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 				}
 				if (isset($value['reviews'])) {
 					echo '</div>
-					<div class="col-xs-12"><button id="advise_button">Voir les avis</button></div>
+					<div class="col-xs-12"><button id="advise_button"><span>Voir les avis</span><span class="hide">Masquer les avis</span></button></div>
 					<div class="col-xs-12 advise">';
 					foreach ($value['reviews'] as $review) {
 						if (!isset($review['profile_photo_url'])) {
@@ -193,6 +193,8 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 
 		$(document).on('click', '#advise_button', function() {
 			$(this).parent().parent().find('.advise').toggleClass('deploy');
+			$(this).find('span:first-child').toggleClass('hide');
+			$(this).find('span:last-child').toggleClass('hide');
 		});
 	});
 	</script>
