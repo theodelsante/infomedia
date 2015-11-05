@@ -48,29 +48,26 @@
                "mail":"mairie.vaise@gmail.com", 
                "website":"http://www.mairie9.lyon.fr/"
         }, {
-               "title":"Town hall",
-               "img":"./assets/img/news2.jpg",
-               "description":"The city hall of Vaise can inform you about the various administrative points.",
-               "address":"6 Place du Marché, 69009 Lyon", 
-               "tel":"06 40 67 58 46", 
-               "mail":"mairie.vaise@gmail.com", 
-               "website":"http://www.mairie9.lyon.fr/"
+               "title":"Vaise's train station",
+               "img":"./assets/img/usefull_links/gare-de-vaise.jpg",
+               "description":"Direct access to Vaise quarter by train. Please consult schedule on SNCF website below.",
+               "address":"Place de Paris, 69009 Lyon", 
+               "tel":"36 35",
+               "website":"http://www.gares-sncf.com/fr/gare/frhcd/lyon-vaise"
         }, {
-               "title":"Town hall",
-               "img":"./assets/img/news2.jpg",
-               "description":"The city hall of Vaise can inform you about the various administrative points.",
-               "address":"6 Place du Marché, 69009 Lyon", 
-               "tel":"06 40 67 58 46", 
-               "mail":"mairie.vaise@gmail.com", 
-               "website":"http://www.mairie9.lyon.fr/"
+               "title":"TCL Vaise",
+               "img":"./assets/img/usefull_links/metro-valmy.jpg",
+               "description":"Move in Vaise by subway, with the public transportation of Lyon.",
+               "address":"Place du Paris, 69009 Lyon", 
+               "tel":"04 26 10 12 12",
+               "website":"http://www.tcl.fr/en"
         }, {
-               "title":"Town hall",
-               "img":"./assets/img/news2.jpg",
-               "description":"The city hall of Vaise can inform you about the various administrative points.",
-               "address":"6 Place du Marché, 69009 Lyon", 
-               "tel":"06 40 67 58 46", 
-               "mail":"mairie.vaise@gmail.com", 
-               "website":"http://www.mairie9.lyon.fr/"
+               "title":"Vaise's library",
+               "img":"./assets/img/usefull_links/mediatheque.jpg",
+               "description":"The library offers you a relaxation moment.",
+               "address":"Place Valmy, 69009 Lyon", 
+               "tel":"04 72 85 66 20", 
+               "website":"https://www.bm-lyon.fr/15-bibliotheques-et-un-bibliobus/mediatheque-de-vaise/"
         }],
         "address":"Address",
         "telephone":"Telephone",
@@ -82,9 +79,34 @@
         "subject_error":"Please enter your subject",
         "mail_error":"Please enter an e-mail valid address",
         "message_error":"Please enter your message",
-        "checkbox_error":"Please not mark the checkbox",
+        "checkbox_error":"Please not mark the box",
         "placeholder_name":"First and last name",
         "placeholder_subject":"Message subject",
         "send":"Send"
-    }
+    }, "news":[{
+               "title":"La Halte inauguration",
+               "img":"./assets/img/clocher.jpg",
+               "type":"news",
+               "text":"Born with the association of the Annonciation's church to create a social link between inhabitants from Vaise quarter, la Halte oppened on October 10th 2015. This space is open for everyone and has to be sociable. It's the location of « good living together » which favorisate meetings with a drink, a meal, a workshop on a thematic … A unique experience to not miss at any pretext. Inhabitant of Vaise quarter or simple visitor, pass by !"
+        }, {
+               "title":"Convergence Vélo 2015",
+               "img":"./assets/img/news2.jpg",
+               "type":"event",
+               "text":"For his 4th edition, the Convergence Vélo (bicycle event) organize to all bikers an event on Sunday September 20th 2016, place Valmy à 14h. Discover or discover again the 9th district as you never saw it. It's also the occasion for kids, teens and parents to share a convivial moment during this bycicle event. The path leads you to place Valmy crossing the Auditorium and ending in the great Parc des Berges."
+        }, {
+               "title":"L.I.R (Book In Room)",
+               "img":"./assets/img/news2.jpg",
+               "type":"news",
+               "text":"The numeric installation L.I.R (Book In Room) is a place made to provide authentic literary immersion. Books are in the heart of this system. It permits after a book selection, to start a visual and sonorous sequence. Each visitors leave with a unique experience of « augmented reading ». In free access for reading lovers at Théâtre Nouvelle génération."
+        }, {
+               "title":"Micro Mondes",
+               "img":"./assets/img/news/theatre.jpg",
+               "type":"event",
+               "text":"Micro Mondes (Micro World) propose for his 3rd edition, an immersive art festival focused on contemporary creations. Micro Mondes has theater, plastic art, danse, circus or multimedia artists. This festival leads you in the heart of intimate and sensorial univers by grouping images, sounds, tactils or poetics sensations. This event will be at Vaise : Théâtre Nouvelle Génération / Centre Dramatique National de Lyon from 24th to 29th of November 2015"
+        }, {
+               "title":"Acrobats",
+               "img":"./assets/img/news2.jpg",
+               "type":"event",
+               "text":"Acrobats is a show focused on the life, the friendship and tenderness. Both actors tells a long and tumultuous trip to the adult age. This show mixes death, life and gorgeous landscapes. This public demonstration is possible with the interprétation of two acrobats and dancing actors. Stéphane Ricordel and Olivier Meyrou will give their representations at the Théâtre Nouvelle Génération on Friday September 25th until Sunday September 27th at night, after 8:00PM."
+        }]
 }
