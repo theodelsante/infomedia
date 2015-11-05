@@ -84,16 +84,17 @@ ul {
 #menu #culture > ul a,
 #menu #leisure > ul a,
 #menu #everyday > ul a {
-  transition: all .2s linear;
+  transition: all .2s linear; /* Change li background color */
 }
 
 #leisure > a, #culture > a, #everyday > a {
   z-index: 10000;
 }
 
+/* Menu animation */
 #menu li > ul {
-  -webkit-animation: movemenu .2s linear;
-  animation: movemenu .2s linear;
+  -webkit-animation: movemenu .2s ease-in-out alternate;
+  animation: movemenu .2s ease-in-out alternate;
 }
 
 /* Chrome, Safari, Opera */
@@ -620,8 +621,8 @@ footer #logograndlyon {
   overflow: hidden;
 }
 
-.isotopesup{
-  height:630px;
+#isotopesup{
+  height: 630px;
   overflow: hidden;
 }
 
@@ -633,7 +634,7 @@ footer #logograndlyon {
 #up_button {
   cursor: pointer;
   position: relative;
-  bottom: 150px;
+  bottom: 100px;
   left: 100px;
   display:none;
   float:right;
@@ -645,7 +646,7 @@ footer #logograndlyon {
 }
 
 #up_button i{
-  line-height: 50px;
+  line-height: 45px;
   text-align: center;
   width:100%;
   color:#5E5E5E;
