@@ -1,7 +1,7 @@
 <div class="row conteneur">
-  <div class="col-md-12 col-sm-12" id="content">
-    <div class="col-md-12" id="titrenews"><h2>NEWS</h2></div>
-    <div class="col-md-12" id="isotopesup">
+  <div class="col-xs-12" id="content">
+    <div id="titrenews"><h2>NEWS</h2></div>
+    <div id="isotopesup">
       <div class="grid listgrid">
         <?php
         for ($key=0; $key < 5; $key++) {
