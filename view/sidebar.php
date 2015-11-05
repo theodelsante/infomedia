@@ -3,7 +3,7 @@
     <?php
     if (isset($page) && $page == 'news') {
       echo '<h3>'.$json['sidebar']['last_news'].'</h3>
-      <a href="./?page=news">'.Display::zoomImage($json['news'][0]['title'], $json['news'][0]['img']).'</a>';
+      <a href="./?page=news&id=0">'.Display::zoomImage($json['news'][0]['title'], $json['news'][0]['img']).'</a>';
     } else {
       echo '<h3>'.$json['sidebar']['mayor_word'].'</h3>
       <img id="mayor_picture" src="./assets/img/maire.png" alt="Maire du 9ème arrondissement"/>

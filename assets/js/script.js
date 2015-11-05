@@ -18,7 +18,7 @@ $(document).ready(function() {
   });
 
   $('#afficher_plus').click(function() {
-    $('.isotopesup').css('height', 'auto');
+    $('#isotopesup').css('height', 'auto');
     $(this).css('display', 'none');
     $('#up_button').css('display', 'block');
   });
