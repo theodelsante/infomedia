@@ -9,6 +9,9 @@ if (isset($_GET['page']) && $_GET['page'] != '') {
     } else if ($_GET['page'] == 'sscat' && ((isset($_GET['details']) && $_GET['details'] != 'restaurants') || !isset($_GET['details']))) {
       require_once('errors.php');
       exit();
+    } else if ($_GET['page'] == 'news' && isset($_GET['id']) && ($_GET['id'] < 0  || $_GET['id'] > 4)) {
+      require_once('errors.php');
+      exit();
     }
   } else {
     require_once('errors.php');
