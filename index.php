@@ -1,5 +1,5 @@
 <?php
-$pages = array('home', 'listnews', 'news', 'category', 'sscat', 'contact', 'legalnotice');
+$pages = array('home', 'listnews', 'news', 'category', 'sscat', 'usefull_links', 'legalnotice');
 if (isset($_GET['page']) && $_GET['page'] != '') {
   if (in_array($_GET['page'], $pages)) {
     $page = $_GET['page'];
@@ -10,7 +10,6 @@ if (isset($_GET['page']) && $_GET['page'] != '') {
       require_once('errors.php');
       exit();
     } else if ($_GET['page'] == 'news' && isset($_GET['id']) && ($_GET['id'] < 0  || $_GET['id'] > 4)) {
-      $id = intval($_GET['id']);
       require_once('errors.php');
       exit();
     }
@@ -28,7 +27,7 @@ require_once('controller/controller.php');
 ?>
 <html lang="<?php echo $_SESSION['lang']; ?>">
 <head>
-	<title>Accueil | <?php echo SITE_NAME; ?></title>
+	<title><?php if(isset($_GET['main'])) {echo $json['nav'][$_GET['main']];} else if(isset($_GET['page']) && $_GET['page'] == 'news' && isset($_GET['id'])) {echo $json['news'][$_GET['id']]['title'];} else {echo $json['nav'][$page];} echo ' | '.SITE_NAME; ?></title>
 	<meta name="robots" content="all"/>
 	<meta name="author" content="<?php echo AUTHOR; ?>"/>
 	<meta name="description" content=""/>

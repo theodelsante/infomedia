@@ -112,5 +112,8 @@
                "img":"./assets/img/news2.jpg",
                "type":"event",
                "text":"Acrobates est un spectacle centré sur la vie, l’amitié et la tendresse. Les deux acteurs raconte un long et tumultueux voyage vers l’âge adulte. Ce spectacle mêle le deuil, la vie et les paysages oniriques. Ces derniers sont exposés au public grâce à l’interprétation des deux acteurs acrobates et danseurs. Stéphane Ricordel et Olivier Meyrou donnerons leurs représentations au Théâtre Nouvelle Génération du Vendredi 25 Septembre jusqu’au Dimanche 27 Septembre le soir à 20h."
-        }]
+        }], "error":{
+          "label":"Error",
+          "404":"<h1>Vous êtes perdu ?!<br>Cette page semble ne pas exister.<br><a href=\"./\">Revenir à l'accueil</a></h1>"
+        }
 }

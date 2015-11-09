@@ -1,7 +1,7 @@
 <?php
 require_once('config.php');
 require_once('controller/controller.php');
-$error = 'Erreur';
+$error = $json['error']['label'];
 if (isset($_GET['error']) && $_GET['error'] != '') {
 	$error .= ' '.$_GET['error'];
 } else if (isset($_SERVER['PHP_SELF']) && strpos($_SERVER['PHP_SELF'], 'index.php')) {
@@ -47,12 +47,8 @@ if (isset($_GET['error']) && $_GET['error'] != '') {
 				<?php
 
 				if (strpos($error, '404') !== false) {
-					echo '<img src="./assets/img/map_404.png">
-					<div class="text_404"><h1>Vous êtes perdu ?!<br>
-					Cette page semble ne pas exister.<br>
-					<a href="./">Revenir à l\'accueil</a>
-					</h1>
-					</div>';
+					echo '<img src="./assets/img/map_404.png"/>
+					<div class="text_404">'.$json['error']['404'].'</div>';
 				} else {
 					echo '<div class="col-md-9 col-sm-12" id="left"><h1>'.$error.'</h1></div>';
 					require_once('view/sidebar.php');
