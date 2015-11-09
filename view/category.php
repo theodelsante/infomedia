@@ -4,7 +4,7 @@
             <li class="cat-menu">
                 <div class="vignette col-md-6 col-sm-12 img-menu">
                     <a href="./?page=sscat&main=everyday&details=move">
-                        <img class="" src="./assets/img/sedeplacer.png" alt="">
+                        <img src="./assets/img/category/sedeplacer.png" alt="">
                     </a>
                     <h2>Se déplacer</h2>
                 </div>
@@ -17,7 +17,7 @@
             <li class="cat-menu">
                 <div class="vignette col-md-6 col-sm-12 img-menu reverse">
                     <a href="./?page=sscat&main=everyday&details=restaurants">
-                        <img class="" src="./assets/img/categorie/saigon-wok.jpg" alt="">
+                        <img src="./assets/img/restaurants/Saigon_Wok.JPG" alt="">
                     </a>
                     <h2>Restauration / Bar</h2>
                 </div>
@@ -30,7 +30,7 @@
             <li class="cat-menu">
                 <div class="vignette col-md-6 col-sm-12 img-menu">
                     <a href="./?page=sscat&main=everyday&details=shops">
-                        <img class="" src="./assets/img/categorie/pathe.jpg" alt="">
+                        <img src="./assets/img/category/cinema.jpg" alt="">
                     </a>
                     <h2>Commerces</h2>
                 </div>
@@ -43,7 +43,7 @@
             <li class="cat-menu">
                 <div class="vignette col-md-6 col-sm-12 img-menu reverse">
                     <a href="./?page=sscat&main=everyday&details=associations">
-                        <img class="" src="./assets/img/categorie/association.jpg" alt="">
+                        <img src="./assets/img/category/association.jpg" alt="">
                     </a>
                     <h2>Associations</h2>
                 </div>
@@ -56,7 +56,7 @@
             <li class="cat-menu">
                 <div class="vignette col-md-6 col-sm-12 img-menu">
                     <a href="./?page=sscat&main=everyday&details=hotels">
-                        <img class="" src="./assets/img/hotel.png" alt="">
+                        <img src="./assets/img/category/hotel.png" alt="">
                     </a>
                     <h2>Hôtel</h2>
                 </div>

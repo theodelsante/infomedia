@@ -12,9 +12,9 @@
             <li>|</li>
             <li><a href="./?page=category&main=culture"><?php echo $json['nav']['culture']; ?></a></li>
             <li>|</li>
-            <li><a href="./?page=contact"><?php echo $json['nav']['usefull_links']; ?></a></li>
+            <li><a href="./?page=usefull_links"><?php echo $json['nav']['usefull_links']; ?></a></li>
             <li>|</li>
-            <li><a href="./?page=legalnotice"><?php echo $json['nav']['legal_notice']; ?></a></li>
+            <li><a href="./?page=legal_notice"><?php echo $json['nav']['legal_notice']; ?></a></li>
         </ul>
     </div>
     <div class="col-md-2 hidden-sm hidden-xs">

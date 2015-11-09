@@ -37,7 +37,8 @@
         "all":"ALL",
         "news":"News",
         "events":"Events",
-        "networks":"Networks"
+        "networks":"Networks",
+        "more_details":"More details"
     }, "contact":{
         "usefull_links":[{
                "title":"Town hall",
