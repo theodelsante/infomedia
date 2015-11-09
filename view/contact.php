@@ -23,7 +23,7 @@
 						</li>';
 						}
 						echo '<li>
-							<p><span>Site : </span><a href="'.$value['website'].'" target="_blank">'.$value['website'].'</a></p>
+							<p><span>Site : </span><a href="'.$value['website'].'" target="_blank">'.$value['website-display'].'</a></p>
 						</li>
 					</ul>
 				</div>
