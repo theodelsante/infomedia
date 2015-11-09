@@ -10,6 +10,7 @@ if (isset($_GET['page']) && $_GET['page'] != '') {
       require_once('errors.php');
       exit();
     } else if ($_GET['page'] == 'news' && isset($_GET['id']) && ($_GET['id'] < 0  || $_GET['id'] > 4)) {
+      $id = intval($_GET['id']);
       require_once('errors.php');
       exit();
     }

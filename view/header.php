@@ -42,7 +42,7 @@
 						</ul>
 					</li>
 					<li id="links"><a href="./?page=contact"><?php echo $json['nav']['usefull_links']; ?></a></li>
-					<div id="other_lang"><a href="./?lang=<?php echo $json['nav']['lang_short']; if (isset($page) && $page != 'home') { echo '&page='.$page; }?>" class="hidden-xs"><?php echo $json['nav']['lang_short']; ?></a><a href="./?lang=<?php echo $json['nav']['lang_short']; if (isset($page) && $page != 'home') { echo '&page='.$page; }?>" class="hidden-sm hidden-md hidden-lg hidden-xl"><?php echo $json['nav']['lang_long']; ?></a></div>
+					<div id="other_lang"><a href="./?lang=<?php echo $json['nav']['lang_short']; if (isset($page) && $page != 'home') { echo '&page='.$page; }  if (isset($page) && $page == 'news') { echo '&id='.$_GET['id']; }?>" class="hidden-xs"><?php echo $json['nav']['lang_short']; ?></a><a href="./?lang=<?php echo $json['nav']['lang_short']; if (isset($page) && $page != 'home') { echo '&page='.$page; }?>" class="hidden-sm hidden-md hidden-lg hidden-xl"><?php echo $json['nav']['lang_long']; ?></a></div>
 				</ul>
 			</div>
 		</div>
