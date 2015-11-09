@@ -113,7 +113,7 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 			foreach ($sscat as $key => $value) {
 				echo '<li id="list-item" data-id="'.$key.'">';
 				if (isset($value['img']) && $value['img'] != null) {
-					echo '<img class="col-sm-3" src="./assets/img/'.$value['img'].'"/>';
+					echo '<img class="col-sm-3" src="./assets/img/restaurants/'.$value['img'].'"/>';
 				} else if (isset($value['icon']) && $value['icon'] != '') {
 					echo '<img class="col-sm-3" src="'.$value['icon'].'" id="no_pict"/>';
 				}

@@ -526,6 +526,7 @@ footer #logograndlyon {
 /* Pagemenu */
 .cat-menu{
   margin-bottom:10px;
+  overflow: hidden;
 }
 
 .cat-menu img{
@@ -551,15 +552,11 @@ footer #logograndlyon {
   position:absolute;
   width:100%;
   text-align: center;
-  bottom: 40%;
+  bottom: 38%;
   color:white;
   text-transform: uppercase;
   font-weight: bold;
   background-color: rgba(0,0,0,0.3);
-}
-
-.cat-menu, .img-menu{
-  min-height:250px;
 }
 
 @media screen and (max-width: 992px){
