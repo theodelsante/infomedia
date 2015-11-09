@@ -46,28 +46,32 @@
                "address":"6 Place du Marché, 69009 Lyon", 
                "tel":"06 40 67 58 46", 
                "mail":"mairie.vaise@gmail.com", 
-               "website":"http://www.mairie9.lyon.fr/"
+               "website":"http://www.mairie9.lyon.fr/",
+               "website-display":"Town hall"
         }, {
                "title":"Vaise's train station",
                "img":"./assets/img/usefull_links/gare-de-vaise.jpg",
                "description":"Direct access to Vaise quarter by train. Please consult schedule on SNCF website below.",
                "address":"Place de Paris, 69009 Lyon", 
                "tel":"36 35",
-               "website":"http://www.gares-sncf.com/fr/gare/frhcd/lyon-vaise"
+               "website":"http://www.gares-sncf.com/fr/gare/frhcd/lyon-vaise",
+               "website-display":"Vaise's train station"
         }, {
                "title":"TCL Vaise",
                "img":"./assets/img/usefull_links/metro-valmy.jpg",
                "description":"Move in Vaise by subway, with the public transportation of Lyon.",
                "address":"Place du Paris, 69009 Lyon", 
                "tel":"04 26 10 12 12",
-               "website":"http://www.tcl.fr/en"
+               "website":"http://www.tcl.fr/en",
+               "website-display":"public transportation of Lyon"
         }, {
                "title":"Vaise's library",
                "img":"./assets/img/usefull_links/mediatheque.jpg",
                "description":"The library offers you a relaxation moment.",
                "address":"Place Valmy, 69009 Lyon", 
                "tel":"04 72 85 66 20", 
-               "website":"https://www.bm-lyon.fr/15-bibliotheques-et-un-bibliobus/mediatheque-de-vaise/"
+               "website":"https://www.bm-lyon.fr/15-bibliotheques-et-un-bibliobus/mediatheque-de-vaise/",
+               "website-display":"Vaise's library"
         }],
         "address":"Address",
         "telephone":"Telephone",
@@ -108,5 +112,8 @@
                "img":"./assets/img/news2.jpg",
                "type":"event",
                "text":"Acrobats is a show focused on the life, the friendship and tenderness. Both actors tells a long and tumultuous trip to the adult age. This show mixes death, life and gorgeous landscapes. This public demonstration is possible with the interprétation of two acrobats and dancing actors. Stéphane Ricordel and Olivier Meyrou will give their representations at the Théâtre Nouvelle Génération on Friday September 25th until Sunday September 27th at night, after 8:00PM."
-        }]
+        }], "error":{
+          "label":"Error",
+          "404":"<h1>Are you lost ?!<br>This webpage seems to not exist.<br><a href=\"./\">Back to homepage</a></h1>"
+        }
 }
