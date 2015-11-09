@@ -46,28 +46,32 @@
                "address":"6 Place du Marché, 69009 Lyon", 
                "tel":"06 40 67 58 46", 
                "mail":"mairie.vaise@gmail.com", 
-               "website":"http://www.mairie9.lyon.fr/"
+               "website":"http://www.mairie9.lyon.fr/",
+               "website-display":"Mairie du 9ème"
         }, {
                "title":"Gare de Vaise",
                "img":"./assets/img/usefull_links/gare-de-vaise.jpg",
                "description":"Accès direct au quartier de Vaise via le train. Consulter les horaires sur le site de la SNCF ci-dessous.",
                "address":"2 Place de Paris, 69009 Lyon", 
                "tel":"36 35",
-               "website":"http://www.gares-sncf.com/fr/gare/frhcd/lyon-vaise"
+               "website":"http://www.gares-sncf.com/fr/gare/frhcd/lyon-vaise",
+               "website-display":"Gare de Vaise"
         }, {
                "title":"TCL Vaise",
                "img":"./assets/img/usefull_links/metro-valmy.jpg",
                "description":"Se déplacer à Vaise avec les Transports en Commun Lyonnais",
                "address":"2-4 Place du Paris, 69009 Lyon", 
                "tel":"04 26 10 12 12",
-               "website":"http://www.tcl.fr/"
+               "website":"http://www.tcl.fr/",
+               "website-display":"Transport en Commun Lyonnais"
         }, {
                "title":"Médiathèque de Vaise",
                "img":"./assets/img/usefull_links/mediatheque.jpg",
                "description":"La médiathèque vous invite pour un moment de détente.",
                "address":"Place Valmy, 69009 Lyon", 
                "tel":"04 72 85 66 20", 
-               "website":"https://www.bm-lyon.fr/15-bibliotheques-et-un-bibliobus/mediatheque-de-vaise/"
+               "website":"https://www.bm-lyon.fr/15-bibliotheques-et-un-bibliobus/mediatheque-de-vaise/",
+               "website-display":"Médiathèque de Vaise"
         }],
         "address":"Adresse",
         "telephone":"Téléphone",
@@ -85,7 +89,7 @@
         "send":"Envoyer"
     }, "news":[{
                "title":"Inauguration de la Halte",
-               "img":"./assets/img/news/clocher.jpg",
+               "img":"./assets/img/clocher.jpg",
                "type":"news",
                "text":"Née de la volonté de l’église de l’Annonciation de crée du lien social entre les habitants du quartier de Vaise, la Halte a ouvert ces portes le 10 Octobre 2015. Cet espace est ouvert à tous et se veut convivial. C’est le lieu du « bien vivre ensemble » qui favorise les rencontres autour d’un verre, d’un repas, d’un atelier sur une thématique … Une expérience unique à ne louper sous aucun prétexte. Habitant du quartier de Vaise ou simple visiteur, arrêtez-vous !"
         }, {
