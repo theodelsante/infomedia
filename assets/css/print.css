@@ -1,3 +1,7 @@
+a[href]:after {
+	content: "" !important;
+}
+
 #content {
 	width: 100%;
 }
@@ -21,6 +25,9 @@ footer,
 	display: block !important;
 }
 
-a[href]:after {
-	content: "" !important;
+#contact_list > li {
+	float: none;
+	display: inline-block;
+	width: 49.8%;
+	vertical-align: top;
 }
