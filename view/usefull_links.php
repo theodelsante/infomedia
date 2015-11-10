@@ -32,7 +32,7 @@
 			?>
 		</ul>
 
-		<div class="contact_formulaire">
+		<div id="contact_formulaire">
 			<h2><?php echo $json['contact']['contact_us']; ?></h2>
 			<form class="form-horizontal" role="form" method="post" action="./controller/contact.php">
 				<div class="form-group">

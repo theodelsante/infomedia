@@ -18,7 +18,7 @@
         <div class="carousel-caption">
           <h1>'.$json['news'][$key]['title'].'</h1>
           <!-- <p>'.$json['news'][$key]['text'].'</p> -->
-          <p><a class="btn btn-lg btn-primary" href="./?page=news&id='.$key.'" role="button">'.$json['home']['more_details'].'</a></p>
+          <p><a class="btn btn-lg btn-primary" href="./?page=news&id='.$key.'" role="button">'.$json['more_details'].'</a></p>
         </div>
       </div>
     </div>';

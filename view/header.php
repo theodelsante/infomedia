@@ -17,7 +17,7 @@
 						<a class="dropdown-toggle" data-toggle="dropdown" href="./?page=category&main=everyday"><?php echo $json['nav']['everyday']; ?></a>
 						<ul class="dropdown-menu">
 							<li><a href="./?page=sscat&main=everyday&details=move"><?php echo $json['nav']['move']; ?></a></li>
-							<li><a href="./?page=sscat&main=everyday&details=restaurants"><?php echo $json['nav']['restaurants_bars']; ?></a></li>
+							<li><a href="./?page=sscat&main=everyday&details=restaurants_bars"><?php echo $json['nav']['restaurants_bars']; ?></a></li>
 							<li><a href="./?page=sscat&main=everyday&details=shops"><?php echo $json['nav']['shops']; ?></a></li>
 							<li><a href="./?page=sscat&main=everyday&details=associations"><?php echo $json['nav']['associations']; ?></a></li>
 							<li><a href="./?page=sscat&main=everyday&details=hotels"><?php echo $json['nav']['hotels']; ?></a></li>
@@ -42,7 +42,7 @@
 						</ul>
 					</li>
 					<li id="links"><a href="./?page=usefull_links"><?php echo $json['nav']['usefull_links']; ?></a></li>
-					<div id="other_lang"><a href="./?lang=<?php echo $json['nav']['lang_short']; if (isset($page) && $page != 'home') { echo '&page='.$page; }  if (isset($page) && $page == 'news') { echo '&id='.$_GET['id']; }?>" class="hidden-xs"><?php echo $json['nav']['lang_short']; ?></a><a href="./?lang=<?php echo $json['nav']['lang_short']; if (isset($page) && $page != 'home') { echo '&page='.$page; }?>" class="hidden-sm hidden-md hidden-lg hidden-xl"><?php echo $json['nav']['lang_long']; ?></a></div>
+					<div id="other_lang"><a href="./?lang=<?php echo $json['nav']['lang_short']; if (isset($page) && $page != 'home') { echo '&page='.$page; } if (isset($page) && $page == 'news' && isset($_GET['id'])) { echo '&id='.$_GET['id']; } else if (isset($page) && $page == 'category' && isset($_GET['main'])) { echo '&main='.$_GET['main']; } else if (isset($page) && $page == 'sscat' && isset($_GET['details'])) { echo '&details='.$_GET['details']; }?>"><span class="hidden-xs"><?php echo $json['nav']['lang_short']; ?></span><span class="hidden-sm hidden-md hidden-lg hidden-xl"><?php echo $json['nav']['lang_long']; ?></span></a></div>
 				</ul>
 			</div>
 		</div>

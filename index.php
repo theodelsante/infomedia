@@ -6,7 +6,7 @@ if (isset($_GET['page']) && $_GET['page'] != '') {
     if ($_GET['page'] == 'category' && ((isset($_GET['main']) && $_GET['main'] != 'everyday') || !isset($_GET['main']))) {
       require_once('errors.php');
       exit();
-    } else if ($_GET['page'] == 'sscat' && ((isset($_GET['details']) && $_GET['details'] != 'restaurants') || !isset($_GET['details']))) {
+    } else if ($_GET['page'] == 'sscat' && ((isset($_GET['details']) && $_GET['details'] != 'restaurants_bars') || !isset($_GET['details']))) {
       require_once('errors.php');
       exit();
     } else if ($_GET['page'] == 'news' && isset($_GET['id']) && ($_GET['id'] < 0  || $_GET['id'] > 4)) {
@@ -27,7 +27,7 @@ require_once('controller/controller.php');
 ?>
 <html lang="<?php echo $_SESSION['lang']; ?>">
 <head>
-	<title><?php if(isset($_GET['main'])) {echo $json['nav'][$_GET['main']];} else if(isset($_GET['page']) && $_GET['page'] == 'news' && isset($_GET['id'])) {echo $json['news'][$_GET['id']]['title'];} else {echo $json['nav'][$page];} echo ' | '.SITE_NAME; ?></title>
+	<title><?php if(isset($_GET['page']) && $_GET['page'] == 'sscat' && isset($_GET['details'])) {echo $json['nav'][$_GET['details']];} else if(isset($_GET['main'])) {echo $json['nav'][$_GET['main']];} else if(isset($_GET['page']) && $_GET['page'] == 'news' && isset($_GET['id'])) {echo $json['news'][$_GET['id']]['title'];} else {echo $json['nav'][$page];} echo ' | '.SITE_NAME; ?></title>
 	<meta name="robots" content="all"/>
 	<meta name="author" content="<?php echo AUTHOR; ?>"/>
 	<meta name="description" content=""/>

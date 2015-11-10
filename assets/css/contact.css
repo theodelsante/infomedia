@@ -1,4 +1,4 @@
-p.contact_description {
+.contact_description {
 	text-align:center;
 }
 
@@ -16,12 +16,11 @@ p.contact_description {
 
 @media screen and (min-width: 768px) {
 	#contact_list > li {
-		min-height:410px;
+		min-height: 410px !important;
 	}
 }
 
 #contact_formulaire {
-	margin-top: 20px;
 	clear: both;
 }
 
@@ -33,6 +32,6 @@ p.contact_description {
 	margin-left:20px;
 }
 
-.contact_formulaire .alert_message {
+#contact_formulaire .alert_message {
 	color: red;
 }

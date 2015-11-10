@@ -19,9 +19,14 @@
         "media_library":"Media library",
         "usefull_links":"Usefull links",
         "legal_notice":"Legal notice",
+        "listnews":"All news",
         "lang_short":"fr",
         "lang_long":"French"
-    }, "sidebar": {
+    },
+      "more_details":"More details",
+      "back_to_news_list":"Back to news list",
+      "display_more":"Display more",
+      "sidebar": {
         "mayor_word":"Mayor word",
         "last_news":"Last news",
         "weather": {
@@ -37,12 +42,11 @@
         "all":"ALL",
         "news":"News",
         "events":"Events",
-        "networks":"Networks",
-        "more_details":"More details"
+        "networks":"Networks"
     }, "contact":{
         "usefull_links":[{
                "title":"Town hall",
-               "img":"./assets/img/news2.jpg",
+               "img":"./assets/img/usefull_links/mairie.jpg",
                "description":"The city hall of Vaise can inform you about the various administrative points.",
                "address":"6 Place du Marché, 69009 Lyon", 
                "tel":"06 40 67 58 46", 
