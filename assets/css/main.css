@@ -34,7 +34,7 @@ ul {
   width: 79%;
   float: right;
   margin-top: 40px;
-  z-index: 1;
+  z-index: 4;
 }
 
 #menu img {
@@ -182,7 +182,7 @@ ul {
 }
 
 #myCarousel * {
-  color: white;
+  color: white !important;
 }
 
 .carousel img {
@@ -252,6 +252,13 @@ ul {
   overflow: hidden;
 }
 
+.grid-item img {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: 0;
+}
+
 .grid-item .zoom_pict {
   position: absolute;
   height: 100%;
@@ -266,7 +273,7 @@ ul {
   moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-  z-index: 0;
+  z-index: 1;
 }
 
 .grid-item:hover .zoom_pict {
@@ -289,6 +296,7 @@ ul {
   background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
   background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+  z-index: 2;
 }
 
 .grid-item .title {
@@ -297,7 +305,7 @@ ul {
   left: 10px;
   right: 10px;
   margin: 0px;
-  color: white;
+  color: white !important;
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
@@ -420,7 +428,6 @@ footer a:hover {
 
 footer li {
   display: inline-block;
-  list-style: none;
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
@@ -530,7 +537,7 @@ footer #logograndlyon {
 }
 
 .cat-menu img{
-  text-align: center
+  text-align: center;
 }
 
 .cat-menu-2:first-child{
@@ -553,7 +560,7 @@ footer #logograndlyon {
   width:100%;
   text-align: center;
   bottom: 38%;
-  color:white;
+  color:white !important;
   text-transform: uppercase;
   font-weight: bold;
   background-color: rgba(0,0,0,0.3);
@@ -575,6 +582,11 @@ footer #logograndlyon {
   .reverse{
     float: right;
   }
+}
+
+#texte_mentions img {
+  width: 80%;
+  margin: 0px 10%;
 }
 
 #texte_mentions > h1 {
@@ -607,9 +619,20 @@ footer #logograndlyon {
   overflow: hidden;
 }
 
-#afficher_plus h3{
-  cursor: pointer;
+#titrenews,
+#afficher_plus h3 {
   text-align: center;
+  text-transform: uppercase;
+}
+
+#titrenews i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#afficher_plus h3 {
+  cursor: pointer;
 }
 
 #up_button {
@@ -631,8 +654,4 @@ footer #logograndlyon {
   text-align: center;
   width:100%;
   color:#5E5E5E;
-}
-
-#titrenews{
-  text-align: center;
 }

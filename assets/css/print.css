@@ -2,13 +2,23 @@
 	width: 100%;
 }
 
+.filters-button-group *,
+.btn-primary,
+.fa,
+.carousel-indicators,
 #sidebar,
 footer,
 .open_now,
 .close_now,
 .advise,
-#advise_button {
+#advise_button,
+#up_button,
+#contact_formulaire {
 	display: none !important;
+}
+
+.filters-button-group .is-checked {
+	display: block !important;
 }
 
 a[href]:after {

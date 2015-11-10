@@ -19,11 +19,16 @@
         "media_library":"Médiathèque",
         "usefull_links":"Liens utiles",
         "legal_notice":"Mentions légales",
+        "listnews":"Toutes les actus",
         "lang_short":"en",
         "lang_long":"English"
-    }, "sidebar": {
+    },
+      "more_details":"Plus de détails",
+      "back_to_news_list":"Retour à la liste des actus",
+      "display_more":"Afficher plus",
+      "sidebar": {
         "mayor_word":"Le mot du maire",
-        "last_news":"Dernière actus",
+        "last_news":"Dernière actu",
         "weather": {
             "label":"Météo",
             "temperature":"Température",
@@ -37,8 +42,7 @@
         "all":"TOUT",
         "news":"Actus",
         "events":"Évènements",
-        "networks":"Les réseaux",
-        "more_details":"Plus de détails"
+        "networks":"Les réseaux"
     }, "contact":{
         "usefull_links":[{
                "title":"Mairie du 9ème",
