@@ -1,5 +1,5 @@
 <?php
-$pages = array('home', 'listnews', 'news', 'category', 'sscat', 'usefull_links', 'legal_notice');
+$pages = array('home', 'listnews', 'news', 'category', 'sscat', 'usefull_links', 'legal_notice', 'shop');
 if (isset($_GET['page']) && $_GET['page'] != '') {
   if (in_array($_GET['page'], $pages)) {
     $page = $_GET['page'];
@@ -27,7 +27,7 @@ require_once('controller/controller.php');
 ?>
 <html lang="<?php echo $_SESSION['lang']; ?>">
 <head>
-	<title><?php if(isset($_GET['page']) && $_GET['page'] == 'sscat' && isset($_GET['details'])) {echo $json['nav'][$_GET['details']];} else if(isset($_GET['main'])) {echo $json['nav'][$_GET['main']];} else if(isset($_GET['page']) && $_GET['page'] == 'news' && isset($_GET['id'])) {echo $json['news'][$_GET['id']]['title'];} else {echo $json['nav'][$page];} echo ' | '.SITE_NAME; ?></title>
+	<title><?php if(isset($_GET['page']) && $_GET['page'] == 'sscat' && isset($_GET['details'])) {echo $json['nav'][$_GET['details']];} else if(isset($_GET['main'])) {echo $json['nav'][$_GET['main']];} else if(isset($_GET['page']) && $_GET['page'] == 'news' && isset($_GET['id'])) {echo $json['news'][$_GET['id']]['title'];} else if(isset($_GET['page']) && $_GET['page'] == 'shop') {echo $json['shop']['label'];} else {echo $json['nav'][$page];} echo ' | '.SITE_NAME; ?></title>
 	<meta name="robots" content="all"/>
 	<meta name="author" content="<?php echo AUTHOR; ?>"/>
 	<meta name="description" content=""/>
@@ -47,10 +47,6 @@ require_once('controller/controller.php');
   <link href="./assets/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet" media="all"/>
   <link href="./assets/css/print.css" type="text/css" rel="stylesheet" media="print"/>
 
-  <script src="./assets/js/jQuery.js" type="text/javascript"></script>
-  <script src="./assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="./assets/js/isotope.min.js" type="text/javascript"></script>
-  <script src="./assets/js/script.js" type="text/javascript"></script>
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
@@ -63,4 +59,8 @@ require_once('controller/controller.php');
 
     ?>
   </div>
+  <script src="./assets/js/jQuery.js" type="text/javascript"></script>
+  <script src="./assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="./assets/js/isotope.min.js" type="text/javascript"></script>
+  <script src="./assets/js/script.js" type="text/javascript"></script>
 </body>
