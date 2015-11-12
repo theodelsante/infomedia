@@ -1,5 +1,6 @@
 .grid-item {
 	min-width: 32%;
+	margin: 5px .5%;
 }
 
 @media screen and (min-width: 768px) {
