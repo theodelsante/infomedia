@@ -528,6 +528,7 @@ footer #logograndlyon {
   margin: 0px auto;
   display: block;
   width: 280px;
+  clear: both;
 }
 
 /* Pagemenu */
