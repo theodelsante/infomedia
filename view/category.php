@@ -16,7 +16,7 @@
             </li>
             <li class="cat-menu">
                 <div class="vignette col-md-6 col-sm-12 img-menu reverse">
-                    <a href="./?page=sscat&main=everyday&details=restaurants">
+                    <a href="./?page=sscat&main=everyday&details=restaurants_bars">
                         <img src="./assets/img/restaurants/Saigon_Wok.JPG" alt="">
                     </a>
                     <h2>Restauration / Bar</h2>

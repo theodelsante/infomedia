@@ -3,7 +3,7 @@
 }
 
 @media screen and (min-width: 768px) {
-	#sidebar {
+	#product #sidebar {
 		position: relative;
 		top: -69px;
 	}

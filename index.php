@@ -27,7 +27,7 @@ require_once('controller/controller.php');
 ?>
 <html lang="<?php echo $_SESSION['lang']; ?>">
 <head>
-	<title><?php if(isset($_GET['page']) && $_GET['page'] == 'sscat' && isset($_GET['details'])) {echo $json['nav'][$_GET['details']];} else if(isset($_GET['main'])) {echo $json['nav'][$_GET['main']];} else if(isset($_GET['page']) && $_GET['page'] == 'news' && isset($_GET['id'])) {echo $json['news'][$_GET['id']]['title'];} else if(isset($_GET['page']) && $_GET['page'] == 'shop') {echo $json['shop']['label'];} else {echo $json['nav'][$page];} echo ' | '.SITE_NAME; ?></title>
+	<title><?php echo Display::getPageName($json, $page).' | '.SITE_NAME; ?></title>
 	<meta name="robots" content="all"/>
 	<meta name="author" content="<?php echo AUTHOR; ?>"/>
 	<meta name="description" content=""/>
@@ -49,7 +49,7 @@ require_once('controller/controller.php');
 
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
-<body>
+<body id="<?php echo $page; ?>">
   <div class="container">
   	<?php
 

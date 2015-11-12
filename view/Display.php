@@ -1,5 +1,30 @@
 <?php
 class Display {
+	public static function getPageName($json, $page) {
+		// Category
+		if(isset($_GET['page']) && $_GET['page'] == 'category' && isset($_GET['main'])) {
+			return $json['nav'][$_GET['main']];
+		}
+		// SSCategory
+		else if(isset($_GET['page']) && $_GET['page'] == 'sscat' && isset($_GET['details']) && isset($_GET['main'])) {
+			return $json['nav'][$_GET['main']].' : '.$json['nav'][$_GET['details']];
+		}
+		// Detailed news
+		else if(isset($_GET['page']) && $_GET['page'] == 'news' && isset($_GET['id'])) {
+			return $json['home']['news'].' : '.$json['news'][$_GET['id']]['title'];
+		}
+		// Shop
+		else if(isset($_GET['page']) && $_GET['page'] == 'shop') {
+			return $json['shop']['label'];
+		}
+		// Product
+		else if(isset($_GET['page']) && $_GET['page'] == 'product' && isset($_GET['id'])) {
+			return $json['shop']['label'].' : '.$json['shop']['products'][$_GET['id']]['name'];
+		} else {
+			return $json['nav'][$page];
+		}
+	}
+
 	public static function zoomImage($title, $img, $class = '') {
 		return '<div class="grid-item '.$class.'">
 		<img src="'.$img.'"/>
