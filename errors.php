@@ -1,7 +1,7 @@
 <?php
 require_once('config.php');
 require_once('controller/controller.php');
-$error = $json['error']['label'];
+$error = 'Erreur';
 if (isset($_GET['error']) && $_GET['error'] != '') {
 	$error .= ' '.$_GET['error'];
 } else if (isset($_SERVER['PHP_SELF']) && strpos($_SERVER['PHP_SELF'], 'index.php')) {
@@ -42,13 +42,25 @@ if (isset($_GET['error']) && $_GET['error'] != '') {
 		require_once('view/header.php');
 
 		?>
-		<div class="row">
+		<div class="row error404">
 			<div class="col-xs-12">
+				<div class=""></div>
 				<?php
 
+				$phrase = array(); 
+				$phrase[0] = "Ma philosophie est simple : difficile de se perdre quand on ne sait pas où on va."; 
+				$phrase[1] = "Se perdre est une façon dangereuse de se trouver."; 
+				$phrase[2] = "Vous posséder et vous perdre, c'est acheter un moment de bonheur pour une éternité de regrets."; 
+				$phrase[3] = "Les gens perdent leur temps à vivre, alors il ne leur en reste plus pour travailler."; 
+				$phrase[4] = "Sans pile, on perd la face.";  
+				$random = rand(0, 4);
+
 				if (strpos($error, '404') !== false) {
-					echo '<img src="./assets/img/map_404.png"/>
-					<div class="text_404">'.$json['error']['404'].'</div>';
+					echo '<div class="error" id="error">
+					  <h1>404</h1>
+					  <h2>'.$phrase[$random].'</h2><br>
+					  <a href="./"><h2>Revenir à l\'accueil</h2></a>
+					</div>';
 				} else {
 					echo '<div class="col-md-9 col-sm-12" id="left"><h1>'.$error.'</h1></div>';
 					require_once('view/sidebar.php');
