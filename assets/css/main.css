@@ -215,8 +215,16 @@ ul {
 }
 
 /* Isotope buttons selector */
+h2.col-md-4 {
+  padding-right: 0px;
+}
+
+.button-group button:first-child {
+  padding-left: 0px;
+}
+
 .button {
-  padding: 10px 18px;
+  padding: 10px 16px;
   background-color: #f9f9f9;
   font-size: 16px;
   cursor: pointer;

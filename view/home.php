@@ -17,7 +17,6 @@
       <div class="container">
         <div class="carousel-caption">
           <h1>'.$json['news'][$key]['title'].'</h1>
-          <!-- <p>'.$json['news'][$key]['text'].'</p> -->
           <p><a class="btn btn-lg btn-primary" href="./?page=news&id='.$key.'" role="button">'.$json['more_details'].'</a></p>
         </div>
       </div>
@@ -36,8 +35,7 @@
 </div>
 <div class="row conteneur">
   <div class="col-md-9 col-xs-12" id="content">
-    <div class="col-md-4"><h2><?php echo $json['home']['now']; ?></h2></div>
-
+    <h2 class="col-md-4"><?php echo $json['home']['now']; ?></h2>
     <div class="button-group filters-button-group">
       <button class="button is-checked" data-filter="*"><?php echo $json['home']['all']; ?></button>
       <button class="button" data-filter=".news"><?php echo $json['home']['news']; ?></button>
