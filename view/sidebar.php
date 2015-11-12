@@ -15,6 +15,12 @@
     <h3><?php echo $json['sidebar']['weather']['label']; ?></h3>
     <?php require_once('weather.php'); ?>
   </div>
+  <div id="shop">
+    <h3><?php echo $json['shop']['label']; ?></h3>
+    <div class="icon">
+      <a href="?page=shop"><i class="fa fa-shopping-cart fa-3x"></i></a>
+    </div>
+  </div>
   <div id="share">
     <h3><?php echo $json['sidebar']['share']; ?></h3>
     <div class="icon">

@@ -120,5 +120,36 @@
         }], "error":{
           "label":"Erreur",
           "404":"<h1>Vous êtes perdu ?!<br>Cette page semble ne pas exister.<br><a href=\"./\">Revenir à l'accueil</a></h1>"
+        }, "shop":{
+          "label":"Boutique",
+          "cheap_price":"10€ et moins",
+          "normal_price":"entre 10€ et 20€",
+          "expensive_price":"20€ et plus",
+          "products":[{
+               "name":"Verre",
+               "img":"",
+               "price":"4",
+               "description":"Born with the association of the Annonciation's church to create a social link between inhabitants from Vaise quarter, la Halte oppened on October 10th 2015. This space is open for everyone and has to be sociable. It's the location of « good living together » which favorisate meetings with a drink, a meal, a workshop on a thematic … A unique experience to not miss at any pretext. Inhabitant of Vaise quarter or simple visitor, pass by !"
+        }, {
+               "name":"Carte de Vaise",
+               "img":"",
+               "price":"2",
+               "description":"For his 4th edition, the Convergence Vélo (bicycle event) organize to all bikers an event on Sunday September 20th 2016, place Valmy à 14h. Discover or discover again the 9th district as you never saw it. It's also the occasion for kids, teens and parents to share a convivial moment during this bycicle event. The path leads you to place Valmy crossing the Auditorium and ending in the great Parc des Berges."
+        }, {
+               "name":"Parapluie",
+               "img":"",
+               "price":"8",
+               "description":"The numeric installation L.I.R (Book In Room) is a place made to provide authentic literary immersion. Books are in the heart of this system. It permits after a book selection, to start a visual and sonorous sequence. Each visitors leave with a unique experience of « augmented reading ». In free access for reading lovers at Théâtre Nouvelle génération."
+        }, {
+               "name":"Souris",
+               "img":"",
+               "price":"12",
+               "description":"Micro Mondes (Micro World) propose for his 3rd edition, an immersive art festival focused on contemporary creations. Micro Mondes has theater, plastic art, danse, circus or multimedia artists. This festival leads you in the heart of intimate and sensorial univers by grouping images, sounds, tactils or poetics sensations. This event will be at Vaise : Théâtre Nouvelle Génération / Centre Dramatique National de Lyon from 24th to 29th of November 2015"
+        }, {
+               "name":"Clé USB",
+               "img":"",
+               "price":"8",
+               "description":"Acrobats is a show focused on the life, the friendship and tenderness. Both actors tells a long and tumultuous trip to the adult age. This show mixes death, life and gorgeous landscapes. This public demonstration is possible with the interprétation of two acrobats and dancing actors. Stéphane Ricordel and Olivier Meyrou will give their representations at the Théâtre Nouvelle Génération on Friday September 25th until Sunday September 27th at night, after 8:00PM."
+        }]
         }
 }
