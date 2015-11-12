@@ -35,7 +35,7 @@
   </a>
 </div>
 <div class="row conteneur">
-  <div class="col-md-9 col-sm-12" id="content">
+  <div class="col-md-9 col-xs-12" id="content">
     <div class="col-md-4"><h2><?php echo $json['home']['now']; ?></h2></div>
 
     <div class="button-group filters-button-group">
