@@ -1,6 +1,5 @@
 <?php
-// Adresse e-mail du vendeur
-$email_vendeur = "vendeur-testtd@gmail.com";
+require_once('../model/PayPal.php');
 // Envoi des infos a Paypal
 $req = "cmd=_notify-validate";
 foreach ($_POST as $key => $value) {
@@ -26,7 +25,7 @@ if (strcmp(trim($res), "VERIFIED") == 0) {
     // Vérifier que le statut du paiement est complet
     if ($_POST['payment_status'] == "Completed") {
         // Vérification de l'e-mail du vendeur
-        if ($email_vendeur == $_POST['receiver_email']) {
+        if (PayPal::$VENDOR_MAIL == $_POST['receiver_email']) {
             // Récupération du montant de la commande dans la BDD
             $req = "SELECT montant_ttc FROM commandes WHERE id=" . $_POST['custom'];
             $rep = mysqli_query($db, $req);

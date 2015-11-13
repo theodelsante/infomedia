@@ -10,6 +10,10 @@
             <p><?php echo $json['shop']['products'][$_GET['id']]['description']; ?></p>
         </div>
         <a href="./?page=shop" class="btn btn-primary" role="button"><?php echo $json['back_to_shop']; ?></a>
+        <?php
+        PayPal::addToCart($_GET['id'], $json['shop']['products'][$_GET['id']]['name'], $json['shop']['products'][$_GET['id']]['price'], 0, 0);
+        PayPal::displayCart();
+        ?>
     </div>
     <?php
     require_once ('sidebar.php');

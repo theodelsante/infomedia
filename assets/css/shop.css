@@ -3,6 +3,13 @@
 	margin: 5px .5%;
 }
 
+#product input[type="submit"] {
+	min-width: 50%;
+	margin: 10px auto;
+	display: block;
+	clear: both;
+}
+
 @media screen and (min-width: 768px) {
 	#product #sidebar {
 		position: relative;
