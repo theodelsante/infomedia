@@ -25,7 +25,12 @@ $(document).ready(function() {
 
   $('#up_button').click(function() {
     $(document.body).animate({
-       'scrollTop':0
-      }, 1000);
+     'scrollTop':0
+   }, 1000);
   });
+
+  /* Build */
+  setTimeout(function() {
+    $('.ribbon').addClass('active');
+  }, 500);
 });
