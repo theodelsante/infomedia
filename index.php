@@ -1,5 +1,5 @@
 <?php
-$pages = array('home', 'listnews', 'news', 'category', 'sscat', 'usefull_links', 'legal_notice', 'shop', 'product', 'pay');
+$pages = array('home', 'listnews', 'news', 'category', 'sscat', 'usefull_links', 'legal_notice', 'shop', 'product', 'pay', 'build');
 if (isset($_GET['page']) && $_GET['page'] != '') {
   if (in_array($_GET['page'], $pages)) {
     $page = $_GET['page'];
