@@ -1,79 +1,66 @@
 <?php
+require_once('controller/pageController.php');
 require_once('../config.php');
-
-/**
- * Connexion a la base de donnees
- * @return PDO
- */
-// function getDb() {
-  try {
-    $database_type='mysql';
-    $dbhost='https://phpmyadmin.ovh.net/';
-    $dbname='siegwaldg4proj';
-    $user='siegwaldg4proj';
-    $pwd='Kirikou007';
-    $db = new PDO($database_type.':host='.$dbhost.';servername=siegwaldg4proj.mysql.db;dbname='.$dbname.';charset=utf8',$user,$pwd);
-    // $db->exec('SET NAMES utf8');
-    $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-  } catch(Exception $e) {
-    die("<br/>Erreur : ".$e->getMessage());
-    exit();
-  }
-//   return $db;
-// }
-
-
-$db->query('SELECT * FROM news');
-var_dump($db);
-
-
-$news_bd = new NewsManager($db);
-
-$tabadd = array (
-  "titrenews" => $_POST['titrenews'],
-  "textenews" => $_POST['textenews'],
-  "datepublication" => $_POST['datepublication'],
-  "datecreation" => date("Y-m-d H:i:s"),
-  "datemodification" => date("Y-m-d H:i:s"),
-  "nomimg" => $_FILES['imgnews']['name'],
-  "importance" => $_POST['importance']);
-
-if (!empty($_POST['ajouternews'])){
- if (!empty($_POST['titrenews']) && !empty($_POST['textenews']) &&!empty($_POST['datepublication']) && !empty($_POST['importance'])){
-   if (preg_match("/^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/", $_POST['datepublication'])){
-     $addnews = new News($tabadd);
-     $news_bd->addNews($addnews);
-     if(isset($_FILES['imgnews']))
-     { 
-       $dossier = './assets/img/news/';
-       $fichier = basename($_FILES['imgnews']['name']);
-       if(move_uploaded_file($_FILES['imgnews']['tmp_name'], $dossier . $fichier)) {
-         echo 'Ajout de la news et upload de l\image effectué avec succès !';
-       } else {
-         echo 'Echec de l\'upload !';
-       }
-     }
-   } else {
-     echo 'La date de publication n\'est pas au bon format : yyyy-mm-dd.';
-   }
- } else {
-   echo 'Les champs du formulaires ne sont pas tous remplis !';
- }
-} else {
-  echo 'Erreur';
-}
+require_once('controller/controller.php');
+require_once('../controller/langController.php');
 ?>
-
 <!DOCTYPE>
 <html>
 <head>
-	<title>Test News</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
+  <title><?php echo $json['admin']['label'].' | '.SITE_NAME; ?></title>
+  <meta name="robots" content="all"/>
+  <meta name="author" content="<?php echo AUTHOR; ?>"/>
+  <meta name="description" content=""/>
+  <meta name="keywords" content="<?php echo SITE_NAME; ?>"/>
+  <link rel="icon" type="image/png" href="../assets/img/Vaise_logo.png"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-title" content="<?php echo SITE_NAME; ?>"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="apple-touch-fullscreen" content="yes"/>
+  <meta name="format-detection" content="telephone=yes"/>
+  <meta name="HandheldFriendly" content="true"/>
+
+  <link href="../assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all"/>
+  <link href="../assets/css/main.css" type="text/css" rel="stylesheet" media="all"/>
+  <link href="../assets/font/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet" media="all"/>
+  <link href="../assets/css/admin.css" type="text/css" rel="stylesheet" media="all"/>
+  <link href="../assets/css/print.css" type="text/css" rel="stylesheet" media="print"/>
+
+  <script src="../assets/js/jQuery.js" type="text/javascript"></script>
+  <script src="../assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
-<body>
-  <?php include_once('formulaire_news.php'); ?>
+<body id="<?php echo $page; ?>">
+  <div class="container">
+    <header>
+      <a href="./"><img id="Vaise_logo" src="../assets/img/Vaise_logo.png" alt="Logo de Vaise, retour vers l'accueil"/></a>
+      <nav class="navbar navbar-default" id="menu">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="./"><img id="Vaise_logo" src="../assets/img/Vaise_logo.png" alt="Logo de Vaise, retour vers l'accueil"/></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="./?page=list&list=news"><?php echo $json['home']['news']; ?></a></li>
+              <li><a href="./?page=list&list=product"><?php echo $json['shop']['label']; ?></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="row">
+      <div class="col-xs-12">
+        <h1><?php echo $json['admin']['label']; ?></h1>
+        <?php require_once('view/'.$page.'.php'); ?>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

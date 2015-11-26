@@ -164,12 +164,6 @@ ul {
   text-align: center;
 }
 
-.navbar-nav > li:last-child {
-  width: 5%;
-  text-align: center;
-  float: left;
-}
-
 .dropdown-menu {
   width: 100%;
   padding: 0px;
@@ -181,8 +175,12 @@ ul {
   clear: both;
 }
 
-#myCarousel * {
+.carousel * {
   color: white !important;
+}
+
+.carousel a:hover {
+  text-decoration: none;
 }
 
 .carousel img {
@@ -447,11 +445,12 @@ footer * {
 
 footer .texte {
   position: absolute;
-  bottom: -70px;
+  bottom: -65px;
   left: 0px;
   right: 0px;
 }
 
+footer .col-md-2,
 footer .col-md-8 {
   padding: 0px;
 }
@@ -665,27 +664,6 @@ footer #logograndlyon {
   color:#5E5E5E;
 }
 
-
-@import "lesshat";
-
-.error404{ 
-  background:  url(https://38.media.tumblr.com/546c0cd48d71f210f9b67a389003790d/tumblr_neq0yw9rMA1tm16jjo1_500.gif) no-repeat center center fixed; 
-  background-size: cover;
-  height:100% !important;
-  width:100% !important;
-}
-#error h1{
-  font-size: 16em;
-  margin: .2em .5em;
-  color: rgba(255,255,255, 0.7);
-  margin-bottom:0px;
-}
-#error h2{
-  font-size: 1.7em;
-  margin: .2em .5em;
-  color: rgba(255,255,255, 0.6);
-}
-div.error{
-  width:100%;
-  text-align:center;
+#news_text .btn-primary {
+  margin: 20px auto;
 }

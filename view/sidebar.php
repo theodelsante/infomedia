@@ -2,12 +2,13 @@
   <div class="first">
     <?php
     if (isset($page) && $page == 'news') {
+      $last_news = Db::select('news', '*', null, array('date_creation' => 'DESC'), 1)[0];
       echo '<h3>'.$json['sidebar']['last_news'].'</h3>
-      <a href="./?page=news&id=0">'.Display::zoomImage($json['news'][0]['title'], $json['news'][0]['img']).'</a>';
+      <a href="./?page=news&id='.$last_news['id'].'">'.Display::zoomImage($last_news['title_'.$_SESSION['lang']], 'assets/img/news/'.$last_news['img']).'</a>';
     } else {
       echo '<h3>'.$json['sidebar']['mayor_word'].'</h3>
       <img id="mayor_picture" src="./assets/img/maire.png" alt="Maire du 9ème arrondissement"/>
-      <p>Lorem ipsum dolor sit amet, cQuisque lacinia varius dolor maximus aliquam. Mauris ut sodales magna. In sit amet nisl imperdiet, maximus mauris sit amet, placerat arcu.</p>';
+      <p>'.$json['sidebar']['mayor_word_content'].'</p>';
     }
     ?>
   </div>

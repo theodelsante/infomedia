@@ -11,13 +11,34 @@ session_start();
 define('SITE_NAME', 'Vaise');
 define('AUTHOR', 'Web City');
 
+/**
+ * Get the database connection
+ * @return PDO
+ */
+function getDb() {
+	try {
+		$database_type = 'mysql';
+		$dbhost = 'localhost';
+		$dbname = 'G4_infomedia';
+		$user = 'root';
+		$pwd = 'root';
+		$db = new PDO($database_type.':host='.$dbhost.';dbname='.$dbname.';charset=utf8', $user, $pwd);
+		// $db->exec('SET NAMES utf8');
+		$db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+		return $db;
+	} catch (Exception $e) {
+		die('<br/>ERROR '.$e->getCode().' : '.$e->getMessage());
+		exit();
+	}
+}
+
 /* Set the language according to the browser */
 $lang_accept = array('fr', 'en');
 if (!isset($_SESSION['lang'])) {    
-  $_SESSION['lang'] = getBrowserLang();
-  if ($_SESSION['lang'] != 'fr') {
-    $_SESSION['lang'] = 'en';
-  }
+	$_SESSION['lang'] = getBrowserLang();
+	if ($_SESSION['lang'] != 'fr') {
+		$_SESSION['lang'] = 'en';
+	}
 }
 
 /**
@@ -27,9 +48,13 @@ if (!isset($_SESSION['lang'])) {
 spl_autoload_register(function ($class) {
 	if(is_file('./model/'.$class.'.php'))
 		require './model/'.$class.'.php';
+	else if(is_file('../model/'.$class.'.php'))
+		require '../model/'.$class.'.php';
 
 	if(is_file('./view/'.$class.'.php'))
 		require './view/'.$class.'.php';
+	else if(is_file('../view/'.$class.'.php'))
+		require '../view/'.$class.'.php';
 });
 
 function getBrowserLang() {

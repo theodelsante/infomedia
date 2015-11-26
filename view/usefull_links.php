@@ -1,4 +1,4 @@
-<link href="./assets/css/contact.css" type="text/css" rel="stylesheet">
+<link href="./assets/css/usefull_links.css" type="text/css" rel="stylesheet" media="all"/>
 <div class="row">
 	<div id="content" class="col-md-9 col-sm-12">
 		<h2><?php echo $json['nav']['usefull_links']; ?></h2>
@@ -12,10 +12,10 @@
 					<p class="contact_description">'.$value['description'].'</p>
 					<ul class="contact_list_adresse">
 						<li>
-							<p><span>Adresse : </span>'.$value['address'].'</p>
+							<p><span>'.$json['contact']['address'].' : </span>'.$value['address'].'</p>
 						</li>
 						<li>
-							<p><span>Téléphone : </span>'.$value['tel'].'</p>
+							<p><span>'.$json['contact']['phone'].' : </span>'.$value['tel'].'</p>
 						</li>';
 						if (isset($value['mail'])) {
 							echo '<li>
@@ -23,7 +23,7 @@
 						</li>';
 						}
 						echo '<li>
-							<p><span>Site : </span><a href="'.$value['website'].'" target="_blank">'.$value['website-display'].'</a></p>
+							<p><span>'.$json['contact']['website'].' : </span><a href="'.$value['website'].'" target="_blank">'.$value['website-display'].'</a></p>
 						</li>
 					</ul>
 				</div>
@@ -64,11 +64,7 @@
 					</div>
 				</div>
 				<div class="form-group hidden">
-					<label for="human" class="col-sm-2 control-label"><?php echo $json['contact']['checkbox_error']; ?></label>
-					<div class="col-sm-10">
-						<input type="checkbox" class="form-control" id="human" name="human" value="robot"/>
-						<span id="msg_human" class="alert_message"></span>
-					</div>
+					<input type="checkbox" class="form-control" id="human" name="human" value="robot"/>
 				</div>
 				<div class="form-group">
 					<div class="col-sm-10 col-sm-offset-2">
@@ -84,9 +80,7 @@
 		</div>
 	</div>
 	<?php
-
 	require_once('sidebar.php');
-
 	?>
 </div>
-<script src="./assets/js/contact.js"></script>
+<script src="./assets/js/usefull_links.js" type="text/javascript"></script>
