@@ -17,7 +17,10 @@ footer,
 .advise,
 #advise_button,
 #up_button,
-#contact_formulaire {
+#contact_formulaire,
+.ephox-polish-layer-above-editor,
+.ephox-polish-html-switch,
+.datepicker {
 	display: none !important;
 }
 

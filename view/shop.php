@@ -11,7 +11,8 @@
 
 		<div class="grid">
 			<?php
-			foreach ($json['shop']['products'] as $key => $product) {
+			$products = Db::select('product', '*', null, array('name_'.$_SESSION['lang'] => 'ASC'));
+			foreach ($products as $product) {
 				$class = '';
 				if ($product['price'] < 10) {
 					$class = ' cheap_price';
@@ -20,7 +21,11 @@
 				} else {
 					$class = ' expensive_price';
 				}
-				echo '<a href="./?page=product&id='.$key.'">'.Display::zoomImage($product['name'], $product['img'], $class).'</a>';
+				$img = '';
+				if (!empty($product['img']) && is_file('assets/img/product/'.$product['img'])) {
+					$img = 'assets/img/product/'.$product['img'];
+				}
+				echo '<a href="./?page=product&id='.$product['id'].'">'.Display::zoomImage($product['name_'.$_SESSION['lang']], $img, $class).'</a>';
 			}
 			?>
 		</div>

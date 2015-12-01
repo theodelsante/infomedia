@@ -1,5 +1,28 @@
 <?php
 class Display {
+	public static function select($name, $optionsValues, $optionsID = array(), $selectedID = 0, $class = '')
+	{
+		$str = '<select name="'.$name.'" id="'.$name.'" class="'.$class.'">';
+		foreach($optionsValues as $key => $value)
+		{
+			if( isset($optionsID[$key]) )
+			{
+				$str.= '<option value="'.$optionsID[$key].'"';
+				if( $optionsID[$key] === $selectedID )
+					$str.= 'selected';
+				$str.= '>'.$value.'</option>';
+			}
+			else
+			{
+				$str.= '<option value="'.$key.'"';
+				if( $key === $selectedID )
+					$str.= 'selected';
+				$str.= '>'.$value.'</option>';
+			}
+		}
+		return $str.= '</select>';
+	}
+	
 	public static function getPageName($json, $page) {
 		// Category
 		if(isset($_GET['page']) && $_GET['page'] == 'category' && isset($_GET['main'])) {
@@ -11,7 +34,12 @@ class Display {
 		}
 		// Detailed news
 		else if(isset($_GET['page']) && $_GET['page'] == 'news' && isset($_GET['id'])) {
-			return $json['home']['news'].' : '.$json['news'][$_GET['id']]['title'];
+			$news = @Db::select('news', '*', array('id' => $_GET['id']))[0];
+			if (!empty($news)) {
+				return $json['home']['news'].' : '.$news['title_'.$_SESSION['lang']];
+			} else {
+				return $json['shop']['label'].' : '.$json['error']['no_news'];
+			}
 		}
 		// Shop
 		else if(isset($_GET['page']) && $_GET['page'] == 'shop') {
@@ -19,7 +47,12 @@ class Display {
 		}
 		// Product
 		else if(isset($_GET['page']) && $_GET['page'] == 'product' && isset($_GET['id'])) {
-			return $json['shop']['label'].' : '.$json['shop']['products'][$_GET['id']]['name'];
+			$product = @Db::select('product', '*', array('id' => $_GET['id']))[0];
+			if (!empty($product)) {
+				return $json['shop']['label'].' : '.$product['name_'.$_SESSION['lang']];
+			} else {
+				return $json['shop']['label'].' : '.$json['error']['no_product'];
+			}
 		} else {
 			return $json['nav'][$page];
 		}
