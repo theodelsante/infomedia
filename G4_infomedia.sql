@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost:8889
--- Généré le :  Jeu 26 Novembre 2015 à 00:31
+-- Généré le :  Mar 01 Décembre 2015 à 20:19
 -- Version du serveur :  5.5.42
 -- Version de PHP :  5.6.10
 
@@ -13,6 +13,15 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `G4_infomedia`
 --
+CREATE DATABASE IF NOT EXISTS `G4_infomedia` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `G4_infomedia`;
+
+-- Privilèges pour `root`@`localhost` // pass = root
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY PASSWORD '*81F5E21E35407D884A6CD4A731AEBFB6AF209E1B' WITH GRANT OPTION;
+GRANT PROXY ON ''@'' TO 'root'@'localhost' WITH GRANT OPTION;
+
+-- Privilèges pour `site`@`localhost` // pass = Vaise
+GRANT SELECT ON `G4_infomedia`.* TO 'site'@'localhost' IDENTIFIED BY PASSWORD '*337D5B28B63CC66EEC704EBE11896C8D4A6FE2B9' WITH MAX_QUERIES_PER_HOUR 3600;
 
 -- --------------------------------------------------------
 
@@ -20,6 +29,7 @@ SET time_zone = "+00:00";
 -- Structure de la table `news`
 --
 
+DROP TABLE IF EXISTS `news`;
 CREATE TABLE `news` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `title_fr` varchar(40) NOT NULL,
@@ -53,8 +63,9 @@ INSERT INTO `news` (`title_fr`, `title_en`, `content_fr`, `content_en`, `date_cr
 -- Structure de la table `product`
 --
 
+DROP TABLE IF EXISTS `product`;
 CREATE TABLE `product` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name_fr` varchar(20) NOT NULL,
   `name_en` varchar(20) NOT NULL,
   `name_company` varchar(20) NOT NULL,

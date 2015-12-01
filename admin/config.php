@@ -20,8 +20,8 @@ function getDb() {
 		$database_type = 'mysql';
 		$dbhost = 'localhost';
 		$dbname = 'G4_infomedia';
-		$user = 'site';
-		$pwd = SITE_NAME;
+		$user = 'root';
+		$pwd = 'root';
 		$db = new PDO($database_type.':host='.$dbhost.';dbname='.$dbname.';charset=utf8', $user, $pwd);
 		// $db->exec('SET NAMES utf8');
 		$db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
