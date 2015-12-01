@@ -1,4 +1,6 @@
 <?php
+// print_r($_POST);
+// print_r($_FILES);
 if (!empty($_POST['change_mayor_word']) && !empty($_POST['mayor_word_content_fr']) && is_string($_POST['mayor_word_content_fr']) && !empty($_POST['mayor_word_content_en']) && is_string($_POST['mayor_word_content_en'])) {
 	$json_fr = json_decode(file_get_contents('../assets/lang/fr.json'), true);
 	$json_en = json_decode(file_get_contents('../assets/lang/en.json'), true);
@@ -59,7 +61,6 @@ if (!empty($_POST['change_mayor_word']) && !empty($_POST['mayor_word_content_fr'
 			$_POST['important'] = true;
 		}
 		if (!empty($_FILES['img']['name'])) {
-			echo "string";
 			$_POST['img'] = @FileManager::uploadFile('img', $_POST['title_en'], 'news/')['name'];
 		}
 		$_POST['date_modification'] = date('Y-m-d H:i:s', $_SERVER['REQUEST_TIME']);

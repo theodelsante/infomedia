@@ -8,7 +8,7 @@ class FileManager
 		// print_r($_FILES);
 		$directoryPath = FileManager::$DIRECTORY_PATH.$fileInputPath;
 		$fileName = basename($_FILES[$inputName]['name']);
-		$maxFileSize = 1000000;	//1Mo
+		$maxFileSize = 2000000;	//2Mo
 		$fileSize = filesize($_FILES[$inputName]['tmp_name']);
 		$extensions = array('.jpg', '.jpeg', '.png', '.gif');
 		$extension = strrchr($_FILES[$inputName]['name'], '.');
@@ -25,6 +25,10 @@ class FileManager
 		}
 		if($fileSize > $maxFileSize)
 		{
+			// $file['compressed'] = FileManager::compressImg($_FILES[$inputName]['tmp_name'], $directoryPath.$fileName);
+			if ($file['compressed'] == true) {
+				$file['name'] = $fileName;
+			}
 			$file['ERROR'][]['code'] = 2;
 			$file['ERROR'][]['message'] = 'Le fichier est trop volumineux';
 		}
@@ -81,7 +85,7 @@ class FileManager
 		fclose($file);
 	}
 
-	public static function supprFile($fileInputName)
+	public static function deleteFile($fileInputName)
 	{
 		$directoryPath = FileManager::$DIRECTORY_PATH;		//Adresse du dossier.
 		unlink($directoryPath.$fileInputName);		//Suppression du fichier
@@ -101,6 +105,33 @@ class FileManager
 				$fileContent[$key] = $expl[0];
 		}
 		return array_values($fileContent);
+	}
+
+	public static function compressImg($imgFile, $compressName)
+	{
+		require_once("tinify/Tinify.php");
+		require_once("tinify/Tinify/Source.php");
+		require_once("tinify/Tinify/Client.php");
+		require_once("tinify/Tinify/Exception.php");
+		require_once("tinify/Tinify/ResultMeta.php");
+		require_once("tinify/Tinify/Result.php");
+
+		// $imgFile = $_FILES['img']['tmp_name'];
+		try {
+			\Tinify\setKey("URlEPGK2FLSLwWIDBleTanrrHPxMaq9Q");
+			if (is_file($imgFile)) {
+				$source = \Tinify\fromFile($imgFile);
+				$source->toFile($compressName);
+			} else {
+				$source = file_get_contents($imgFile);
+				$source = \Tinify\fromBuffer($source)->toBuffer();
+				file_put_contents($compressName, $source);
+			}
+			return true;
+		} catch(\Tinify\Exception $e) {
+			echo $e;
+			return false;
+		}
 	}
 }
 ?>

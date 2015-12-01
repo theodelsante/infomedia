@@ -139,5 +139,25 @@ $(document).on('change', '.btn-file :file', function() {
   numFiles = input.get(0).files ? input.get(0).files.length : 1,
   label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
   input.trigger('fileselect', [numFiles, label]);
+
+  // if (input.get(0).files) {
+  //   var formData = new FormData($('form')[0]);
+  //   $.ajax({
+  //     url: 'controller/ajaxController.php',  //server script to process data
+  //     type: 'POST',
+  //     // Form data
+  //     data: formData,
+  //     //Options to tell JQuery not to process data or worry about content-type
+  //     cache: false,
+  //     contentType: false,
+  //     processData: false
+  //   })
+  //   .done(function(msg) {
+  //     alert("msg : "+msg);
+  //   })
+  //   .fail(function() {
+  //     alert("error");
+  //   });
+  // }
 });
 </script>

@@ -2,7 +2,7 @@ table th {
   padding: 5px 0px;
 }
 
-table tbody tr:hover {
+#list table tbody tr:hover {
   background-color: #e7e7e7;
 }
 
