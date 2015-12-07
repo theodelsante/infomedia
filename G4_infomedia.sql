@@ -16,10 +16,6 @@ SET time_zone = "+00:00";
 CREATE DATABASE IF NOT EXISTS `G4_infomedia` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `G4_infomedia`;
 
--- Privilèges pour `root`@`localhost` // pass = root
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY PASSWORD '*81F5E21E35407D884A6CD4A731AEBFB6AF209E1B' WITH GRANT OPTION;
-GRANT PROXY ON ''@'' TO 'root'@'localhost' WITH GRANT OPTION;
-
 -- Privilèges pour `site`@`localhost` // pass = Vaise
 GRANT SELECT ON `G4_infomedia`.* TO 'site'@'localhost' IDENTIFIED BY PASSWORD '*337D5B28B63CC66EEC704EBE11896C8D4A6FE2B9' WITH MAX_QUERIES_PER_HOUR 3600;
 
