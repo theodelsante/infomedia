@@ -1,47 +1,56 @@
 <?php
-$sscat[0] = Google::getPlaceDetails('ChIJAQAAAHTr9EcRZgFFzuySLWc', getBrowserLang());
+$sscat[0] = Google::getPlaceDetails('ChIJAQAAAHTr9EcRZgFFzuySLWc', $_SESSION['lang']);
 $sscat[0]['name'] = 'Cantabria';
-$sscat[0]['type'] = 'Restaurant et bar espagnol';
+$sscat[0]['type_fr'] = 'Restaurant et bar espagnol';
+$sscat[0]['type_en'] = 'Spanish bar and restaurant';
 $sscat[0]['img'] = 'Cantabria.JPG';
 
-$sscat[1] = Google::getPlaceDetails('ChIJ5_PoS3Lr9EcRHbXJXHzx4JU', getBrowserLang());
+$sscat[1] = Google::getPlaceDetails('ChIJ5_PoS3Lr9EcRHbXJXHzx4JU', $_SESSION['lang']);
 $sscat[1]['name'] = 'Subway';
-$sscat[1]['type'] = 'Chaîne de sandwichs à composer soi-même';
+$sscat[1]['type_fr'] = 'Chaîne de sandwichs à composer soi-même';
+$sscat[1]['type_en'] = 'Sandwiches to compose ourself';
 $sscat[1]['img'] = 'Subway.JPG';
 
-$sscat[2] = Google::getPlaceDetails('ChIJ-yES3m3r9EcRbO0nlVnNfjc', getBrowserLang());
+$sscat[2] = Google::getPlaceDetails('ChIJ-yES3m3r9EcRbO0nlVnNfjc', $_SESSION['lang']);
 $sscat[2]['name'] = 'Indian Haveli';
-$sscat[2]['type'] = 'Restaurant indien';
+$sscat[2]['type_fr'] = 'Restaurant indien';
+$sscat[2]['type_en'] = 'Indian restaurant';
 $sscat[2]['img'] = null;
 
-$sscat[3] = Google::getPlaceDetails('ChIJpyRJCW7r9EcR5u7OcODMEws', getBrowserLang());
+$sscat[3] = Google::getPlaceDetails('ChIJpyRJCW7r9EcR5u7OcODMEws', $_SESSION['lang']);
 $sscat[3]['name'] = 'Chicken Chips';
-$sscat[3]['type'] = 'Restauration rapide Hallal';
+$sscat[3]['type_fr'] = 'Restauration rapide Hallal';
+$sscat[3]['type_en'] = 'Hallal Fast food';
 $sscat[3]['img'] = 'Chicken_chips.JPG';
 
-$sscat[4] = Google::getPlaceDetails('ChIJj4spEm7r9EcRQCCgn5DGkc0', getBrowserLang());
+$sscat[4] = Google::getPlaceDetails('ChIJj4spEm7r9EcRQCCgn5DGkc0', $_SESSION['lang']);
 $sscat[4]['name'] = 'Dominos Pizza';
-$sscat[4]['type'] = 'Pizzeria';
+$sscat[4]['type_fr'] = 'Pizzeria';
+$sscat[4]['type_en'] = 'Pizzeria';
 $sscat[4]['img'] = 'Dominos.JPG';
 
-$sscat[5] = Google::getPlaceDetails('ChIJ6ZirTmnr9EcRjuAdsUbs1FU', getBrowserLang());
+$sscat[5] = Google::getPlaceDetails('ChIJ6ZirTmnr9EcRjuAdsUbs1FU', $_SESSION['lang']);
 $sscat[5]['name'] = 'Tout le Monde à Table';
-$sscat[5]['type'] = 'Cuisine traditionelle';
+$sscat[5]['type_fr'] = 'Cuisine traditionelle';
+$sscat[5]['type_en'] = 'Traditionnal cooking';
 $sscat[5]['img'] = 'Tous a table.JPG';
 
-$sscat[6] = Google::getPlaceDetails('ChIJ-wrbN2rr9EcRsYKTnNYOXRE', getBrowserLang());
+$sscat[6] = Google::getPlaceDetails('ChIJ-wrbN2rr9EcRsYKTnNYOXRE', $_SESSION['lang']);
 $sscat[6]['name'] = 'Matsuri';
-$sscat[6]['type'] = 'Restaurant japonnais de sushis et tartares';
+$sscat[6]['type_fr'] = 'Restaurant japonnais de sushis et tartares';
+$sscat[6]['type_en'] = 'Japanese sushis and tartars Restaurant';
 $sscat[6]['img'] = 'Matsuri.JPG';
 
-$sscat[7] = Google::getPlaceDetails('ChIJBaitTmnr9EcRlNs3mfSRnpc', getBrowserLang());
+$sscat[7] = Google::getPlaceDetails('ChIJBaitTmnr9EcRlNs3mfSRnpc', $_SESSION['lang']);
 $sscat[7]['name'] = 'Home Sushi';
-$sscat[7]['type'] = 'Restaurant japonnais';
+$sscat[7]['type_fr'] = 'Restaurant japonnais';
+$sscat[7]['type_en'] = 'Japanese restaurant';
 $sscat[7]['img'] = 'Home_sushi.JPG';
 
-$sscat[8] = Google::getPlaceDetails('ChIJG05gbmrr9EcRg2-j8g-57ms', getBrowserLang());
+$sscat[8] = Google::getPlaceDetails('ChIJG05gbmrr9EcRg2-j8g-57ms', $_SESSION['lang']);
 $sscat[8]['name'] = 'Saigon Wok';
-$sscat[8]['type'] = 'Restaurant asiatique';
+$sscat[8]['type_fr'] = 'Restaurant asiatique';
+$sscat[8]['type_en'] = 'Asiatic restaurant';
 $sscat[8]['img'] = 'Saigon_Wok.JPG';
 
 ?>
@@ -119,7 +128,7 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 				}
 				echo '<div class="col-sm-5 col-xs-12 details">
 				<h3>'.$value['name'].'</h3>
-				<p>'.$value['type'].'</p>';
+				<p>'.$value['type_'.$_SESSION['lang']].'</p>';
 				// print_r($value);
 				if (isset($value['rating'])) {
 					echo '<div class="rating">'
@@ -144,13 +153,13 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 				echo '<div class="col-sm-4 col-xs-12 opening_hours">';
 				if (isset($value['opening_hours']['open_now'])) {
 					if ($value['opening_hours']['open_now'] == true) {
-						echo '<span class="open_now">OUVERT</span>';
+						echo '<span class="open_now">'.$json['sscat']['open'].'</span>';
 					} else {
-						echo '<span class="close_now">FERMÉ</span>';
+						echo '<span class="close_now">'.$json['sscat']['close'].'</span>';
 					}
 				}
 				if (isset($value['opening_hours']['weekday_text'])) {
-					echo '<p>Horaires d\'ouvertures</p>
+					echo '<p>'.$json['sscat']['opening_hours'].'</p>
 					<ul>';
 					foreach ($value['opening_hours']['weekday_text'] as $opening_hours) {
 						echo '<li>'.$opening_hours.'</li>';
@@ -159,7 +168,7 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 				}
 				if (isset($value['reviews'])) {
 					echo '</div>
-					<div class="col-xs-12"><button id="advise_button"><span>Voir les avis</span><span class="hide">Masquer les avis</span></button></div>
+					<div class="col-xs-12"><button id="advise_button"><span>'.$json['sscat']['show_all_advice'].'</span><span class="hide">'.$json['sscat']['hide_all_advice'].'</span></button></div>
 					<div class="col-xs-12 advise">';
 					foreach ($value['reviews'] as $review) {
 						if (!isset($review['profile_photo_url'])) {

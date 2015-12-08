@@ -49,6 +49,10 @@
 	text-decoration: underline;
 }
 
+.opening_hours ul {
+	font-size: 13px;
+}
+
 .open_now,
 .close_now {
 	position: absolute;
