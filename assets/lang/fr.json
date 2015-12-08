@@ -25,6 +25,8 @@
     },
     "more_details": "Plus de d\u00e9tails",
     "previous": "Pr\u00e9c\u00e9dent",
+    "open": "Ouvert",
+    "close": "Fermé",
     "next": "Suivant",
     "back": "Retour",
     "back_home": "Retour \u00e0 l'accueil",
@@ -182,5 +184,13 @@
                 "description": "Idéal pour faire une pause dans votre visite, voici notre sélection d'hôtels."
             }
         ]
+    },
+    "sscat": {
+        "open": "Ouvert",
+        "close": "Fermé",
+        "google_advice": "avis Google",
+        "show_all_advice": "Voir les avis",
+        "hide_all_advice": "Cacher les avis",
+        "opening_hours": "Heures d'ouverture"
     }
 }
