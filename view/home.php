@@ -41,7 +41,7 @@
       <button class="button is-checked" data-filter="*"><?php echo $json['home']['all']; ?></button>
       <button class="button" data-filter=".news"><?php echo $json['home']['news']; ?></button>
       <button class="button" data-filter=".event"><?php echo $json['home']['events']; ?></button>
-      <button class="button" data-filter=".social"><?php echo $json['home']['networks']; ?></button>
+      <!--<button class="button" data-filter=".social"><?php echo $json['home']['networks']; ?></button>-->
     </div>
 
     <div class="grid">

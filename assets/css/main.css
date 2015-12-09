@@ -171,7 +171,7 @@ ul {
 }
 
 /* Caroussel */
-#myCarousel {
+.carousel {
   clear: both;
 }
 
@@ -200,6 +200,30 @@ ul {
   margin-left: -20px;
   margin-top: -20px;
   z-index: 5;
+}
+
+@media screen and (max-width: 640px) {
+  .carousel .item {
+    max-height: 427px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel .item {
+    max-height: 360px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .carousel .item {
+    max-height: 260px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .carousel .item {
+    max-height: 213px;
+  }
 }
 
 .row {
@@ -633,16 +657,13 @@ footer #logograndlyon {
 
 #up_button {
   cursor: pointer;
-  position: relative;
-  bottom: 100px;
-  left: 100px;
   display:none;
-  float:right;
   width:60px;
   height:60px;
   border-radius: 1000px;
   color:#5E5E5E;
   border:5px solid #5E5E5E;
+  margin: 10px auto;
 }
 
 #up_button i{

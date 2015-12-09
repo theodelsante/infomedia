@@ -1,5 +1,12 @@
 $(document).ready(function() {
-  // init Isotope
+
+  /* blockCarouselResize */
+  // blockCarouselResize();
+  // window.onresize = function(event) {
+  //   blockCarouselResize();
+  // };
+
+  /* Isotope */
   var $grid = $('.grid').isotope({
     itemSelector: '.grid-item'
   });
@@ -17,9 +24,10 @@ $(document).ready(function() {
     });
   });
 
+  /* ListNews */
   $('#afficher_plus').click(function() {
     $('#isotopesup').css('height', 'auto');
-    $(this).css('display', 'none');
+    $(this).find('h3').css('display', 'none');
     $('#up_button').css('display', 'block');
   });
 
@@ -34,3 +42,15 @@ $(document).ready(function() {
     $('.ribbon').addClass('active');
   }, 500);
 });
+
+// function blockCarouselResize() {
+//   var maxH = 500;
+//   $('#myCarousel img').each(function() {
+//     var imgH = $(this).height();
+//     alert('h : '+imgH);
+//     if (imgH < maxH) {
+//       maxH = imgH;
+//     }
+//   });
+//   $('.carousel .item').css('max-height', maxH);
+// }

@@ -37,9 +37,9 @@
     </div>
     <div id="afficher_plus">
       <h3><?php echo $json['display_more']; ?></h3>
-    </div>
-    <div id="up_button">
-     <i class="fa fa-chevron-up fa-2x"></i>
+      <div id="up_button">
+       <i class="fa fa-chevron-up fa-2x"></i>
+     </div>
    </div>
  </div>
 </div>

@@ -3,6 +3,19 @@
 	margin: 5px .5%;
 }
 
+#product .col-xs-1 {
+	padding: 0px;
+}
+
+#product #img,
+#product #text {
+	margin-bottom: 20px;
+}
+
+#product .btn {
+	font-size: 15px;
+}
+
 #product .btn-info {
 	min-width: 50%;
 	margin: 10px auto;
@@ -12,12 +25,15 @@
 
 #product .btn-info .fa {
 	color: white;
+	vertical-align: middle;
+	font-size: 22px;
 }
 
 #product input[type="submit"] {
 	margin-left: 10px;
 	background: none;
 	border: none;
+	vertical-align: middle;
 }
 
 @media screen and (min-width: 768px) {

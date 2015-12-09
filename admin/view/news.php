@@ -44,13 +44,13 @@ if (isset($_GET['change']) && isset($_GET['id']) && intval($_GET['id'])) {
     <div class="form-group">
       <label class="col-md-4 control-label" for="text_fr"><?php echo $json['admin']['news']['content_fr']; ?></label>
       <div class="col-md-6">
-        <textarea id="text_fr" class="form-control" name="content_fr" data-textboxio-index="0" required><?php echo $content_fr; ?></textarea>
+        <textarea id="text_fr" class="form-control" name="content_fr" data-textboxio-index="0"><?php echo $content_fr; ?></textarea>
       </div>
     </div>
     <div class="form-group">
       <label class="col-md-4 control-label" for="text_en"><?php echo $json['admin']['news']['content_en']; ?></label>
       <div class="col-md-6">
-        <textarea id="text_en" class="form-control" name="content_en" data-textboxio-index="1" required><?php echo $content_en; ?></textarea>
+        <textarea id="text_en" class="form-control" name="content_en" data-textboxio-index="1"><?php echo $content_en; ?></textarea>
       </div>
     </div>
 

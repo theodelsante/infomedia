@@ -180,7 +180,7 @@ $sscat[8]['img'] = 'Saigon_Wok.JPG';
 						} else {
 							echo '<img src="'.$review['profile_photo_url'].'"/><h4>'.$review['author_name'].'</h4>';
 						}
-						echo '<span>'.Display::ratingStar($review['aspects'][0]['rating']).'</span>
+						echo '<span>'.Display::ratingStar($review['rating']).'</span>
 						<p>'.$review['text'].'</p>
 						</div>';
 					}
