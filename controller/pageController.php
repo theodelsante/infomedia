@@ -1,6 +1,6 @@
 <?php
 $pages = array('home', 'listnews', 'news', 'category', 'sscat', 'usefull_links', 'legal_notice', 'shop', 'product', 'pay', 'build');
-if (isset($_GET['page']) && $_GET['page'] != '') {
+if (isset($_GET['page']) && $_GET['page'] != '' || isset($_GET['error'])) {
   if (in_array($_GET['page'], $pages)) {
     $page = $_GET['page'];
     if ($_GET['page'] == 'category' && ((isset($_GET['main']) && $_GET['main'] != 'everyday') || !isset($_GET['main']))) {

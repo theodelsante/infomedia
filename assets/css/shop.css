@@ -3,11 +3,21 @@
 	margin: 5px .5%;
 }
 
-#product input[type="submit"] {
+#product .btn-info {
 	min-width: 50%;
 	margin: 10px auto;
 	display: block;
 	clear: both;
+}
+
+#product .btn-info .fa {
+	color: white;
+}
+
+#product input[type="submit"] {
+	margin-left: 10px;
+	background: none;
+	border: none;
 }
 
 @media screen and (min-width: 768px) {
