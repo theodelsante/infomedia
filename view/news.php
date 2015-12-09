@@ -6,7 +6,10 @@
             if (!empty($news['img']) && is_file('assets/img/'.$page.'/'.$news['img'])) {
                 echo '<img id="news_img" src="assets/img/'.$page.'/'.$news['img'].'"/>';
             }
-            echo '<div id="news_text"><h1>'.$news['title_'.$_SESSION['lang']].'</h1><div>'.$news['content_'.$_SESSION['lang']].'</div>
+            if ($_SESSION['lang'] == 'fr') {
+                $news['date_publication'] = date("d/m/Y", strtotime($news['date_publication']));
+            }
+            echo '<div id="news_text"><h1>'.$news['title_'.$_SESSION['lang']].'</h1><h2>'.$news['date_publication'].'</h2><div>'.$news['content_'.$_SESSION['lang']].'</div>
             <a href="./?page=listnews" class="btn btn-primary" role="button">'.$json['back_to_news_list'].'</a></div>';
         } else {
             echo '<div id="news_text"><h1>'.$json['shop']['label'].' : '.$json['error']['no_news'].'</h1>

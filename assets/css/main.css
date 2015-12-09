@@ -506,6 +506,11 @@ footer #logograndlyon {
 }
 
 /* News */
+#news_text h2 {
+  float: right;
+  margin-top: -43px;
+}
+
 .btn-primary {
   margin: 0px auto;
   display: block;
