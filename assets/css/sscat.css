@@ -1,5 +1,6 @@
 #gmap {
 	height: 50%;
+	min-height: 280px;
 }
 
 #gmap * {

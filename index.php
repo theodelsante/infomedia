@@ -3,6 +3,7 @@ require_once('controller/pageController.php');
 require_once('config.php');
 require_once('controller/langController.php');
 ?>
+<!DOCTYPE html>
 <html lang="<?php echo $_SESSION['lang']; ?>">
 <head>
 	<title><?php echo Display::getPageName($json, $page).' | '.SITE_NAME; ?></title>

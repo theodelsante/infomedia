@@ -26,7 +26,7 @@
 					<li class="dropdown" id="leisure">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="./?page=category&main=leisures"><?php echo $json['nav']['leisures']; ?></a>
 						<ul class="dropdown-menu">
-							<li><a href="./?page=sscat&main=leisures&details=parks"><?php echo $json['nav']['parks']; ?></a></a></li>
+							<li><a href="./?page=sscat&main=leisures&details=parks"><?php echo $json['nav']['parks']; ?></a></li>
 							<li><a href="./?page=sscat&main=leisures&details=sports"><?php echo $json['nav']['sports']; ?></a></li>
 							<li><a href="./?page=sscat&main=leisures&details=cinemas"><?php echo $json['nav']['cinemas']; ?></a></li>
 							<li><a href="./?page=sscat&main=leisures&details=theaters"><?php echo $json['nav']['theaters']; ?></a></li>

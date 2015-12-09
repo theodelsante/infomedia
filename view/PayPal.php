@@ -17,7 +17,9 @@ class PayPal {
         <input type="hidden" name="shipping" value="'.$transportation_price.'">
         <input type="hidden" name="add" value="1">
         <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
-        <input type="submit" name="submit" value="'.$json['shop']['add_to_cart'].'" class="btn btn-info">
+        <button class="btn btn-info">
+        <i class="fa fa-plus"></i><input type="submit" name="submit" value="'.$json['shop']['add_to_cart'].'"/>
+        </button>
     </form>';
     }
 
@@ -26,7 +28,9 @@ class PayPal {
         <input type="hidden" name="cmd" value="_cart">
         <input type="hidden" name="business" value="'.PayPal::$VENDOR_MAIL.'">
         <input type="hidden" name="display" value="1">
-        <input type="submit" name="submit" value="'.$json['shop']['show_cart'].'" class="btn btn-info">
+        <button class="btn btn-info">
+        <i class="fa fa-shopping-bag"></i><input type="submit" name="submit" value="'.$json['shop']['show_cart'].'"/>
+        </button>
     </form>';
     }
 }

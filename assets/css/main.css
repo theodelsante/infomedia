@@ -391,31 +391,6 @@ h2.col-md-4 {
   margin-bottom: -3px; 
 }
 
-/* Page 404 */
-#errors .row img {
-  width: 100%;
-}
-
-#errors .text_404 {
-  position: absolute;
-  top: 10%;
-  left: 0px;
-  right: 0px;
-}
-
-#errors .text_404 h1 {
-  font-size: 5vw;
-  font-family: "Arial Black";
-  line-height: 1.402;
-  text-align: center;
-}
-
-#errors .text_404 h1 a {
-  font-family: "Arial Black";
-  color: rgb(94, 94, 94);
-  text-decoration: underline;
-}
-
 /* Footer */
 footer {
   position: relative;
@@ -563,6 +538,10 @@ footer #logograndlyon {
   border: none;
 }
 
+.cat-menu .txt-menu p{
+  margin: 70px 10px;
+}
+
 .cat-menu h2{
   position:absolute;
   width:100%;
@@ -574,9 +553,13 @@ footer #logograndlyon {
   background-color: rgba(0,0,0,0.3);
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 991px){
   .cat-menu > .img-menu{
     min-height: 10px;
+  }
+
+  .cat-menu .txt-menu p{
+    margin: 20px 10px 50px 10px;
   }
 
   .vignette{
