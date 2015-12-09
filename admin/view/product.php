@@ -58,14 +58,14 @@ if (isset($_GET['change']) && isset($_GET['id']) && intval($_GET['id'])) {
         <div class="form-group">
             <label class="col-sm-4 control-label" for="description"><?php echo $json['admin']['product']['desc_fr']; ?></label>
             <div class="col-sm-6">
-                <textarea id="description" name="description_fr" class="form-control" required><?php echo $description_fr; ?></textarea>
+                <textarea id="description" name="description_fr" class="form-control"><?php echo $description_fr; ?></textarea>
             </div>
         </div>
 
         <div class="form-group">
             <label class="col-sm-4 control-label" for="description_eng"><?php echo $json['admin']['product']['desc_en']; ?></label>
             <div class="col-sm-6">
-                <textarea id="description_eng" name="description_en" class="form-control" required><?php echo $description_en; ?></textarea>
+                <textarea id="description_eng" name="description_en" class="form-control"><?php echo $description_en; ?></textarea>
             </div>
         </div>
 

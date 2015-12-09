@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted Access"
+AuthUserFile /home/u544081784/public_html/projects/G4/Vaise/admin/.htpasswd
+Require user vaiseadmin
