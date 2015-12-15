@@ -31,9 +31,9 @@
   <div id="share">
     <h3><?php echo $json['sidebar']['share']; ?></h3>
     <div class="icon">
-      <i class="fa fa-facebook-square fa-3x"></i>
-      <i class="fa fa-twitter-square fa-3x"></i>
-      <i class="fa fa-google-plus-square fa-3x"></i>
+      <a href="https://facebook.com/" title="Facebook" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a>
+      <a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a>
+      <a href="https://plus.google.com/" title="Google Plus" target="_blank"><i class="fa fa-google-plus-square fa-3x"></i></a>
     </div>
     <h3><?php echo $json['sidebar']['print']; ?></h3>
     <div class="icon"><i class="fa fa-print fa-3x" onClick="window.print()"></i></div>
